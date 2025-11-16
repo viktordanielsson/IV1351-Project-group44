@@ -13,7 +13,7 @@
 \headheight 27pt
 \pagestyle{fancyplain}
 \lhead{\footnotesize{Data Storage Paradigms, IV1351}}
-\chead{\footnotesize{Project Report}}
+\chead{\footnotesize{Seminar 1 Report}}
 \rhead{}
 \lfoot{}
 \cfoot{\thepage\ (\pageref{LastPage})}
@@ -63,7 +63,7 @@ Explain the task and the requirements on the solution. It's important to clearly
 The task at hand is to design and create a database capable of describing a universites course system. There has to exist a course layout that describes the course code, course name, how many points the course is worth, the minimum amount of students and the maximum amount. A course instance is needded to track the total amount of students registered and in which period the course is given in ex. P1, P2, P3, P4. Each course has many different teaching activites such as lectures, labs, tutorials and seminars. Every teaching activity requires a diffrerent amount of time for the teacher to prepare (multiplication factor) which has to be included in the database. Every course has a varying amount of time for each teaching activity which also has to be considered in the database, aswell as derived data for examination hours and admin hours dependening on the amount of students. The last things are the different departments with their manager (who is also an employee) and the teachers/employees themselves. An employee or teacher works at a department and must have contact details, salary, teaching activites based on skill set, job title and their supervisor/manager. Each teacher can be involved in many teaching activites for multiple different course instances and each course instance can have multiple teachers involved at once. However, a teacher can only be in up to four course instances in a single period.
 \bigskip
 \\
-The final database has to be able to handle all the affermentioned details from the university and be flexible enough to add more  teaching activites later on. 
+The final database has to be able to handle all the affermentioned details from the university and be flexible enough to add more  teaching activites later on. It must also be possible to add different course versions of the same course layout to to have a 15hp course aswell as a 7.5hp for the same course.
 \section{Literature Study}
 
 This chapter must prove that you collected sufficient knowledge before starting development, instead of just hacking away without knowing how to complete a task. State what you have read and briefly summarize what you have learned.
@@ -75,28 +75,29 @@ Some of the knowledge gathered to complete the task was:
     \item Cardinality: A relationship between two tables must express how many of such tables can be associated with the other table. One-to-one would indicate that the their only exists a single table related to another single table. However Many-to-many would instead indicate multiple tables can have a single relationship to multiple other tables. Cardinality is also necessary to define how many of a certain attribute is allowed in a signle instance, can we have a null amount, one to many, zero to many and so on.
     \item Attribute Domain: For each column or attribute there has to be an assigned domain to define all the values that would be allowed to fill that column for each instance of the table. 
     \item Atomic values: Our database strives to use atomic values in our columns. That means that each value is in its smallest part and not able to be divided into any more smaller parts. So our domain can be atomic if it only allows for a single integer in its column.
-    \item Normalization: A database should not store loads of redundant data, it is space inefficient and requires more computation when you perform operations on the database. So normalization is design decisition that formally defines how normalized the data is in the database. The first normal form 1NF is when every single attribute is atomic. NF2 is the state of the model where every attribute is fully dependent on the entire Primary key and 3NF has removed all the transitive functional dependencies in a lossless manner (no information was lost).
-    \item Primary Key: 
-    \item Foreign key:
-    
-    
-    
-    
-    
+    \item Normalization: A database should not store loads of redundant data, it is space inefficient and requires more computation when you perform operations on the database. So normalization is design decisition that formally defines how normalized the data is in the database. The first normal form 1NF is when every single attribute is atomic. NF2 is the state of the model where every attribute is fully dependent on the entire primary key and 3NF has removed all the transitive functional dependencies in a lossless manner (no information was lost).
+    \item Primary Key: A primary key is a specific attribute choosen specifically to identify each tuple in the relation, or alternativly each row in a table. 
+    \item Foreign key: The foreign key is a value in a different table that has to match one of the values in the primary key of that other table. This allows for references between tables. 
 \end{itemize}
-
+There is of course more, but this was a short summary of what has been taught and what is needed to understand the task. 
 
 \section{Method}
 
 \textbf{This chapter tells \textit{how} you solved the task.}
 
 Explain how you worked when solving the tasks and how you evaluated that your solution met the requirements. \textit{Do not explain your solution and do not refer to code}, that belongs to the \textit{Result} chapter. More specific instructions for the content can be found under each task on the Project page in Canvas.
-
-After the trivial conversion of tables and columns the third method is to assign domains to each of the attributes. Then each attribute labeled unique has to be unique in the model.
-
-Defining primary keys for each table is then done by finding all strong entities in the model.
+\bigskip
+\\
+The method of creating a database starts by creating a miniworld of reality that describes how different entities interact and exchange information Then the conceptual model is transformed into a logical and physical model which describes how the miniworld would be represented in a database. The eleven steps necessary to formulate the correct logical and physical model were:
+\begin{description}
+  \item Two trivial steps of creating tables and rows based on the conceptual model.
+  \item Then assigning the domain for each attribute.
+  \item Attribute "unique" to attributes that are unique in the conceptual model.
+  \item Define primary keys for each table which is definied as a strong entity in the model.
+\end{description}
 
 \section{Result}
+Applying all the 
 
 Attributes in person: phone number has VARCHAR 15 to allow a phone number with country code that is larger than 2 digits. Adress, last\_name and first\_name all use VARCHAR 200 to allow for large names but without risks of massive values.
 \bigskip
@@ -116,11 +117,12 @@ The rest of the attributes were handled similarly except for study\_period which
 Each attribute such as person\_number, employment\_id and all the others marked with UNIQUE  got labels describing that property.
 \bigskip
 \\
-Finding the strong entities was done by looking at the conceptual model and searching for an entity which is not dependant on another entyity to exist. Such entites were found to be person, course layout and department. They were then given a surrogate key to define their primary key. 
+Finding the strong entities was done by looking at the conceptual model and searching for an entity which is not dependant on another entity to exist. Such entites were found to be person, course layout and department. They were then given a surrogate key to define their primary key. 
 \textbf{This chapter explains \textit{the result} of what you did.}
 
 \textbf{The report must show that you have done the work yourself and that you have understood what you have done}, both of these goals are met by carefully explaining your solution here in the result chapter, and proving that it meets the requirements. \textit{State each requirement that is met} and explain \textit{how you met it}. Also include links to your code in your Git repository, and include also diagrams, see Figure \ref{fig:diag}, and other figures to illustrate your reasoning. All figures must be referenced in the text. Ask yourself if the solution is clearly explained, and if the reader will understand the application. What would you yourself want to know if you read about the application, is that included in the report? More specific instructions for the content can be found under each task on the Project page in Canvas. 
 
+Foreign key constraint
 \begin{figure}[h!]
   \begin{center}
   \end{center}
@@ -130,13 +132,17 @@ Finding the strong entities was done by looking at the conceptual model and sear
 
 \section{Discussion}
 
-The employee attribute skill set is tricky because multiple employees can share the same skill and we want to ensure the values are atomic so we also do not want to store an array of multiple skills for a single employee. So multiple employees can have the same skill and a single employee has multiple skills. The solution we choose was to create a new table with the skill set table which can store the employment\_id as a foreign key and the skill set as the second part of the primary key for the table. Other solutions could have been to use a second table that describes the relation between skill set and employee and then a second table with many-to-many relations but it was deemed unnecessarily complex with to many tables.
+The employee attribute skill set is tricky because multiple employees can share the same skill and we want to ensure the values are atomic so we also do not want to store an array of multiple skills for a single employee. So multiple employees can have the same skill and a single employee has multiple skills. Then solved with a many-to-many relation.
+\bigskip
+\\
+For our many-to-many relations such as study period and employee skillset we use the cross-reference table. It could be done with less tables with a table with multivalued attributes but it is valuable to decrease the amount of duplicate data. We then force the values to be unique because otherwise they would be able to be duplicate which would remove the benefit of having a cross-reference table.
 \bigskip
 \\
 When finding strong entites the department entity is perculiar because the manager\_id is dependent on a employee existing. By allowing for a null manager we can define the department as a strong entity because it is no longer dependant on the employee table. This is allowed because null is not accounted for when checking the column for uniqueness.
 \bigskip
 \\
-When considering the hp for a course there could be the same course with the same 
+When considering the hp for a course there could be the same course with the same course id but with a different amount of hp. This is a complicated thing to solve because the typical course layout would store 
+
 
 
 \textbf{This chapter \textit{analysis} the result presented in the previous section.} 
