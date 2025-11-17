@@ -12,22 +12,21 @@ NUM_SKILLS = 20
 NUM_COURSES = 50
 MAX_LAYOUTS_PER_COURSE = 3
 MAX_INSTANCES_PER_LAYOUT = 2
-STUDY_PERIODS = ["SP1", "SP2", "SP3", "SP4"]
+STUDY_PERIODS = ["P1", "P2", "P3", "P4"]
 
 TEACHING_ACTIVITIES = [
-    ("Lecture", 1.0),
-    ("Seminar", 0.8),
-    ("Supervision", 0.5),
-    ("Lab", 1.2),
-    ("Workshop", 1.1)
+    ("Lecture", 3.6),
+    ("Seminar", 1.8),
+    ("Tutorial", 2.4),
+    ("Lab", 2.4),
+    ("Workshop", 0.9)
 ]
 
 print("-- PERSON")
 persons = []
 for i in range(1, NUM_PERSONS+1):
     p = {
-        "id": i,
-        "personal_number": fake.unique.ssn()[:12],
+        "personal_number": fake.unique.ssn()[:10],
         "first_name": fake.first_name(),
         "last_name": fake.last_name(),
         "phone_number": fake.msisdn()[:13],
@@ -41,7 +40,6 @@ print("\n-- DEPARTMENT")
 departments = []
 for i in range(1, NUM_DEPARTMENTS+1):
     d = {
-        "id": i,
         "name": fake.word().capitalize() + " Department",
         "manager_id": random.randint(1, NUM_PERSONS)
     }
@@ -141,5 +139,5 @@ for (inst_id, layout_id, course_id) in course_instances:
     for employee in allocated:
         dept = random.randint(1, NUM_DEPARTMENTS)
         ta = random.randint(1, len(TEACHING_ACTIVITIES))
-        print(f"INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) "
+        print(f"INSERT INTO employee_load_allocation(person_id, department_id, course_id, teaching_activity_id) "
               f"VALUES ({employee['id']}, {dept}, {course_id}, {layout_id}, {ta});")
