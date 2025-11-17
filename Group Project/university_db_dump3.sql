@@ -1,6 +1,6 @@
 CREATE TABLE course (
  id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
- course_code  VARCHAR(200) NOT NULL UNIQUE,
+ course_code  VARCHAR(200) NOT NULL,
  course_name VARCHAR(200) NOT NULL
 );
 
@@ -9,11 +9,11 @@ ALTER TABLE course ADD CONSTRAINT PK_course PRIMARY KEY (id);
 
 CREATE TABLE course_layout (
  id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
- course_id INT  NOT NULL,
+ course_id INT NOT NULL,
  min_students INT NOT NULL,
  max_students INT NOT NULL,
  hp DOUBLE PRECISION NOT NULL,
- ver INT NOT NULL
+ version INT NOT NULL
 );
 
 ALTER TABLE course_layout ADD CONSTRAINT PK_course_layout PRIMARY KEY (id,course_id);
@@ -42,7 +42,7 @@ CREATE TABLE person (
  first_name VARCHAR(200) NOT NULL,
  last_name VARCHAR(200) NOT NULL,
  phone_number VARCHAR(13) NOT NULL,
- adress VARCHAR(200) NOT NULL
+ address VARCHAR(200) NOT NULL
 );
 
 ALTER TABLE person ADD CONSTRAINT PK_person PRIMARY KEY (id);
@@ -86,7 +86,7 @@ ALTER TABLE course_instance ADD CONSTRAINT PK_course_instance PRIMARY KEY (id);
 
 
 CREATE TABLE course_instance_study_period (
- study_period_id INT  NOT NULL,
+ study_period_id INT NOT NULL,
  course_instance_id INT NOT NULL
 );
 
@@ -109,10 +109,10 @@ ALTER TABLE employee ADD CONSTRAINT PK_employee PRIMARY KEY (id);
 
 CREATE TABLE employee_skill_set (
  skill_set_id INT NOT NULL,
- id INT NOT NULL
+ employee_id INT NOT NULL
 );
 
-ALTER TABLE employee_skill_set ADD CONSTRAINT PK_employee_skill_set PRIMARY KEY (skill_set_id,id);
+ALTER TABLE employee_skill_set ADD CONSTRAINT PK_employee_skill_set PRIMARY KEY (skill_set_id,employee_id);
 
 
 CREATE TABLE planned_activity (
@@ -125,7 +125,7 @@ ALTER TABLE planned_activity ADD CONSTRAINT PK_planned_activity PRIMARY KEY (tea
 
 
 CREATE TABLE employee_load_allocation (
- teaching_activity_id INT  NOT NULL,
+ teaching_activity_id INT NOT NULL,
  course_instance_id INT NOT NULL,
  employee_id INT NOT NULL
 );
@@ -149,7 +149,7 @@ ALTER TABLE employee ADD CONSTRAINT FK_employee_2 FOREIGN KEY (job_title_id) REF
 
 
 ALTER TABLE employee_skill_set ADD CONSTRAINT FK_employee_skill_set_0 FOREIGN KEY (skill_set_id) REFERENCES skill_set (id);
-ALTER TABLE employee_skill_set ADD CONSTRAINT FK_employee_skill_set_1 FOREIGN KEY (id) REFERENCES employee (id);
+ALTER TABLE employee_skill_set ADD CONSTRAINT FK_employee_skill_set_1 FOREIGN KEY (employee_id) REFERENCES employee (id);
 
 
 ALTER TABLE planned_activity ADD CONSTRAINT FK_planned_activity_0 FOREIGN KEY (teaching_activity_id) REFERENCES teaching_activity (id);
