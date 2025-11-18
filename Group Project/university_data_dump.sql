@@ -1,1701 +1,476 @@
--- PERSON
-INSERT INTO person VALUES ('312-32-0315', 'Katherine', 'Miller', '8282385813329', '590 Erik Valley, Sharphaven, GU 20307');
-INSERT INTO person VALUES ('194-55-9711', 'Vincent', 'Garcia', '6300957023950', '383 Daniel Circle Apt. 248, Jonesburgh, KS 97321');
-INSERT INTO person VALUES ('416-11-5657', 'Nicholas', 'Ray', '3636959368404', '2801 Wilson Centers Suite 261, West Gary, KY 93662');
-INSERT INTO person VALUES ('549-60-0373', 'Alyssa', 'Ryan', '8136135259456', '7498 Harrison Locks Suite 139, New Wanda, MP 57191');
-INSERT INTO person VALUES ('780-34-3467', 'James', 'Weaver', '0120320136573', '38929 Michele Garden Apt. 543, Whiteside, SC 59891');
-INSERT INTO person VALUES ('731-75-9009', 'Gary', 'Hamilton', '2631449154222', '94108 Miller Rapid, Gallagherland, UT 90351');
-INSERT INTO person VALUES ('788-28-4096', 'Denise', 'Davis', '0909091717951', '741 Smith Parks Suite 940, Brendaborough, WI 87264');
-INSERT INTO person VALUES ('238-60-6805', 'William', 'Harrison', '8594184196139', '94202 Kenneth Ville, Davishaven, MP 06547');
-INSERT INTO person VALUES ('387-97-5646', 'Bethany', 'Kidd', '9776863401958', 'Unit 7009 Box 5775, DPO AE 12665');
-INSERT INTO person VALUES ('736-56-1684', 'Lawrence', 'Huff', '5393950925285', 'PSC 4233, Box 0793, APO AA 23192');
-INSERT INTO person VALUES ('445-49-8206', 'Valerie', 'Walker', '2052898615011', 'USCGC Jones, FPO AP 47023');
-INSERT INTO person VALUES ('107-52-3080', 'Brandy', 'Carter', '1188253342639', '5652 Young Crest, Mooneyburgh, WA 62022');
-INSERT INTO person VALUES ('071-05-5721', 'Michael', 'Miller', '0916075949473', '856 Cynthia Walk Suite 136, West Ralphport, PR 04126');
-INSERT INTO person VALUES ('522-29-6065', 'April', 'Clark', '7638662024460', '304 Grant Forges Apt. 490, North Rogerland, MD 29385');
-INSERT INTO person VALUES ('792-29-9000', 'Cassandra', 'Reeves', '3656985438368', '40824 Rachel Haven, Guzmanmouth, MA 44684');
-INSERT INTO person VALUES ('042-34-3708', 'Patricia', 'Butler', '3533166306053', '32536 Miranda Prairie Suite 238, Port Barrymouth, MP 72541');
-INSERT INTO person VALUES ('563-60-4560', 'Michael', 'Green', '3253462238645', '003 Tom Flat, Walkerfort, AS 64628');
-INSERT INTO person VALUES ('780-01-9592', 'John', 'Weber', '6752028649540', '221 Megan Road Apt. 732, Port Morganshire, PA 31365');
-INSERT INTO person VALUES ('669-72-2994', 'Rhonda', 'Bryant', '1198926351345', '0580 Moody Fields, Faulknerview, KY 18057');
-INSERT INTO person VALUES ('241-27-9353', 'Kayla', 'Peck', '1799462021178', '435 Davis Fall, Port James, NJ 59116');
-INSERT INTO person VALUES ('406-66-8231', 'Jesse', 'Singh', '7008825083563', '915 Stanley Trace, Port Lindaberg, OH 69244');
-INSERT INTO person VALUES ('597-56-4823', 'Gina', 'Harris', '6436186703319', '679 Lacey Extension Apt. 889, Charlesshire, NJ 24533');
-INSERT INTO person VALUES ('051-48-1153', 'Billy', 'Gordon', '6608433196633', '4852 Rogers Squares, Port Debbie, PW 04074');
-INSERT INTO person VALUES ('559-99-9014', 'David', 'Franklin', '4668451197456', '0539 Riley Squares, Lake Timothy, MS 94308');
-INSERT INTO person VALUES ('118-15-8433', 'Michael', 'Mccullough', '4343388019855', '552 Michael Via Suite 757, Lake Briannashire, OH 40098');
-INSERT INTO person VALUES ('683-44-3837', 'Caitlin', 'Robbins', '2821829238406', '5737 Theresa Walk, Mirandaside, WI 21108');
-INSERT INTO person VALUES ('808-84-2456', 'Kelsey', 'Kelley', '1880941980082', '4186 Jessica River, Mcguirestad, AR 31880');
-INSERT INTO person VALUES ('297-17-0328', 'Melinda', 'Chandler', '3037074663978', '652 Baker Common, Hendersonmouth, WI 11708');
-INSERT INTO person VALUES ('621-77-9588', 'Jonathan', 'Chambers', '4747905441914', '587 Ballard Ridge, Fergusonport, HI 23281');
-INSERT INTO person VALUES ('127-16-7661', 'Kevin', 'Collier', '0824749577909', '79699 Burns Courts, Bartlettberg, VI 18962');
-INSERT INTO person VALUES ('612-99-8347', 'Linda', 'Hayes', '9085299754656', '550 Joshua Lights Apt. 553, Williamville, OH 58215');
-INSERT INTO person VALUES ('340-33-1151', 'Cameron', 'Anderson', '4143013003088', '2161 Nicole Place, Cohenport, IN 63690');
-INSERT INTO person VALUES ('492-61-9491', 'Jody', 'Clark', '0288654086740', '477 Gill Wall Apt. 154, West Rickmouth, PR 85932');
-INSERT INTO person VALUES ('834-24-0780', 'Meredith', 'Ball', '9448959176117', '6588 Hanson Manor, Port Joseph, AL 74068');
-INSERT INTO person VALUES ('420-42-4651', 'Joshua', 'Rodriguez', '3612761858513', '516 Johnston Walks, Nortonchester, AL 38384');
-INSERT INTO person VALUES ('567-68-9826', 'Jamie', 'Lambert', '2690113411481', '518 Laura Field, Aliciastad, HI 30373');
-INSERT INTO person VALUES ('584-37-8554', 'Christina', 'Smith', '4239571638497', '5629 Aaron Manors, Lake Codytown, FL 25263');
-INSERT INTO person VALUES ('744-01-4879', 'Cory', 'Thompson', '1578569384701', '12140 Paula Summit Suite 180, West Robert, VI 29346');
-INSERT INTO person VALUES ('167-88-0274', 'William', 'Perez', '9614008748554', '6795 Burns Trace, South Melissaport, PR 51648');
-INSERT INTO person VALUES ('303-21-7015', 'Brenda', 'Torres', '6965146011309', 'Unit 8410 Box 1135, DPO AE 80998');
-INSERT INTO person VALUES ('506-92-6368', 'Scott', 'Lindsey', '0373913874587', '19374 Herring Trail Apt. 933, Lake Rebeccamouth, NC 70493');
-INSERT INTO person VALUES ('863-60-3670', 'Robert', 'White', '7475512749617', '19582 Clay Junctions, Erikaport, NC 14880');
-INSERT INTO person VALUES ('381-79-3776', 'Gabriella', 'Harris', '1496986455807', '7601 Barron Course, Kylestad, OH 43995');
-INSERT INTO person VALUES ('789-31-8565', 'Steven', 'Vega', '3934801698437', '95822 Richard Rest Suite 021, South Corey, OK 62200');
-INSERT INTO person VALUES ('490-06-4986', 'Ashley', 'Raymond', '5683813513606', '552 Smith Flats, Michaelborough, IA 68526');
-INSERT INTO person VALUES ('253-11-2365', 'Jim', 'Wilson', '6148639652454', '45624 Jackson Garden, South Marcia, DE 02207');
-INSERT INTO person VALUES ('201-93-2697', 'Alexander', 'Davis', '1382312959182', '24150 Morales Dam, North Julie, NH 78291');
-INSERT INTO person VALUES ('154-38-4347', 'Stacie', 'Pitts', '5721866677044', '86458 Cheryl Knoll Suite 208, Michaelberg, PW 63831');
-INSERT INTO person VALUES ('209-51-9154', 'Jessica', 'Sanchez', '9715606186105', '783 Calderon Corner Apt. 538, Clarkhaven, MA 19164');
-INSERT INTO person VALUES ('149-97-8904', 'Ashley', 'Sanchez', '2516524555353', '144 Cox Crescent, Port Manuel, WY 53648');
-INSERT INTO person VALUES ('684-89-9800', 'Lisa', 'Quinn', '5076359011412', '88660 Tracy Bypass, Allenberg, MN 45909');
-INSERT INTO person VALUES ('899-42-1938', 'Tammy', 'Roberts', '8561793571471', '236 Maria Ford, Welchland, MP 20240');
-INSERT INTO person VALUES ('658-96-1972', 'Patricia', 'Evans', '1747197960289', '05067 Todd Burg Apt. 970, Martinezside, CT 33577');
-INSERT INTO person VALUES ('276-60-7033', 'Peter', 'Ramirez', '2334457373664', '10939 Rose Route Apt. 742, Lake Jessica, TX 60325');
-INSERT INTO person VALUES ('742-40-5050', 'Sharon', 'Larson', '1457169397484', 'PSC 1378, Box 8273, APO AA 14524');
-INSERT INTO person VALUES ('700-19-6571', 'Shawn', 'Mcdaniel', '4918121341669', '99630 Peterson Pike, Russellmouth, ID 96179');
-INSERT INTO person VALUES ('640-19-6687', 'Jennifer', 'Mueller', '4455946461622', '9333 Jodi Village, Allisonside, IA 95853');
-INSERT INTO person VALUES ('697-80-7098', 'Ryan', 'Mcguire', '8004604493240', '124 Caitlin Camp, Wheelerburgh, PR 26832');
-INSERT INTO person VALUES ('776-82-7643', 'Martha', 'White', '0090440006473', '262 Daniel Turnpike Suite 522, Stantonfurt, MO 14214');
-INSERT INTO person VALUES ('862-34-0395', 'Katherine', 'Herring', '2150480781168', '6787 William Cove Suite 863, Erinberg, MN 74230');
-INSERT INTO person VALUES ('471-19-1187', 'Larry', 'Lane', '4604774072858', '907 Tonya Drives, East Jessica, GU 43911');
-INSERT INTO person VALUES ('698-74-7930', 'Victoria', 'Ward', '1256901920879', '8541 Smith Brooks, Martinezburgh, TX 10724');
-INSERT INTO person VALUES ('814-17-3932', 'Theresa', 'Young', '6475260084246', '665 Alyssa Trail Suite 519, West Michaeltown, AK 71305');
-INSERT INTO person VALUES ('548-30-5839', 'Michael', 'Murray', '9627412029514', '52643 Long Orchard Suite 371, Susanport, AZ 51690');
-INSERT INTO person VALUES ('613-76-5180', 'Robert', 'Molina', '2402893181463', '981 Bauer Trail, New Miranda, DE 21002');
-INSERT INTO person VALUES ('127-97-3835', 'Virginia', 'Brown', '0204457144592', '226 Michael Valley Apt. 150, Potterbury, NC 42997');
-INSERT INTO person VALUES ('326-71-3991', 'Robert', 'Simon', '6821828591768', '27867 Pamela Trafficway Apt. 818, Lake Shannon, CT 43988');
-INSERT INTO person VALUES ('022-61-1076', 'Anthony', 'Lloyd', '6585898365808', '81966 Noah Land, Johnview, NV 05695');
-INSERT INTO person VALUES ('454-32-5612', 'Amanda', 'Wolfe', '0904962745542', '0379 Ford Prairie, Port Mariaside, IL 73580');
-INSERT INTO person VALUES ('285-44-3806', 'David', 'Campbell', '2317199170243', '6188 Scott Tunnel Apt. 210, North Courtneyfort, WV 96412');
-INSERT INTO person VALUES ('551-33-5338', 'Bryan', 'Martin', '1898731699528', 'USNS Brady, FPO AE 94310');
-INSERT INTO person VALUES ('044-25-1639', 'Heather', 'Roman', '7305186666286', '1927 Kevin Flats, South Frankport, NH 74491');
-INSERT INTO person VALUES ('339-15-8481', 'Kelsey', 'Flores', '0516655769411', '2854 Wilson Burgs Suite 227, Dustinburgh, OH 65438');
-INSERT INTO person VALUES ('046-66-6405', 'Zachary', 'Smith', '4489209811544', '960 Kevin Meadows, West Davidtown, PR 32800');
-INSERT INTO person VALUES ('630-26-2326', 'Nicole', 'Garcia', '4070210028294', '1570 Holmes Light Suite 764, Spencerbury, AS 31660');
-INSERT INTO person VALUES ('265-47-9020', 'Danny', 'Smith', '2940249491284', '3473 Vaughn Fields, Christianbury, NY 94774');
-INSERT INTO person VALUES ('494-64-2569', 'Rebecca', 'Johnson', '9926059956302', '09242 Anderson Estates Apt. 205, Port Jennifer, CA 56701');
-INSERT INTO person VALUES ('593-57-1324', 'Melissa', 'King', '1004002268845', '1790 Harvey Underpass, South Kellychester, PR 56963');
-INSERT INTO person VALUES ('467-08-3553', 'Brett', 'Gonzalez', '4978588786417', '8466 Carrie Motorway Suite 075, South Brandon, KS 77417');
-INSERT INTO person VALUES ('702-74-5856', 'Catherine', 'Esparza', '8404166154130', '76592 Jacqueline Squares, South Brittneytown, NE 54916');
-INSERT INTO person VALUES ('577-11-3749', 'Anna', 'Lewis', '3777535271340', '3981 Leach Forges Apt. 267, Wilsontown, AS 06520');
-INSERT INTO person VALUES ('748-10-5736', 'Rachel', 'Esparza', '0740114018883', '5866 Beck Estates, Smithchester, MD 07821');
-INSERT INTO person VALUES ('375-82-5119', 'Jacob', 'Jones', '6205404047754', '328 Armstrong Rapid, South Brian, WA 04979');
-INSERT INTO person VALUES ('582-97-4837', 'Hannah', 'Gonzalez', '3956024830774', '13291 Burke Plaza Apt. 515, Katelynburgh, GA 22509');
-INSERT INTO person VALUES ('105-55-1952', 'Tina', 'White', '6463593658461', '7347 Golden Island Suite 165, East Suzanne, NV 71973');
-INSERT INTO person VALUES ('379-31-2392', 'Chelsey', 'Haynes', '2399518125555', '2662 Richard Skyway Suite 331, Karenbury, NM 94346');
-INSERT INTO person VALUES ('341-93-8076', 'Shawn', 'Davenport', '3122792050421', '375 Kristen Stravenue Apt. 868, Oliverton, WI 41997');
-INSERT INTO person VALUES ('447-79-3561', 'Nathan', 'Gomez', '9988370617100', '632 Hernandez Summit Apt. 540, Port Nicholaston, MP 09208');
-INSERT INTO person VALUES ('876-09-4490', 'Krista', 'Meyer', '3046342178222', 'Unit 3118 Box 5130, DPO AA 06202');
-INSERT INTO person VALUES ('219-70-8434', 'Jesse', 'Morris', '9601938171186', '1086 Hendricks Motorway Suite 971, Christophermouth, UT 32867');
-INSERT INTO person VALUES ('295-39-2677', 'James', 'Wolfe', '8887271689611', 'PSC 4598, Box 6349, APO AE 66059');
-INSERT INTO person VALUES ('338-84-3196', 'Clinton', 'Walker', '5938320574797', '436 Walker Row, New Davidshire, AK 83607');
-INSERT INTO person VALUES ('860-10-9255', 'Michelle', 'Dennis', '4201119847999', '4205 Taylor Union, North Alyssa, HI 05162');
-INSERT INTO person VALUES ('364-96-4165', 'Danielle', 'Scott', '5942069052047', '31384 Spencer Meadow Apt. 678, Veronicamouth, IN 41908');
-INSERT INTO person VALUES ('240-03-5993', 'Joseph', 'Taylor', '7336699731330', '4356 Molly Causeway, North Megan, CA 50835');
-INSERT INTO person VALUES ('716-58-5897', 'Emily', 'Santiago', '5356176089565', 'USNS Evans, FPO AE 40920');
-INSERT INTO person VALUES ('748-26-6924', 'Robert', 'Nguyen', '7657219975980', '61214 Cline Greens, Ronaldside, MH 16023');
-INSERT INTO person VALUES ('839-96-6880', 'Seth', 'Mckee', '3761037474176', '17352 Michelle Lights Apt. 403, Lake Andreabury, GU 82258');
-INSERT INTO person VALUES ('800-56-4973', 'Jennifer', 'Kelly', '3977524008967', '455 Hanna Square Suite 217, West Brianaton, UT 81125');
-INSERT INTO person VALUES ('050-59-4315', 'Lisa', 'Johnson', '7886116279694', '8095 Shah Orchard Suite 775, Valenciamouth, MI 66398');
+INSERT INTO person ( personal_number, first_name, last_name, phone_number, address) VALUES
+('199203154873', 'Anna', 'Svensson', '+46723541322', 'Bergsgatan 12, 113 45 Stockholm'),
+('198711098452', 'Lars', 'Johansson', '+46855221978', 'Storgatan 8, 411 24 Göteborg'),
+('200104223567', 'Maja', 'Lindgren', '+46791834552', 'Östra Hamngatan 3, 903 26 Umeå'),
+('197906307841', 'Erik', 'Nilsson', '+46521998431', 'Trädgårdsgatan 19, 211 43 Malmö'),
+('199512144982', 'Sara', 'Berg', '+46712567903', 'Västra Kyrkogatan 7, 752 33 Uppsala'),
+('198303298712', 'Johan', 'Holm', '+46844212889', 'Kungsgatan 21, 602 29 Norrköping'),
+('199811229001', 'Emil', 'Ekström', '+46733989442', 'Stationsvägen 5, 981 31 Kiruna'),
+('197402188645', 'Karin', 'Åkesson', '+46964553771', 'Lärkgatan 4, 352 22 Växjö'),
+('200207154432', 'Filip', 'Hedlund', '+46788123944', 'Björkgatan 16, 831 34 Östersund'),
+('199610303214', 'Elin', 'Dahl', '+46714662501', 'Hantverkargatan 11, 112 21 Stockholm'),
+('198812124578', 'Nils', 'Håkansson', '+46755231904', 'Rådhusgatan 9, 903 27 Umeå'),
+('199409307612', 'Olivia', 'Ström', '+46832998441', 'Ringvägen 72, 118 61 Stockholm'),
+('197305144421', 'Per', 'Granlund', '+46519443882', 'Hamnvägen 5, 374 36 Karlshamn'),
+('198602288354', 'Linda', 'Blom', '+46711559233', 'Tallstigen 3, 541 45 Skövde'),
+('200103097845', 'Astrid', 'Sjöberg', '+46742668901', 'Parkgatan 14, 972 33 Luleå'),
+('198910223578', 'Markus', 'Olofsson', '+46821441907', 'Sveavägen 45, 113 59 Stockholm'),
+('197801298764', 'Helena', 'Backman', '+46931599742', 'Kyrkogatan 22, 903 28 Umeå'),
+('199705042233', 'Daniel', 'Forsberg', '+46777321988', 'Aspvägen 2, 702 15 Örebro'),
+('198209118912', 'Cecilia', 'Nordin', '+46866239100', 'Norrtullsgatan 13, 113 43 Stockholm'),
+('199311238745', 'Simon', 'Palm', '+46790445322', 'Östergatan 11, 252 34 Helsingborg'),
+('197901292345', 'Rebecca', 'Sandström', '+46854998112', 'Malmvägen 19, 191 60 Sollentuna'),
+('199506307874', 'Axel', 'Lindqvist', '+46729551882', 'Skolgatan 4, 903 25 Umeå'),
+('198704188912', 'Johanna', 'Ek', '+46791221764', 'Götgatan 91, 118 62 Stockholm'),
+('199108098734', 'Felix', 'Holgersson', '+46767882300', 'Kvarnvägen 8, 531 32 Lidköping'),
+('198311174552', 'Maria', 'Ahlgren', '+46910763344', 'Rönnvägen 5, 802 57 Gävle'),
+('199212309812', 'Patrik', 'Dahlgren', '+46755117299', 'Industrigatan 3, 352 36 Växjö'),
+('197607229876', 'Kristina', 'Lager', '+46553901122', 'Stortorget 6, 211 34 Malmö'),
+('198411228123', 'Oskar', 'Wikström', '+46764222901', 'Nybrogatan 17, 114 39 Stockholm'),
+('199901102345', 'Ella', 'Engström', '+46877932455', 'Kungsgatan 101, 753 18 Uppsala'),
+('198002265512', 'Henrik', 'Palmqvist', '+46736882114', 'Åsavägen 19, 722 17 Västerås'),
+('197403287634', 'Katarina', 'Nyström', '+46740231998', 'Torggatan 7, 434 30 Kungsbacka'),
+('199609257711', 'Joel', 'Falk', '+46722338440', 'Blomstervägen 1, 903 20 Umeå'),
+('198505188912', 'Sofie', 'Edlund', '+46787519200', 'Villavägen 3, 752 36 Uppsala'),
+('199311304221', 'Tobias', 'Arvidsson', '+46512977654', 'Skogsvägen 18, 331 53 Värnamo'),
+('198801229412', 'Emma', 'Hedberg', '+46903455822', 'Sturegatan 22, 114 36 Stockholm'),
+('199407156723', 'Jonathan', 'Bodin', '+46842661933', 'Sibyllegatan 10, 114 42 Stockholm'),
+('197107086534', 'Åsa', 'Jonsson', '+46733813204', 'Lundgatan 14, 903 27 Umeå'),
+('198912304987', 'Rasmus', 'Sundberg', '+46744519332', 'Trädgårdsgatan 9, 451 31 Uddevalla'),
+('199803227612', 'Matilda', 'Elofsson', '+46933612540', 'Götagatan 52, 118 26 Stoclm'),
+('197909017854', 'Björn', 'Hellström', '+46750887293', 'Sandgatan 3, 223 50 Lund'),
+('198408276512', 'Stina', 'Viklund', '+46820994441', 'Bäckvägen 8, 217 63 Malmö'),
+('199511304492', 'Gabriel', 'Mårtensson', '+46791441778', 'Norra Vägen 19, 392 34 Kalmar'),
+('197612194432', 'Annika', 'Lindahl', '+46730559124', 'Solvägen 7, 931 57 Skellefteå'),
+('199205087731', 'Marcus', 'Ekman', '+46532142887', 'Björkvägen 11, 514 34 Tranemo'),
+('198105304522', 'Eva', 'Nordström', '+46771555912', 'Örngatan 4, 903 29 Umeå'),
+('199704039010', 'Hugo', 'Sjödin', '+46726994310', 'Kanalgatan 12, 931 32 Skellefteå'),
+('198310277764', 'Ida', 'Åström', '+46788112903', 'Furuvägen 2, 864 31 Matfors'),
+('199812144500', 'Alexander', 'Franzén', '+46866210998', 'Valhallavägen 49, 114 22 Stockholm'),
+('197910257611', 'Emelie', 'Burman', '+46721992554', 'Marknadsgatan 3, 749 50 Enköping'),
+('198607108811', 'Tilda', 'Fors', '+46765334921', 'Stadsgårdshamnen 4, 116 45 Stockholm');
 
--- DEPARTMENT
-INSERT INTO department VALUES('Camera Department', 49);
-INSERT INTO department VALUES('Wife Department', 50);
-INSERT INTO department VALUES('Task Department', 62);
-INSERT INTO department VALUES('Impact Department', 24);
-INSERT INTO department VALUES('Involve Department', 58);
+INSERT INTO job_title (job_title) VALUES
+('Universitetslektor'),
+('Universitetsadjunkt'),
+('Professor'),
+('Docent'),
+('Forskare'),
+('Labbassistent'),
+('Handledare'),
+('Studievägledare'),
+('Administratör'),
+('Programansvarig'),
+('Utbildningsledare'),
+('Kursansvarig'),
+('IT-tekniker'),
+('Systemadministratör'),
+('Bibliotekarie'),
+('Forskningsingenjör'),
+('Postdoktor'),
+('Prefekt'),
+('Avdelningschef'),
+('Studiekoordinator');
 
--- JOB TITLES
-INSERT INTO job_title VALUES ('Chartered certified accountant');
-INSERT INTO job_title VALUES ('Curator');
-INSERT INTO job_title VALUES ('Nurse, mental health');
-INSERT INTO job_title VALUES ('Therapist, art');
-INSERT INTO job_title VALUES ('Hydrologist');
-INSERT INTO job_title VALUES ('Osteopath');
-INSERT INTO job_title VALUES ('Customer service manager');
-INSERT INTO job_title VALUES ('Systems analyst');
-INSERT INTO job_title VALUES ('Equities trader');
-INSERT INTO job_title VALUES ( 'Legal secretary');
+INSERT INTO department (department_name, manager_id) VALUES
+('Computer Science Department', NULL),
+('Mathematics Department', NULL),
+('Physics Department', NULL),
+('Electrical Engineering Department', NULL),
+('Information Systems Department', NULL);
 
--- SKILL SET
-INSERT INTO skill_set VALUES ('Bar');
-INSERT INTO skill_set VALUES ('Affect');
-INSERT INTO skill_set VALUES ('News');
-INSERT INTO skill_set VALUES ('Statement');
-INSERT INTO skill_set VALUES ('Nearly');
-INSERT INTO skill_set VALUES ('Address');
-INSERT INTO skill_set VALUES ('Instead');
-INSERT INTO skill_set VALUES ('Especially');
-INSERT INTO skill_set VALUES ('Every');
-INSERT INTO skill_set VALUES ( 'General');
-INSERT INTO skill_set VALUES ( 'Health');
-INSERT INTO skill_set VALUES ( 'Or');
-INSERT INTO skill_set VALUES ( 'Option');
-INSERT INTO skill_set VALUES ( 'Serious');
-INSERT INTO skill_set VALUES ( 'Listen');
-INSERT INTO skill_set VALUES ( 'Computer');
-INSERT INTO skill_set VALUES ( 'Network');
-INSERT INTO skill_set VALUES ( 'Involve');
-INSERT INTO skill_set VALUES ( 'Site');
-INSERT INTO skill_set VALUES ( 'Around');
+-- === DEPARTMENT 1: 9 employees (1 manager) ===
+INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
+('EMP10001', 72000, 1, 1, 4, 3, NULL),
+('EMP10002', 54000, 2, 1, 3, 7, 'EMP10001'),
+('EMP10003', 51000, 3, 1, 2, 4, 'EMP10001'),
+('EMP10004', 60000, 4, 1, 5, 6, 'EMP10001'),
+('EMP10005', 58000, 5, 1, 4, 2, 'EMP10001'),
+('EMP10006', 49000, 6, 1, 2, 1, 'EMP10001'),
+('EMP10007', 63000, 7, 1, 6, 8, 'EMP10001'),
+('EMP10008', 52000, 8, 1, 3, 5, 'EMP10001'),
+('EMP10009', 56000, 9, 1, 4, 9, 'EMP10001');
 
--- EMPLOYEES
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (79, 2, 5, 62199, 63, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (57, 4, 8, 81095, 98, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (82, 5, 10, 88279, 39, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (98, 4, 9, 72365, 56, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (19, 3, 3, 67328, 11, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (73, 1, 10, 47044, 61, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (12, 5, 5, 75464, 60, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (46, 4, 1, 44747, 49, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (6, 4, 7, 70095, 82, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (99, 1, 5, 67851, 82, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (85, 3, 8, 73038, 53, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (9, 1, 2, 77777, 6, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (27, 5, 3, 78896, 17, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (25, 3, 7, 58610, 26, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (2, 2, 1, 88125, 6, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (76, 1, 7, 31310, 77, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (87, 1, 7, 79201, 39, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (15, 5, 2, 37643, 9, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (14, 4, 3, 37854, 66, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (60, 2, 5, 87909, 46, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (28, 3, 9, 82809, 80, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (11, 3, 10, 51959, 56, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (23, 3, 2, 85099, 62, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (29, 4, 10, 71531, 79, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (95, 3, 7, 62037, 57, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (80, 4, 4, 71707, 40, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (5, 5, 1, 52504, 41, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (26, 4, 9, 54149, 14, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (55, 4, 10, 78749, 89, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (52, 1, 9, 64925, 14, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (36, 2, 10, 73849, 59, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (20, 2, 1, 51207, 2, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (71, 5, 9, 53794, 38, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (39, 1, 3, 30996, 9, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (48, 5, 8, 55594, 69, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (59, 1, 2, 88560, 13, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (41, 1, 9, 60235, 56, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (21, 2, 10, 51358, 93, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (44, 4, 1, 63926, 22, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (18, 1, 10, 80601, 28, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (69, 1, 5, 66591, 36, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (90, 4, 7, 80454, 48, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (34, 3, 3, 43283, 67, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (13, 3, 3, 46432, 79, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (63, 1, 7, 32041, 85, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (74, 1, 8, 48976, 76, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (65, 3, 2, 56748, 90, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (77, 2, 5, 53826, 93, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (4, 1, 3, 33815, 67, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (3, 5, 7, 82609, 26, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (32, 5, 5, 34441, 38, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (40, 5, 10, 77285, 60, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (70, 4, 10, 30785, 20, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (61, 2, 3, 84010, 21, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (53, 4, 5, 57909, 82, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (88, 2, 2, 61290, 60, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (62, 4, 10, 75519, 26, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (31, 3, 3, 45819, 15, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (89, 2, 10, 65958, 4, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (56, 5, 5, 32434, 3, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (94, 4, 10, 61467, 28, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (93, 1, 7, 62896, 34, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (16, 1, 10, 52341, 77, 6);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (100, 4, 4, 49340, 5, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (67, 5, 5, 45635, 49, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (8, 2, 3, 56189, 55, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (66, 5, 3, 48338, 78, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (38, 3, 1, 79978, 55, 1);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (10, 2, 4, 45454, 51, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (84, 4, 9, 38800, 18, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (64, 2, 7, 49282, 29, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (58, 3, 10, 46335, 15, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (33, 4, 5, 60117, 22, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (86, 5, 7, 84968, 94, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (50, 5, 7, 48295, 16, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (17, 4, 6, 63973, 85, 4);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (49, 5, 1, 83580, 57, 5);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (78, 3, 2, 46616, 17, 2);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (22, 4, 2, 45974, 32, 3);
-INSERT INTO employee(person_id, department_id, job_title_id, salary, manager_id, max_allowed_courses) VALUES (51, 5, 8, 70035, 20, 5);
 
--- EMPLOYEE SKILL SET
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (79, 1, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (79, 1, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (79, 1, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (79, 5, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (79, 4, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (57, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (57, 1, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (82, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (82, 5, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (82, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (82, 4, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (98, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (98, 2, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (19, 1, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (19, 5, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (19, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (19, 4, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (19, 3, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (73, 5, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (73, 3, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (73, 3, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (73, 4, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (73, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (12, 2, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (12, 1, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (12, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (12, 5, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (46, 3, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (6, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (6, 5, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (6, 4, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (6, 1, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (99, 3, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (99, 3, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (99, 1, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (99, 2, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (99, 2, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (85, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (85, 3, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (85, 1, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (85, 2, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (85, 3, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (9, 4, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (9, 2, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (27, 4, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (27, 5, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (27, 2, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (27, 2, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (25, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (25, 5, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (25, 5, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (25, 2, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (25, 4, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (2, 5, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (2, 3, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (2, 2, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (2, 5, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (76, 5, 14);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (76, 3, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (76, 2, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (76, 2, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (87, 5, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (87, 3, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (87, 1, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (15, 5, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (15, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (15, 3, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (15, 3, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (15, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (14, 3, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (14, 5, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (60, 2, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (60, 5, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (60, 5, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (60, 4, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (60, 2, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (28, 2, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (28, 2, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (28, 4, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (28, 5, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (28, 2, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (11, 4, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (23, 2, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (23, 5, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (23, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (23, 4, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (29, 2, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (95, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (95, 4, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (80, 1, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (5, 3, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (26, 1, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (26, 1, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (55, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (55, 3, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (55, 5, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (55, 4, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (52, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (36, 3, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (36, 4, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (36, 2, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (20, 1, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (20, 5, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (20, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (71, 1, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (71, 2, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (71, 3, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (71, 5, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (71, 3, 14);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (39, 1, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (39, 4, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (39, 1, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (39, 3, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (39, 1, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (48, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (59, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (59, 5, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (59, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (41, 5, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (41, 3, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (21, 4, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (21, 4, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (44, 5, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (44, 4, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (44, 5, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (44, 2, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (44, 3, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (18, 3, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (18, 1, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (18, 5, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (69, 2, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (69, 1, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (69, 2, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (69, 1, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (69, 1, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (90, 2, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (90, 1, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (90, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (90, 4, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (90, 3, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (34, 5, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (34, 2, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (34, 3, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (13, 3, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (13, 4, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (13, 5, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (63, 4, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (63, 3, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (63, 2, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (74, 3, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (74, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (74, 3, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (65, 5, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (65, 4, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (77, 1, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (77, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (77, 5, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (77, 2, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (77, 3, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (4, 5, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (4, 1, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (4, 4, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (4, 4, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (4, 4, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (3, 2, 14);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (3, 5, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (3, 2, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (3, 5, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (3, 1, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (32, 3, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (32, 4, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (32, 4, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (40, 5, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (70, 1, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (61, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (61, 4, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (61, 2, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (53, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (53, 1, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (53, 5, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (88, 3, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (88, 4, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (88, 2, 14);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (88, 3, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (62, 5, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (62, 5, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (31, 3, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (31, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (31, 2, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (31, 4, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (89, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (89, 5, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (89, 4, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (89, 5, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (56, 5, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (94, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (94, 4, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (94, 3, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (93, 2, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (93, 5, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (93, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (16, 2, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (16, 5, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (16, 4, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (16, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (16, 1, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (100, 5, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (100, 2, 2);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (100, 3, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (100, 3, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (67, 1, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (67, 5, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (67, 2, 9);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (8, 3, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (8, 2, 14);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (66, 4, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (66, 4, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (38, 3, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (38, 4, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (38, 3, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (38, 2, 20);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (38, 4, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (10, 1, 5);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (84, 2, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (64, 2, 19);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (58, 1, 18);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (58, 2, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (58, 4, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (33, 3, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (33, 2, 4);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (33, 1, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (33, 3, 11);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (33, 5, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (86, 3, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (50, 4, 12);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (17, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (49, 4, 1);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (78, 2, 7);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (78, 2, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (78, 3, 6);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (22, 3, 17);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (22, 3, 15);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (22, 2, 3);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (22, 2, 13);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (51, 5, 10);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (51, 3, 16);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (51, 5, 8);
-INSERT INTO employee_skill_set(person_id, department_id, skill_set_id) VALUES (51, 2, 15);
-A
--- COURSES
-INSERT INTO course VALUES ( 'C0001', 'Hour fear present.');
-INSERT INTO course VALUES ( 'C0002', 'Lead number model.');
-INSERT INTO course VALUES ( 'C0003', 'Wish early.');
-INSERT INTO course VALUES ( 'C0004', 'Peace event.');
-INSERT INTO course VALUES ( 'C0005', 'Particularly choose name.');
-INSERT INTO course VALUES ( 'C0006', 'Should feeling.');
-INSERT INTO course VALUES ( 'C0007', 'Understand another up.');
-INSERT INTO course VALUES ( 'C0008', 'Body early.');
-INSERT INTO course VALUES ( 'C0009', 'Next possible local.');
-INSERT INTO course VALUES ('C0010', 'He how region.');
-INSERT INTO course VALUES ('C0011', 'Notice.');
-INSERT INTO course VALUES ('C0012', 'Central conference.');
-INSERT INTO course VALUES ('C0013', 'Past decide.');
-INSERT INTO course VALUES ('C0014', 'Standard such.');
-INSERT INTO course VALUES ('C0015', 'Want nation organization.');
-INSERT INTO course VALUES ('C0016', 'Reason ask quickly.');
-INSERT INTO course VALUES ('C0017', 'Suggest just option let.');
-INSERT INTO course VALUES ('C0018', 'Feel follow church including.');
-INSERT INTO course VALUES ('C0019', 'Bar probably.');
-INSERT INTO course VALUES ('C0020', 'Ask per.');
-INSERT INTO course VALUES ('C0021', 'Speak professional despite.');
-INSERT INTO course VALUES ('C0022', 'Series American later.');
-INSERT INTO course VALUES ('C0023', 'Character two.');
-INSERT INTO course VALUES ('C0024', 'Knowledge the available.');
-INSERT INTO course VALUES ('C0025', 'Leader various.');
-INSERT INTO course VALUES ('C0026', 'Rock life clear.');
-INSERT INTO course VALUES ('C0027', 'Such chance.');
-INSERT INTO course VALUES ('C0028', 'Sound under.');
-INSERT INTO course VALUES ('C0029', 'Picture college.');
-INSERT INTO course VALUES ('C0030', 'Art direction everybody.');
-INSERT INTO course VALUES ('C0031', 'Reach practice impact.');
-INSERT INTO course VALUES ('C0032', 'Western.');
-INSERT INTO course VALUES ('C0033', 'Free discuss energy.');
-INSERT INTO course VALUES ('C0034', 'Enjoy recently arrive road.');
-INSERT INTO course VALUES ('C0035', 'Mr else.');
-INSERT INTO course VALUES ('C0036', 'Call cup up fall.');
-INSERT INTO course VALUES ('C0037', 'Life bank common.');
-INSERT INTO course VALUES ('C0038', 'If push.');
-INSERT INTO course VALUES ('C0039', 'Daughter low.');
-INSERT INTO course VALUES ('C0040', 'Likely book.');
-INSERT INTO course VALUES ('C0041', 'Manage.');
-INSERT INTO course VALUES ('C0042', 'Determine join.');
-INSERT INTO course VALUES ('C0043', 'Dream section picture.');
-INSERT INTO course VALUES ('C0044', 'Allow home cup.');
-INSERT INTO course VALUES ('C0045', 'Crime most.');
-INSERT INTO course VALUES ('C0046', 'Hospital.');
-INSERT INTO course VALUES ('C0047', 'Per blood father.');
-INSERT INTO course VALUES ('C0048', 'Responsibility reduce.');
-INSERT INTO course VALUES ('C0049', 'Here.');
-INSERT INTO course VALUES ('C0050', 'Success despite choice.');
+-- === DEPARTMENT 2: 9 employees (1 manager) ===
+INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
+('EMP20001', 76000, 10, 2, 5, 2, NULL),
+('EMP20002', 53000, 11, 2, 3, 1, 'EMP20001'),
+('EMP20003', 61000, 12, 2, 4, 8, 'EMP20001'),
+('EMP20004', 48000, 13, 2, 2, 5, 'EMP20001'),
+('EMP20005', 57000, 14, 2, 3, 3, 'EMP20001'),
+('EMP20006', 62000, 15, 2, 5, 7, 'EMP20001'),
+('EMP20007', 51000, 16, 2, 2, 10, 'EMP20001'),
+('EMP20008', 55000, 17, 2, 3, 4, 'EMP20001'),
+('EMP20009', 59000, 18, 2, 4, 9, 'EMP20001');
 
--- COURSE LAYOUTS
-INSERT INTO course_layout VALUES ( 1, 13, 70, 19.0, 1);
-INSERT INTO course_layout VALUES ( 1, 14, 43, 8.9, 2);
-INSERT INTO course_layout VALUES ( 2, 19, 59, 5.5, 1);
-INSERT INTO course_layout VALUES ( 3, 10, 25, 18.1, 1);
-INSERT INTO course_layout VALUES ( 4, 12, 50, 14.1, 1);
-INSERT INTO course_layout VALUES ( 4, 9, 47, 16.0, 2);
-INSERT INTO course_layout VALUES ( 4, 17, 40, 17.9, 3);
-INSERT INTO course_layout VALUES ( 5, 15, 72, 12.5, 1);
-INSERT INTO course_layout VALUES ( 6, 5, 19, 6.6, 1);
-INSERT INTO course_layout VALUES ( 6, 5, 42, 10.7, 2);
-INSERT INTO course_layout VALUES ( 6, 11, 42, 16.0, 3);
-INSERT INTO course_layout VALUES ( 7, 13, 36, 6.3, 1);
-INSERT INTO course_layout VALUES ( 7, 15, 27, 10.1, 2);
-INSERT INTO course_layout VALUES ( 8, 8, 48, 14.5, 1);
-INSERT INTO course_layout VALUES ( 8, 14, 59, 19.4, 2);
-INSERT INTO course_layout VALUES ( 9, 8, 20, 15.6, 1);
-INSERT INTO course_layout VALUES ( 10, 16, 75, 6.4, 1);
-INSERT INTO course_layout VALUES ( 10, 10, 59, 5.2, 2);
-INSERT INTO course_layout VALUES ( 10, 12, 58, 10.4, 3);
-INSERT INTO course_layout VALUES ( 11, 6, 39, 7.4, 1);
-INSERT INTO course_layout VALUES ( 11, 7, 46, 16.2, 2);
-INSERT INTO course_layout VALUES ( 12, 11, 46, 16.9, 1);
-INSERT INTO course_layout VALUES ( 12, 20, 59, 17.6, 2);
-INSERT INTO course_layout VALUES ( 12, 15, 60, 13.2, 3);
-INSERT INTO course_layout VALUES ( 13, 12, 29, 9.8, 1);
-INSERT INTO course_layout VALUES ( 13, 10, 33, 9.3, 2);
-INSERT INTO course_layout VALUES ( 14, 11, 30, 5.7, 1);
-INSERT INTO course_layout VALUES ( 14, 14, 72, 6.4, 2);
-INSERT INTO course_layout VALUES ( 15, 10, 55, 12.4, 1);
-INSERT INTO course_layout VALUES ( 15, 6, 35, 7.8, 2);
-INSERT INTO course_layout VALUES ( 16, 18, 49, 14.4, 1);
-INSERT INTO course_layout VALUES ( 16, 18, 62, 10.1, 2);
-INSERT INTO course_layout VALUES ( 16, 19, 29, 14.0, 3);
-INSERT INTO course_layout VALUES ( 17, 7, 55, 14.6, 1);
-INSERT INTO course_layout VALUES ( 18, 16, 34, 11.2, 1);
-INSERT INTO course_layout VALUES ( 18, 7, 24, 9.1, 2);
-INSERT INTO course_layout VALUES ( 19, 6, 47, 16.7, 1);
-INSERT INTO course_layout VALUES ( 19, 16, 68, 15.7, 2);
-INSERT INTO course_layout VALUES ( 20, 11, 39, 18.5, 1);
-INSERT INTO course_layout VALUES ( 20, 11, 35, 5.4, 2);
-INSERT INTO course_layout VALUES ( 21, 19, 44, 17.7, 1);
-INSERT INTO course_layout VALUES ( 22, 6, 18, 15.5, 1);
-INSERT INTO course_layout VALUES ( 23, 13, 37, 7.2, 1);
-INSERT INTO course_layout VALUES ( 23, 19, 67, 12.9, 2);
-INSERT INTO course_layout VALUES ( 24, 17, 35, 8.5, 1);
-INSERT INTO course_layout VALUES ( 24, 12, 65, 5.1, 2);
-INSERT INTO course_layout VALUES ( 25, 17, 65, 11.0, 1);
-INSERT INTO course_layout VALUES ( 26, 11, 60, 9.7, 1);
-INSERT INTO course_layout VALUES ( 26, 14, 48, 6.9, 2);
-INSERT INTO course_layout VALUES ( 27, 20, 31, 17.9, 1);
-INSERT INTO course_layout VALUES ( 28, 12, 42, 8.8, 1);
-INSERT INTO course_layout VALUES ( 29, 16, 32, 6.5, 1);
-INSERT INTO course_layout VALUES ( 30, 8, 44, 14.8, 1);
-INSERT INTO course_layout VALUES ( 31, 18, 78, 11.3, 1);
-INSERT INTO course_layout VALUES ( 32, 19, 35, 15.6, 1);
-INSERT INTO course_layout VALUES ( 32, 18, 63, 11.4, 2);
-INSERT INTO course_layout VALUES ( 32, 14, 44, 12.1, 3);
-INSERT INTO course_layout VALUES ( 33, 11, 47, 16.9, 1);
-INSERT INTO course_layout VALUES ( 33, 6, 57, 8.6, 2);
-INSERT INTO course_layout VALUES ( 33, 14, 36, 6.5, 3);
-INSERT INTO course_layout VALUES ( 34, 14, 56, 11.8, 1);
-INSERT INTO course_layout VALUES ( 35, 10, 51, 5.7, 1);
-INSERT INTO course_layout VALUES ( 36, 16, 75, 5.5, 1);
-INSERT INTO course_layout VALUES ( 37, 13, 36, 12.1, 1);
-INSERT INTO course_layout VALUES ( 37, 8, 37, 7.2, 2);
-INSERT INTO course_layout VALUES ( 38, 5, 27, 15.2, 1);
-INSERT INTO course_layout VALUES ( 39, 5, 30, 11.7, 1);
-INSERT INTO course_layout VALUES ( 39, 15, 75, 12.8, 2);
-INSERT INTO course_layout VALUES ( 39, 9, 23, 17.1, 3);
-INSERT INTO course_layout VALUES ( 40, 9, 44, 14.8, 1);
-INSERT INTO course_layout VALUES ( 40, 12, 72, 6.3, 2);
-INSERT INTO course_layout VALUES ( 41, 17, 56, 8.1, 1);
-INSERT INTO course_layout VALUES ( 41, 12, 31, 13.5, 2);
-INSERT INTO course_layout VALUES ( 41, 16, 70, 17.0, 3);
-INSERT INTO course_layout VALUES ( 42, 18, 28, 14.6, 1);
-INSERT INTO course_layout VALUES ( 42, 14, 32, 14.7, 2);
-INSERT INTO course_layout VALUES ( 43, 11, 26, 13.3, 1);
-INSERT INTO course_layout VALUES ( 43, 20, 77, 16.8, 2);
-INSERT INTO course_layout VALUES ( 44, 9, 34, 13.0, 1);
-INSERT INTO course_layout VALUES ( 44, 19, 63, 13.0, 2);
-INSERT INTO course_layout VALUES ( 45, 11, 68, 7.0, 1);
-INSERT INTO course_layout VALUES ( 46, 12, 57, 18.6, 1);
-INSERT INTO course_layout VALUES ( 46, 14, 36, 7.6, 2);
-INSERT INTO course_layout VALUES ( 46, 17, 74, 15.7, 3);
-INSERT INTO course_layout VALUES ( 47, 10, 20, 5.0, 1);
-INSERT INTO course_layout VALUES ( 48, 13, 23, 8.5, 1);
-INSERT INTO course_layout VALUES ( 48, 7, 27, 10.1, 2);
-INSERT INTO course_layout VALUES ( 48, 15, 73, 13.5, 3);
-INSERT INTO course_layout VALUES ( 49, 8, 32, 18.2, 1);
-INSERT INTO course_layout VALUES ( 50, 11, 55, 16.5, 1);
-INSERT INTO course_layout VALUES ( 50, 13, 61, 13.5, 2);
+-- === DEPARTMENT 3: 9 employees (1 manager) ===
+INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
+('EMP30001', 78000, 19, 3, 5, 6, NULL),
+('EMP30002', 54000, 20, 3, 3, 2, 'EMP30001'),
+('EMP30003', 60000, 21, 3, 4, 7, 'EMP30001'),
+('EMP30004', 49000, 22, 3, 2, 1, 'EMP30001'),
+('EMP30005', 52000, 23, 3, 3, 4, 'EMP30001'),
+('EMP30006', 56000, 24, 3, 4, 8, 'EMP30001'),
+('EMP30007', 63000, 25, 3, 6, 5, 'EMP30001'),
+('EMP30008', 58000, 26, 3, 4, 10, 'EMP30001'),
+('EMP30009', 51000, 27, 3, 3, 3, 'EMP30001');
 
--- COURSE INSTANCES
-INSERT INTO course_instance VALUES ( 1, 1, '1', 33, '2024');
-INSERT INTO course_instance VALUES ( 1, 1, '2', 49, '2024');
-INSERT INTO course_instance VALUES ( 2, 1, '3', 75, '2023');
-INSERT INTO course_instance VALUES ( 3, 2, '4', 14, '2025');
-INSERT INTO course_instance VALUES ( 4, 3, '5', 22, '2025');
-INSERT INTO course_instance VALUES ( 4, 3, '6', 97, '2023');
-INSERT INTO course_instance VALUES ( 5, 4, '7', 13, '2023');
-INSERT INTO course_instance VALUES ( 5, 4, '8', 86, '2025');
-INSERT INTO course_instance VALUES ( 6, 4, '9', 17, '2025');
-INSERT INTO course_instance VALUES ( 6, 4, '10', 14, '2023');
-INSERT INTO course_instance VALUES ( 7, 4, '11', 63, '2024');
-INSERT INTO course_instance VALUES ( 8, 5, '12', 73, '2023');
-INSERT INTO course_instance VALUES ( 9, 6, '13', 31, '2025');
-INSERT INTO course_instance VALUES ( 9, 6, '14', 90, '2024');
-INSERT INTO course_instance VALUES ( 10, 6, '15', 5, '2023');
-INSERT INTO course_instance VALUES ( 10, 6, '16', 73, '2024');
-INSERT INTO course_instance VALUES ( 11, 6, '17', 11, '2023');
-INSERT INTO course_instance VALUES ( 12, 7, '18', 49, '2024');
-INSERT INTO course_instance VALUES ( 13, 7, '19', 75, '2025');
-INSERT INTO course_instance VALUES ( 13, 7, '20', 92, '2024');
-INSERT INTO course_instance VALUES ( 14, 8, '21', 32, '2023');
-INSERT INTO course_instance VALUES ( 15, 8, '22', 78, '2025');
-INSERT INTO course_instance VALUES ( 16, 9, '23', 73, '2025');
-INSERT INTO course_instance VALUES ( 16, 9, '24', 41, '2023');
-INSERT INTO course_instance VALUES ( 17, 10, '25', 16, '2023');
-INSERT INTO course_instance VALUES ( 18, 10, '26', 92, '2024');
-INSERT INTO course_instance VALUES ( 19, 10, '27', 16, '2023');
-INSERT INTO course_instance VALUES ( 20, 11, '28', 43, '2023');
-INSERT INTO course_instance VALUES ( 20, 11, '29', 49, '2025');
-INSERT INTO course_instance VALUES ( 21, 11, '30', 6, '2023');
-INSERT INTO course_instance VALUES ( 22, 12, '31', 72, '2025');
-INSERT INTO course_instance VALUES ( 23, 12, '32', 6, '2025');
-INSERT INTO course_instance VALUES ( 23, 12, '33', 67, '2025');
-INSERT INTO course_instance VALUES ( 24, 12, '34', 35, '2024');
-INSERT INTO course_instance VALUES ( 24, 12, '35', 45, '2025');
-INSERT INTO course_instance VALUES ( 25, 13, '36', 51, '2025');
-INSERT INTO course_instance VALUES ( 26, 13, '37', 36, '2024');
-INSERT INTO course_instance VALUES ( 27, 14, '38', 76, '2023');
-INSERT INTO course_instance VALUES ( 28, 14, '39', 13, '2024');
-INSERT INTO course_instance VALUES ( 28, 14, '40', 65, '2023');
-INSERT INTO course_instance VALUES ( 29, 15, '41', 55, '2024');
-INSERT INTO course_instance VALUES ( 29, 15, '42', 84, '2024');
-INSERT INTO course_instance VALUES ( 30, 15, '43', 55, '2024');
-INSERT INTO course_instance VALUES ( 30, 15, '44', 61, '2024');
-INSERT INTO course_instance VALUES ( 31, 16, '45', 59, '2024');
-INSERT INTO course_instance VALUES ( 32, 16, '46', 97, '2023');
-INSERT INTO course_instance VALUES ( 33, 16, '47', 74, '2023');
-INSERT INTO course_instance VALUES ( 33, 16, '48', 58, '2025');
-INSERT INTO course_instance VALUES ( 34, 17, '49', 74, '2025');
-INSERT INTO course_instance VALUES ( 34, 17, '50', 12, '2025');
-INSERT INTO course_instance VALUES ( 35, 18, '51', 28, '2024');
-INSERT INTO course_instance VALUES ( 35, 18, '52', 88, '2025');
-INSERT INTO course_instance VALUES ( 36, 18, '53', 57, '2023');
-INSERT INTO course_instance VALUES ( 36, 18, '54', 69, '2023');
-INSERT INTO course_instance VALUES ( 37, 19, '55', 10, '2025');
-INSERT INTO course_instance VALUES ( 37, 19, '56', 28, '2024');
-INSERT INTO course_instance VALUES ( 38, 19, '57', 99, '2025');
-INSERT INTO course_instance VALUES ( 39, 20, '58', 46, '2025');
-INSERT INTO course_instance VALUES ( 40, 20, '59', 56, '2023');
-INSERT INTO course_instance VALUES ( 41, 21, '60', 72, '2025');
-INSERT INTO course_instance VALUES ( 41, 21, '61', 87, '2025');
-INSERT INTO course_instance VALUES ( 42, 22, '62', 55, '2023');
-INSERT INTO course_instance VALUES ( 43, 23, '63', 52, '2025');
-INSERT INTO course_instance VALUES ( 44, 23, '64', 89, '2023');
-INSERT INTO course_instance VALUES ( 44, 23, '65', 27, '2023');
-INSERT INTO course_instance VALUES ( 45, 24, '66', 84, '2025');
-INSERT INTO course_instance VALUES ( 46, 24, '67', 8, '2023');
-INSERT INTO course_instance VALUES ( 47, 25, '68', 16, '2024');
-INSERT INTO course_instance VALUES ( 48, 26, '69', 69, '2025');
-INSERT INTO course_instance VALUES ( 49, 26, '70', 89, '2023');
-INSERT INTO course_instance VALUES ( 50, 27, '71', 11, '2024');
-INSERT INTO course_instance VALUES ( 51, 28, '72', 81, '2024');
-INSERT INTO course_instance VALUES ( 52, 29, '73', 9, '2023');
-INSERT INTO course_instance VALUES ( 52, 29, '74', 97, '2025');
-INSERT INTO course_instance VALUES ( 53, 30, '75', 35, '2024');
-INSERT INTO course_instance VALUES ( 53, 30, '76', 92, '2025');
-INSERT INTO course_instance VALUES ( 54, 31, '77', 16, '2024');
-INSERT INTO course_instance VALUES ( 55, 32, '78', 8, '2024');
-INSERT INTO course_instance VALUES ( 56, 32, '79', 39, '2024');
-INSERT INTO course_instance VALUES ( 56, 32, '80', 44, '2023');
-INSERT INTO course_instance VALUES ( 57, 32, '81', 55, '2025');
-INSERT INTO course_instance VALUES ( 58, 33, '82', 28, '2023');
-INSERT INTO course_instance VALUES ( 59, 33, '83', 41, '2024');
-INSERT INTO course_instance VALUES ( 59, 33, '84', 51, '2024');
-INSERT INTO course_instance VALUES ( 60, 33, '85', 68, '2025');
-INSERT INTO course_instance VALUES ( 60, 33, '86', 49, '2025');
-INSERT INTO course_instance VALUES ( 61, 34, '87', 62, '2025');
-INSERT INTO course_instance VALUES ( 61, 34, '88', 61, '2024');
-INSERT INTO course_instance VALUES ( 62, 35, '89', 78, '2024');
-INSERT INTO course_instance VALUES ( 62, 35, '90', 96, '2025');
-INSERT INTO course_instance VALUES ( 63, 36, '91', 8, '2025');
-INSERT INTO course_instance VALUES ( 64, 37, '92', 94, '2024');
-INSERT INTO course_instance VALUES ( 65, 37, '93', 65, '2024');
-INSERT INTO course_instance VALUES ( 65, 37, '94', 13, '2024');
-INSERT INTO course_instance VALUES ( 66, 38, '95', 53, '2023');
-INSERT INTO course_instance VALUES ( 67, 39, '96', 13, '2023');
-INSERT INTO course_instance VALUES ( 67, 39, '97', 65, '2023');
-INSERT INTO course_instance VALUES ( 68, 39, '98', 64, '2023');
-INSERT INTO course_instance VALUES ( 68, 39, '99', 25, '2024');
-INSERT INTO course_instance VALUES (69, 39, '100', 72, '2025');
-INSERT INTO course_instance VALUES (69, 39, '101', 71, '2023');
-INSERT INTO course_instance VALUES (70, 40, '102', 57, '2024');
-INSERT INTO course_instance VALUES (71, 40, '103', 41, '2023');
-INSERT INTO course_instance VALUES (71, 40, '104', 70, '2024');
-INSERT INTO course_instance VALUES (72, 41, '105', 98, '2024');
-INSERT INTO course_instance VALUES (72, 41, '106', 76, '2023');
-INSERT INTO course_instance VALUES (73, 41, '107', 12, '2024');
-INSERT INTO course_instance VALUES (73, 41, '108', 62, '2025');
-INSERT INTO course_instance VALUES (74, 41, '109', 33, '2025');
-INSERT INTO course_instance VALUES (75, 42, '110', 93, '2025');
-INSERT INTO course_instance VALUES (76, 42, '111', 33, '2025');
-INSERT INTO course_instance VALUES (76, 42, '112', 29, '2023');
-INSERT INTO course_instance VALUES (77, 43, '113', 75, '2024');
-INSERT INTO course_instance VALUES (77, 43, '114', 50, '2023');
-INSERT INTO course_instance VALUES (78, 43, '115', 48, '2024');
-INSERT INTO course_instance VALUES (79, 44, '116', 99, '2024');
-INSERT INTO course_instance VALUES (80, 44, '117', 8, '2023');
-INSERT INTO course_instance VALUES (80, 44, '118', 20, '2024');
-INSERT INTO course_instance VALUES (81, 45, '119', 43, '2025');
-INSERT INTO course_instance VALUES (82, 46, '120', 67, '2025');
-INSERT INTO course_instance VALUES (82, 46, '121', 92, '2023');
-INSERT INTO course_instance VALUES (83, 46, '122', 14, '2024');
-INSERT INTO course_instance VALUES (83, 46, '123', 35, '2023');
-INSERT INTO course_instance VALUES (84, 46, '124', 14, '2023');
-INSERT INTO course_instance VALUES (84, 46, '125', 28, '2023');
-INSERT INTO course_instance VALUES (85, 47, '126', 62, '2025');
-INSERT INTO course_instance VALUES (86, 48, '127', 54, '2024');
-INSERT INTO course_instance VALUES (87, 48, '128', 31, '2023');
-INSERT INTO course_instance VALUES (88, 48, '129', 57, '2025');
-INSERT INTO course_instance VALUES (88, 48, '130', 29, '2025');
-INSERT INTO course_instance VALUES (89, 49, '131', 55, '2024');
-INSERT INTO course_instance VALUES (89, 49, '132', 45, '2024');
-INSERT INTO course_instance VALUES (90, 50, '133', 95, '2024');
-INSERT INTO course_instance VALUES (90, 50, '134', 40, '2023');
-INSERT INTO course_instance VALUES (91, 50, '135', 70, '2025');
+-- === DEPARTMENT 4: 9 employees (1 manager) ===
+INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
+('EMP40001', 75000, 28, 4, 5, 9, NULL),
+('EMP40002', 54000, 29, 4, 3, 7, 'EMP40001'),
+('EMP40003', 58000, 30, 4, 4, 6, 'EMP40001'),
+('EMP40004', 62000, 31, 4, 5, 8, 'EMP40001'),
+('EMP40005', 50000, 32, 4, 2, 2, 'EMP40001'),
+('EMP40006', 53000, 33, 4, 3, 4, 'EMP40001'),
+('EMP40007', 57000, 34, 4, 4, 5, 'EMP40001'),
+('EMP40008', 64000, 35, 4, 6, 1, 'EMP40001'),
+('EMP40009', 59500, 36, 4, 4, 3, 'EMP40001');
 
--- STUDY PERIOD
-INSERT INTO study_period VALUES ('P1');
-INSERT INTO study_period VALUES ('P2');
-INSERT INTO study_period VALUES ('P3');
-INSERT INTO study_period VALUES ('P4');
+-- === DEPARTMENT 5: 9 employees (1 manager) ===
+INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
+('EMP50001', 82000, 37, 5, 6, 10, NULL),
+('EMP50002', 60000, 38, 5, 4, 7, 'EMP50001'),
+('EMP50003', 53000, 39, 5, 3, 6, 'EMP50001'),
+('EMP50004', 51000, 40, 5, 2, 4, 'EMP50001'),
+('EMP50005', 58000, 41, 5, 4, 3, 'EMP50001'),
+('EMP50006', 62000, 42, 5, 5, 8, 'EMP50001'),
+('EMP50007', 56000, 43, 5, 3, 5, 'EMP50001'),
+('EMP50008', 59000, 44, 5, 4, 9, 'EMP50001'),
+('EMP50009', 54000, 45, 5, 3, 1, 'EMP50001');
 
--- COURSE INSTANCE STUDY PERIOD
-INSERT INTO course_instance_study_period VALUES ( 1, 1, 1);
-INSERT INTO course_instance_study_period VALUES ( 1, 1, 2);
-INSERT INTO course_instance_study_period VALUES ( 1, 1, 1);
-INSERT INTO course_instance_study_period VALUES ( 2, 1, 2);
-INSERT INTO course_instance_study_period VALUES ( 2, 1, 1);
-INSERT INTO course_instance_study_period VALUES ( 3, 2, 2);
-INSERT INTO course_instance_study_period VALUES ( 3, 2, 4);
-INSERT INTO course_instance_study_period VALUES ( 4, 3, 1);
-INSERT INTO course_instance_study_period VALUES ( 4, 3, 3);
-INSERT INTO course_instance_study_period VALUES ( 4, 3, 4);
-INSERT INTO course_instance_study_period VALUES ( 5, 4, 1);
-INSERT INTO course_instance_study_period VALUES ( 5, 4, 2);
-INSERT INTO course_instance_study_period VALUES ( 5, 4, 3);
-INSERT INTO course_instance_study_period VALUES ( 6, 4, 2);
-INSERT INTO course_instance_study_period VALUES ( 6, 4, 4);
-INSERT INTO course_instance_study_period VALUES ( 6, 4, 2);
-INSERT INTO course_instance_study_period VALUES ( 6, 4, 4);
-INSERT INTO course_instance_study_period VALUES ( 7, 4, 3);
-INSERT INTO course_instance_study_period VALUES ( 8, 5, 3);
-INSERT INTO course_instance_study_period VALUES ( 8, 5, 2);
-INSERT INTO course_instance_study_period VALUES ( 9, 6, 2);
-INSERT INTO course_instance_study_period VALUES ( 9, 6, 1);
-INSERT INTO course_instance_study_period VALUES ( 9, 6, 3);
-INSERT INTO course_instance_study_period VALUES ( 10, 6, 3);
-INSERT INTO course_instance_study_period VALUES ( 10, 6, 1);
-INSERT INTO course_instance_study_period VALUES ( 10, 6, 3);
-INSERT INTO course_instance_study_period VALUES ( 11, 6, 1);
-INSERT INTO course_instance_study_period VALUES ( 12, 7, 3);
-INSERT INTO course_instance_study_period VALUES ( 13, 7, 2);
-INSERT INTO course_instance_study_period VALUES ( 13, 7, 3);
-INSERT INTO course_instance_study_period VALUES ( 13, 7, 1);
-INSERT INTO course_instance_study_period VALUES ( 13, 7, 4);
-INSERT INTO course_instance_study_period VALUES ( 14, 8, 1);
-INSERT INTO course_instance_study_period VALUES ( 15, 8, 1);
-INSERT INTO course_instance_study_period VALUES ( 16, 9, 1);
-INSERT INTO course_instance_study_period VALUES ( 16, 9, 2);
-INSERT INTO course_instance_study_period VALUES ( 16, 9, 3);
-INSERT INTO course_instance_study_period VALUES ( 17, 10, 1);
-INSERT INTO course_instance_study_period VALUES ( 17, 10, 4);
-INSERT INTO course_instance_study_period VALUES ( 18, 10, 1);
-INSERT INTO course_instance_study_period VALUES ( 19, 10, 2);
-INSERT INTO course_instance_study_period VALUES ( 19, 10, 4);
-INSERT INTO course_instance_study_period VALUES ( 20, 11, 2);
-INSERT INTO course_instance_study_period VALUES ( 20, 11, 2);
-INSERT INTO course_instance_study_period VALUES ( 21, 11, 3);
-INSERT INTO course_instance_study_period VALUES ( 21, 11, 1);
-INSERT INTO course_instance_study_period VALUES ( 22, 12, 1);
-INSERT INTO course_instance_study_period VALUES ( 22, 12, 4);
-INSERT INTO course_instance_study_period VALUES ( 23, 12, 2);
-INSERT INTO course_instance_study_period VALUES ( 23, 12, 1);
-INSERT INTO course_instance_study_period VALUES ( 24, 12, 3);
-INSERT INTO course_instance_study_period VALUES ( 24, 12, 1);
-INSERT INTO course_instance_study_period VALUES ( 24, 12, 1);
-INSERT INTO course_instance_study_period VALUES ( 24, 12, 4);
-INSERT INTO course_instance_study_period VALUES ( 25, 13, 3);
-INSERT INTO course_instance_study_period VALUES ( 26, 13, 1);
-INSERT INTO course_instance_study_period VALUES ( 27, 14, 3);
-INSERT INTO course_instance_study_period VALUES ( 27, 14, 4);
-INSERT INTO course_instance_study_period VALUES ( 28, 14, 3);
-INSERT INTO course_instance_study_period VALUES ( 28, 14, 1);
-INSERT INTO course_instance_study_period VALUES ( 28, 14, 4);
-INSERT INTO course_instance_study_period VALUES ( 29, 15, 4);
-INSERT INTO course_instance_study_period VALUES ( 29, 15, 2);
-INSERT INTO course_instance_study_period VALUES ( 29, 15, 1);
-INSERT INTO course_instance_study_period VALUES ( 30, 15, 4);
-INSERT INTO course_instance_study_period VALUES ( 30, 15, 2);
-INSERT INTO course_instance_study_period VALUES ( 30, 15, 4);
-INSERT INTO course_instance_study_period VALUES ( 31, 16, 3);
-INSERT INTO course_instance_study_period VALUES ( 32, 16, 4);
-INSERT INTO course_instance_study_period VALUES ( 32, 16, 2);
-INSERT INTO course_instance_study_period VALUES ( 33, 16, 2);
-INSERT INTO course_instance_study_period VALUES ( 33, 16, 3);
-INSERT INTO course_instance_study_period VALUES ( 34, 17, 2);
-INSERT INTO course_instance_study_period VALUES ( 34, 17, 1);
-INSERT INTO course_instance_study_period VALUES ( 34, 17, 2);
-INSERT INTO course_instance_study_period VALUES ( 35, 18, 4);
-INSERT INTO course_instance_study_period VALUES ( 35, 18, 1);
-INSERT INTO course_instance_study_period VALUES ( 35, 18, 2);
-INSERT INTO course_instance_study_period VALUES ( 35, 18, 1);
-INSERT INTO course_instance_study_period VALUES ( 36, 18, 1);
-INSERT INTO course_instance_study_period VALUES ( 36, 18, 3);
-INSERT INTO course_instance_study_period VALUES ( 37, 19, 4);
-INSERT INTO course_instance_study_period VALUES ( 37, 19, 3);
-INSERT INTO course_instance_study_period VALUES ( 37, 19, 2);
-INSERT INTO course_instance_study_period VALUES ( 38, 19, 4);
-INSERT INTO course_instance_study_period VALUES ( 39, 20, 1);
-INSERT INTO course_instance_study_period VALUES ( 39, 20, 3);
-INSERT INTO course_instance_study_period VALUES ( 40, 20, 1);
-INSERT INTO course_instance_study_period VALUES ( 41, 21, 4);
-INSERT INTO course_instance_study_period VALUES ( 41, 21, 1);
-INSERT INTO course_instance_study_period VALUES ( 42, 22, 3);
-INSERT INTO course_instance_study_period VALUES ( 42, 22, 2);
-INSERT INTO course_instance_study_period VALUES ( 43, 23, 1);
-INSERT INTO course_instance_study_period VALUES ( 44, 23, 2);
-INSERT INTO course_instance_study_period VALUES ( 44, 23, 1);
-INSERT INTO course_instance_study_period VALUES ( 44, 23, 3);
-INSERT INTO course_instance_study_period VALUES ( 45, 24, 4);
-INSERT INTO course_instance_study_period VALUES ( 45, 24, 1);
-INSERT INTO course_instance_study_period VALUES ( 46, 24, 1);
-INSERT INTO course_instance_study_period VALUES ( 47, 25, 2);
-INSERT INTO course_instance_study_period VALUES ( 47, 25, 1);
-INSERT INTO course_instance_study_period VALUES ( 48, 26, 4);
-INSERT INTO course_instance_study_period VALUES ( 48, 26, 3);
-INSERT INTO course_instance_study_period VALUES ( 49, 26, 1);
-INSERT INTO course_instance_study_period VALUES ( 49, 26, 3);
-INSERT INTO course_instance_study_period VALUES ( 50, 27, 4);
-INSERT INTO course_instance_study_period VALUES ( 50, 27, 1);
-INSERT INTO course_instance_study_period VALUES ( 51, 28, 2);
-INSERT INTO course_instance_study_period VALUES ( 52, 29, 2);
-INSERT INTO course_instance_study_period VALUES ( 52, 29, 4);
-INSERT INTO course_instance_study_period VALUES ( 52, 29, 3);
-INSERT INTO course_instance_study_period VALUES ( 53, 30, 4);
-INSERT INTO course_instance_study_period VALUES ( 53, 30, 4);
-INSERT INTO course_instance_study_period VALUES ( 53, 30, 2);
-INSERT INTO course_instance_study_period VALUES ( 54, 31, 1);
-INSERT INTO course_instance_study_period VALUES ( 55, 32, 3);
-INSERT INTO course_instance_study_period VALUES ( 56, 32, 1);
-INSERT INTO course_instance_study_period VALUES ( 56, 32, 4);
-INSERT INTO course_instance_study_period VALUES ( 57, 32, 3);
-INSERT INTO course_instance_study_period VALUES ( 57, 32, 2);
-INSERT INTO course_instance_study_period VALUES ( 58, 33, 4);
-INSERT INTO course_instance_study_period VALUES ( 59, 33, 4);
-INSERT INTO course_instance_study_period VALUES ( 59, 33, 1);
-INSERT INTO course_instance_study_period VALUES ( 59, 33, 3);
-INSERT INTO course_instance_study_period VALUES ( 60, 33, 1);
-INSERT INTO course_instance_study_period VALUES ( 60, 33, 4);
-INSERT INTO course_instance_study_period VALUES ( 60, 33, 2);
-INSERT INTO course_instance_study_period VALUES ( 60, 33, 3);
-INSERT INTO course_instance_study_period VALUES ( 61, 34, 4);
-INSERT INTO course_instance_study_period VALUES ( 61, 34, 3);
-INSERT INTO course_instance_study_period VALUES ( 61, 34, 3);
-INSERT INTO course_instance_study_period VALUES ( 61, 34, 1);
-INSERT INTO course_instance_study_period VALUES ( 62, 35, 1);
-INSERT INTO course_instance_study_period VALUES ( 62, 35, 4);
-INSERT INTO course_instance_study_period VALUES ( 62, 35, 3);
-INSERT INTO course_instance_study_period VALUES ( 62, 35, 4);
-INSERT INTO course_instance_study_period VALUES ( 63, 36, 4);
-INSERT INTO course_instance_study_period VALUES ( 63, 36, 1);
-INSERT INTO course_instance_study_period VALUES ( 64, 37, 3);
-INSERT INTO course_instance_study_period VALUES ( 65, 37, 1);
-INSERT INTO course_instance_study_period VALUES ( 65, 37, 2);
-INSERT INTO course_instance_study_period VALUES ( 65, 37, 4);
-INSERT INTO course_instance_study_period VALUES ( 66, 38, 3);
-INSERT INTO course_instance_study_period VALUES ( 67, 39, 4);
-INSERT INTO course_instance_study_period VALUES ( 67, 39, 2);
-INSERT INTO course_instance_study_period VALUES ( 67, 39, 2);
-INSERT INTO course_instance_study_period VALUES ( 68, 39, 4);
-INSERT INTO course_instance_study_period VALUES ( 68, 39, 4);
-INSERT INTO course_instance_study_period VALUES ( 69, 39, 4);
-INSERT INTO course_instance_study_period VALUES ( 69, 39, 2);
-INSERT INTO course_instance_study_period VALUES ( 69, 39, 2);
-INSERT INTO course_instance_study_period VALUES ( 70, 40, 3);
-INSERT INTO course_instance_study_period VALUES ( 71, 40, 3);
-INSERT INTO course_instance_study_period VALUES ( 71, 40, 4);
-INSERT INTO course_instance_study_period VALUES ( 71, 40, 3);
-INSERT INTO course_instance_study_period VALUES ( 71, 40, 1);
-INSERT INTO course_instance_study_period VALUES ( 72, 41, 4);
-INSERT INTO course_instance_study_period VALUES ( 72, 41, 1);
-INSERT INTO course_instance_study_period VALUES ( 72, 41, 1);
-INSERT INTO course_instance_study_period VALUES ( 73, 41, 1);
-INSERT INTO course_instance_study_period VALUES ( 73, 41, 4);
-INSERT INTO course_instance_study_period VALUES ( 74, 41, 4);
-INSERT INTO course_instance_study_period VALUES ( 74, 41, 3);
-INSERT INTO course_instance_study_period VALUES ( 75, 42, 4);
-INSERT INTO course_instance_study_period VALUES ( 75, 42, 3);
-INSERT INTO course_instance_study_period VALUES ( 76, 42, 1);
-INSERT INTO course_instance_study_period VALUES ( 76, 42, 4);
-INSERT INTO course_instance_study_period VALUES ( 76, 42, 1);
-INSERT INTO course_instance_study_period VALUES ( 76, 42, 2);
-INSERT INTO course_instance_study_period VALUES ( 77, 43, 2);
-INSERT INTO course_instance_study_period VALUES ( 77, 43, 4);
-INSERT INTO course_instance_study_period VALUES ( 78, 43, 3);
-INSERT INTO course_instance_study_period VALUES ( 78, 43, 4);
-INSERT INTO course_instance_study_period VALUES ( 79, 44, 1);
-INSERT INTO course_instance_study_period VALUES ( 79, 44, 4);
-INSERT INTO course_instance_study_period VALUES ( 80, 44, 4);
-INSERT INTO course_instance_study_period VALUES ( 80, 44, 2);
-INSERT INTO course_instance_study_period VALUES ( 80, 44, 2);
-INSERT INTO course_instance_study_period VALUES ( 81, 45, 1);
-INSERT INTO course_instance_study_period VALUES ( 81, 45, 2);
-INSERT INTO course_instance_study_period VALUES ( 82, 46, 1);
-INSERT INTO course_instance_study_period VALUES ( 82, 46, 2);
-INSERT INTO course_instance_study_period VALUES ( 82, 46, 4);
-INSERT INTO course_instance_study_period VALUES ( 83, 46, 1);
-INSERT INTO course_instance_study_period VALUES ( 83, 46, 4);
-INSERT INTO course_instance_study_period VALUES ( 83, 46, 1);
-INSERT INTO course_instance_study_period VALUES ( 84, 46, 4);
-INSERT INTO course_instance_study_period VALUES ( 84, 46, 1);
-INSERT INTO course_instance_study_period VALUES ( 84, 46, 4);
-INSERT INTO course_instance_study_period VALUES ( 84, 46, 2);
-INSERT INTO course_instance_study_period VALUES ( 85, 47, 1);
-INSERT INTO course_instance_study_period VALUES ( 86, 48, 1);
-INSERT INTO course_instance_study_period VALUES ( 87, 48, 2);
-INSERT INTO course_instance_study_period VALUES ( 87, 48, 3);
-INSERT INTO course_instance_study_period VALUES ( 88, 48, 4);
-INSERT INTO course_instance_study_period VALUES ( 88, 48, 4);
-INSERT INTO course_instance_study_period VALUES ( 89, 49, 1);
-INSERT INTO course_instance_study_period VALUES ( 89, 49, 2);
-INSERT INTO course_instance_study_period VALUES ( 89, 49, 4);
-INSERT INTO course_instance_study_period VALUES ( 90, 50, 4);
-INSERT INTO course_instance_study_period VALUES ( 90, 50, 1);
-INSERT INTO course_instance_study_period VALUES ( 90, 50, 1);
-INSERT INTO course_instance_study_period VALUES ( 91, 50, 3);
+-- === Assign department managers === --
+UPDATE department SET manager_id = 'EMP10001' WHERE id = 1;
+UPDATE department SET manager_id = 'EMP20001' WHERE id = 2;
+UPDATE department SET manager_id = 'EMP30001' WHERE id = 3;
+UPDATE department SET manager_id = 'EMP40001' WHERE id = 4;
+UPDATE department SET manager_id = 'EMP50001' WHERE id = 5;
 
--- TEACHING ACTIVITIES
-INSERT INTO teaching_activity VALUES ( 'Lecture', 1.0);
-INSERT INTO teaching_activity VALUES ( 'Seminar', 0.8);
-INSERT INTO teaching_activity VALUES ( 'Supervision', 0.5);
-INSERT INTO teaching_activity VALUES ( 'Lab', 1.2);
-INSERT INTO teaching_activity VALUES ( 'Workshop', 1.1);
 
--- PLANNED ACTIVITY
-INSERT INTO planned_activity VALUES (1, 1, 33);
-INSERT INTO planned_activity VALUES (1, 2, 11);
-INSERT INTO planned_activity VALUES (1, 3, 32);
-INSERT INTO planned_activity VALUES (1, 4, 17);
-INSERT INTO planned_activity VALUES (1, 5, 21);
-INSERT INTO planned_activity VALUES (1, 1, 24);
-INSERT INTO planned_activity VALUES (1, 2, 32);
-INSERT INTO planned_activity VALUES (1, 3, 17);
-INSERT INTO planned_activity VALUES (1, 4, 10);
-INSERT INTO planned_activity VALUES (1, 5, 26);
-INSERT INTO planned_activity VALUES (2, 1, 14);
-INSERT INTO planned_activity VALUES (2, 2, 9);
-INSERT INTO planned_activity VALUES (2, 3, 6);
-INSERT INTO planned_activity VALUES (2, 4, 38);
-INSERT INTO planned_activity VALUES (2, 5, 39);
-INSERT INTO planned_activity VALUES (3, 1, 5);
-INSERT INTO planned_activity VALUES (3, 2, 16);
-INSERT INTO planned_activity VALUES (3, 3, 17);
-INSERT INTO planned_activity VALUES (3, 4, 26);
-INSERT INTO planned_activity VALUES (3, 5, 5);
-INSERT INTO planned_activity VALUES (4, 1, 26);
-INSERT INTO planned_activity VALUES (4, 2, 30);
-INSERT INTO planned_activity VALUES (4, 3, 29);
-INSERT INTO planned_activity VALUES (4, 4, 38);
-INSERT INTO planned_activity VALUES (4, 5, 32);
-INSERT INTO planned_activity VALUES (4, 1, 39);
-INSERT INTO planned_activity VALUES (4, 2, 17);
-INSERT INTO planned_activity VALUES (4, 3, 22);
-INSERT INTO planned_activity VALUES (4, 4, 37);
-INSERT INTO planned_activity VALUES (4, 5, 26);
-INSERT INTO planned_activity VALUES (4, 1, 27);
-INSERT INTO planned_activity VALUES (4, 2, 10);
-INSERT INTO planned_activity VALUES (4, 3, 6);
-INSERT INTO planned_activity VALUES (4, 4, 38);
-INSERT INTO planned_activity VALUES (4, 5, 15);
-INSERT INTO planned_activity VALUES (5, 1, 30);
-INSERT INTO planned_activity VALUES (5, 2, 39);
-INSERT INTO planned_activity VALUES (5, 3, 38);
-INSERT INTO planned_activity VALUES (5, 4, 13);
-INSERT INTO planned_activity VALUES (5, 5, 21);
-INSERT INTO planned_activity VALUES (6, 1, 27);
-INSERT INTO planned_activity VALUES (6, 2, 23);
-INSERT INTO planned_activity VALUES (6, 3, 34);
-INSERT INTO planned_activity VALUES (6, 4, 21);
-INSERT INTO planned_activity VALUES (6, 5, 38);
-INSERT INTO planned_activity VALUES ( 6, 1, 36);
-INSERT INTO planned_activity VALUES ( 6, 2, 24);
-INSERT INTO planned_activity VALUES ( 6, 3, 30);
-INSERT INTO planned_activity VALUES ( 6, 4, 14);
-INSERT INTO planned_activity VALUES ( 6, 5, 9);
-INSERT INTO planned_activity VALUES ( 6, 1, 8);
-INSERT INTO planned_activity VALUES ( 6, 2, 8);
-INSERT INTO planned_activity VALUES ( 6, 3, 12);
-INSERT INTO planned_activity VALUES ( 6, 4, 27);
-INSERT INTO planned_activity VALUES ( 6, 5, 35);
-INSERT INTO planned_activity VALUES ( 7, 1, 17);
-INSERT INTO planned_activity VALUES ( 7, 2, 40);
-INSERT INTO planned_activity VALUES ( 7, 3, 26);
-INSERT INTO planned_activity VALUES ( 7, 4, 34);
-INSERT INTO planned_activity VALUES ( 7, 5, 16);
-INSERT INTO planned_activity VALUES ( 7, 1, 30);
-INSERT INTO planned_activity VALUES ( 7, 2, 40);
-INSERT INTO planned_activity VALUES ( 7, 3, 13);
-INSERT INTO planned_activity VALUES ( 7, 4, 37);
-INSERT INTO planned_activity VALUES ( 7, 5, 8);
-INSERT INTO planned_activity VALUES ( 8, 1, 13);
-INSERT INTO planned_activity VALUES ( 8, 2, 15);
-INSERT INTO planned_activity VALUES ( 8, 3, 38);
-INSERT INTO planned_activity VALUES ( 8, 4, 5);
-INSERT INTO planned_activity VALUES ( 8, 5, 10);
-INSERT INTO planned_activity VALUES ( 8, 1, 40);
-INSERT INTO planned_activity VALUES ( 8, 2, 36);
-INSERT INTO planned_activity VALUES ( 8, 3, 15);
-INSERT INTO planned_activity VALUES ( 8, 4, 12);
-INSERT INTO planned_activity VALUES ( 8, 5, 38);
-INSERT INTO planned_activity VALUES ( 9, 1, 33);
-INSERT INTO planned_activity VALUES ( 9, 2, 40);
-INSERT INTO planned_activity VALUES ( 9, 3, 36);
-INSERT INTO planned_activity VALUES ( 9, 4, 9);
-INSERT INTO planned_activity VALUES ( 9, 5, 16);
-INSERT INTO planned_activity VALUES ( 10, 1, 40);
-INSERT INTO planned_activity VALUES ( 10, 2, 37);
-INSERT INTO planned_activity VALUES ( 10, 3, 5);
-INSERT INTO planned_activity VALUES ( 10, 4, 11);
-INSERT INTO planned_activity VALUES ( 10, 5, 39);
-INSERT INTO planned_activity VALUES ( 10, 1, 37);
-INSERT INTO planned_activity VALUES ( 10, 2, 7);
-INSERT INTO planned_activity VALUES ( 10, 3, 10);
-INSERT INTO planned_activity VALUES ( 10, 4, 12);
-INSERT INTO planned_activity VALUES ( 10, 5, 33);
-INSERT INTO planned_activity VALUES ( 10, 1, 29);
-INSERT INTO planned_activity VALUES ( 10, 2, 5);
-INSERT INTO planned_activity VALUES ( 10, 3, 21);
-INSERT INTO planned_activity VALUES ( 10, 4, 38);
-INSERT INTO planned_activity VALUES ( 10, 5, 12);
-INSERT INTO planned_activity VALUES ( 11, 1, 20);
-INSERT INTO planned_activity VALUES ( 11, 2, 12);
-INSERT INTO planned_activity VALUES ( 11, 3, 37);
-INSERT INTO planned_activity VALUES ( 11, 4, 30);
-INSERT INTO planned_activity VALUES ( 11, 5, 40);
-INSERT INTO planned_activity VALUES ( 11, 1, 37);
-INSERT INTO planned_activity VALUES ( 11, 2, 21);
-INSERT INTO planned_activity VALUES ( 11, 3, 31);
-INSERT INTO planned_activity VALUES ( 11, 4, 8);
-INSERT INTO planned_activity VALUES ( 11, 5, 7);
-INSERT INTO planned_activity VALUES ( 12, 1, 16);
-INSERT INTO planned_activity VALUES ( 12, 2, 20);
-INSERT INTO planned_activity VALUES ( 12, 3, 33);
-INSERT INTO planned_activity VALUES ( 12, 4, 19);
-INSERT INTO planned_activity VALUES ( 12, 5, 12);
-INSERT INTO planned_activity VALUES ( 12, 1, 12);
-INSERT INTO planned_activity VALUES ( 12, 2, 26);
-INSERT INTO planned_activity VALUES ( 12, 3, 35);
-INSERT INTO planned_activity VALUES ( 12, 4, 26);
-INSERT INTO planned_activity VALUES ( 12, 5, 35);
-INSERT INTO planned_activity VALUES ( 12, 1, 27);
-INSERT INTO planned_activity VALUES ( 12, 2, 39);
-INSERT INTO planned_activity VALUES ( 12, 3, 10);
-INSERT INTO planned_activity VALUES ( 12, 4, 14);
-INSERT INTO planned_activity VALUES ( 12, 5, 35);
-INSERT INTO planned_activity VALUES ( 13, 1, 11);
-INSERT INTO planned_activity VALUES ( 13, 2, 37);
-INSERT INTO planned_activity VALUES ( 13, 3, 29);
-INSERT INTO planned_activity VALUES ( 13, 4, 25);
-INSERT INTO planned_activity VALUES ( 13, 5, 7);
-INSERT INTO planned_activity VALUES ( 13, 1, 33);
-INSERT INTO planned_activity VALUES ( 13, 2, 25);
-INSERT INTO planned_activity VALUES ( 13, 3, 24);
-INSERT INTO planned_activity VALUES ( 13, 4, 39);
-INSERT INTO planned_activity VALUES ( 13, 5, 6);
-INSERT INTO planned_activity VALUES ( 14, 1, 18);
-INSERT INTO planned_activity VALUES ( 14, 2, 26);
-INSERT INTO planned_activity VALUES ( 14, 3, 21);
-INSERT INTO planned_activity VALUES ( 14, 4, 30);
-INSERT INTO planned_activity VALUES ( 14, 5, 20);
-INSERT INTO planned_activity VALUES ( 14, 1, 26);
-INSERT INTO planned_activity VALUES ( 14, 2, 15);
-INSERT INTO planned_activity VALUES ( 14, 3, 18);
-INSERT INTO planned_activity VALUES ( 14, 4, 36);
-INSERT INTO planned_activity VALUES ( 14, 5, 34);
-INSERT INTO planned_activity VALUES ( 15, 1, 19);
-INSERT INTO planned_activity VALUES ( 15, 2, 20);
-INSERT INTO planned_activity VALUES ( 15, 3, 23);
-INSERT INTO planned_activity VALUES ( 15, 4, 37);
-INSERT INTO planned_activity VALUES ( 15, 5, 28);
-INSERT INTO planned_activity VALUES ( 15, 1, 36);
-INSERT INTO planned_activity VALUES ( 15, 2, 27);
-INSERT INTO planned_activity VALUES ( 15, 3, 7);
-INSERT INTO planned_activity VALUES ( 15, 4, 17);
-INSERT INTO planned_activity VALUES ( 15, 5, 33);
-INSERT INTO planned_activity VALUES ( 16, 1, 25);
-INSERT INTO planned_activity VALUES ( 16, 2, 15);
-INSERT INTO planned_activity VALUES ( 16, 3, 15);
-INSERT INTO planned_activity VALUES ( 16, 4, 8);
-INSERT INTO planned_activity VALUES ( 16, 5, 13);
-INSERT INTO planned_activity VALUES ( 16, 1, 38);
-INSERT INTO planned_activity VALUES ( 16, 2, 6);
-INSERT INTO planned_activity VALUES ( 16, 3, 39);
-INSERT INTO planned_activity VALUES ( 16, 4, 25);
-INSERT INTO planned_activity VALUES ( 16, 5, 10);
-INSERT INTO planned_activity VALUES ( 16, 1, 22);
-INSERT INTO planned_activity VALUES ( 16, 2, 36);
-INSERT INTO planned_activity VALUES ( 16, 3, 33);
-INSERT INTO planned_activity VALUES ( 16, 4, 24);
-INSERT INTO planned_activity VALUES ( 16, 5, 20);
-INSERT INTO planned_activity VALUES ( 17, 1, 7);
-INSERT INTO planned_activity VALUES ( 17, 2, 36);
-INSERT INTO planned_activity VALUES ( 17, 3, 32);
-INSERT INTO planned_activity VALUES ( 17, 4, 15);
-INSERT INTO planned_activity VALUES ( 17, 5, 35);
-INSERT INTO planned_activity VALUES ( 18, 1, 18);
-INSERT INTO planned_activity VALUES ( 18, 2, 9);
-INSERT INTO planned_activity VALUES ( 18, 3, 10);
-INSERT INTO planned_activity VALUES ( 18, 4, 6);
-INSERT INTO planned_activity VALUES ( 18, 5, 31);
-INSERT INTO planned_activity VALUES ( 18, 1, 24);
-INSERT INTO planned_activity VALUES ( 18, 2, 29);
-INSERT INTO planned_activity VALUES ( 18, 3, 6);
-INSERT INTO planned_activity VALUES ( 18, 4, 18);
-INSERT INTO planned_activity VALUES ( 18, 5, 15);
-INSERT INTO planned_activity VALUES ( 19, 1, 33);
-INSERT INTO planned_activity VALUES ( 19, 2, 12);
-INSERT INTO planned_activity VALUES ( 19, 3, 31);
-INSERT INTO planned_activity VALUES ( 19, 4, 13);
-INSERT INTO planned_activity VALUES ( 19, 5, 22);
-INSERT INTO planned_activity VALUES ( 19, 1, 36);
-INSERT INTO planned_activity VALUES ( 19, 2, 33);
-INSERT INTO planned_activity VALUES ( 19, 3, 20);
-INSERT INTO planned_activity VALUES ( 19, 4, 20);
-INSERT INTO planned_activity VALUES ( 19, 5, 22);
-INSERT INTO planned_activity VALUES ( 20, 1, 29);
-INSERT INTO planned_activity VALUES ( 20, 2, 24);
-INSERT INTO planned_activity VALUES ( 20, 3, 34);
-INSERT INTO planned_activity VALUES ( 20, 4, 29);
-INSERT INTO planned_activity VALUES ( 20, 5, 31);
-INSERT INTO planned_activity VALUES ( 20, 1, 9);
-INSERT INTO planned_activity VALUES ( 20, 2, 15);
-INSERT INTO planned_activity VALUES ( 20, 3, 40);
-INSERT INTO planned_activity VALUES ( 20, 4, 21);
-INSERT INTO planned_activity VALUES ( 20, 5, 16);
-INSERT INTO planned_activity VALUES ( 21, 1, 31);
-INSERT INTO planned_activity VALUES ( 21, 2, 33);
-INSERT INTO planned_activity VALUES ( 21, 3, 15);
-INSERT INTO planned_activity VALUES ( 21, 4, 36);
-INSERT INTO planned_activity VALUES ( 21, 5, 5);
-INSERT INTO planned_activity VALUES ( 22, 1, 32);
-INSERT INTO planned_activity VALUES ( 22, 2, 10);
-INSERT INTO planned_activity VALUES ( 22, 3, 8);
-INSERT INTO planned_activity VALUES ( 22, 4, 34);
-INSERT INTO planned_activity VALUES ( 22, 5, 33);
-INSERT INTO planned_activity VALUES ( 23, 1, 28);
-INSERT INTO planned_activity VALUES ( 23, 2, 35);
-INSERT INTO planned_activity VALUES ( 23, 3, 31);
-INSERT INTO planned_activity VALUES ( 23, 4, 13);
-INSERT INTO planned_activity VALUES ( 23, 5, 36);
-INSERT INTO planned_activity VALUES ( 23, 1, 28);
-INSERT INTO planned_activity VALUES ( 23, 2, 22);
-INSERT INTO planned_activity VALUES ( 23, 3, 25);
-INSERT INTO planned_activity VALUES ( 23, 4, 20);
-INSERT INTO planned_activity VALUES ( 23, 5, 28);
-INSERT INTO planned_activity VALUES ( 24, 1, 5);
-INSERT INTO planned_activity VALUES ( 24, 2, 30);
-INSERT INTO planned_activity VALUES ( 24, 3, 15);
-INSERT INTO planned_activity VALUES ( 24, 4, 37);
-INSERT INTO planned_activity VALUES ( 24, 5, 28);
-INSERT INTO planned_activity VALUES ( 24, 1, 36);
-INSERT INTO planned_activity VALUES ( 24, 2, 18);
-INSERT INTO planned_activity VALUES ( 24, 3, 25);
-INSERT INTO planned_activity VALUES ( 24, 4, 5);
-INSERT INTO planned_activity VALUES ( 24, 5, 13);
-INSERT INTO planned_activity VALUES ( 25, 1, 32);
-INSERT INTO planned_activity VALUES ( 25, 2, 28);
-INSERT INTO planned_activity VALUES ( 25, 3, 17);
-INSERT INTO planned_activity VALUES ( 25, 4, 5);
-INSERT INTO planned_activity VALUES ( 25, 5, 5);
-INSERT INTO planned_activity VALUES ( 26, 1, 39);
-INSERT INTO planned_activity VALUES ( 26, 2, 29);
-INSERT INTO planned_activity VALUES ( 26, 3, 19);
-INSERT INTO planned_activity VALUES ( 26, 4, 13);
-INSERT INTO planned_activity VALUES ( 26, 5, 31);
-INSERT INTO planned_activity VALUES ( 26, 1, 13);
-INSERT INTO planned_activity VALUES ( 26, 2, 5);
-INSERT INTO planned_activity VALUES ( 26, 3, 24);
-INSERT INTO planned_activity VALUES ( 26, 4, 18);
-INSERT INTO planned_activity VALUES ( 26, 5, 23);
-INSERT INTO planned_activity VALUES ( 27, 1, 6);
-INSERT INTO planned_activity VALUES ( 27, 2, 29);
-INSERT INTO planned_activity VALUES ( 27, 3, 38);
-INSERT INTO planned_activity VALUES ( 27, 4, 23);
-INSERT INTO planned_activity VALUES ( 27, 5, 20);
-INSERT INTO planned_activity VALUES ( 28, 1, 31);
-INSERT INTO planned_activity VALUES ( 28, 2, 39);
-INSERT INTO planned_activity VALUES ( 28, 3, 18);
-INSERT INTO planned_activity VALUES ( 28, 4, 18);
-INSERT INTO planned_activity VALUES ( 28, 5, 17);
-INSERT INTO planned_activity VALUES ( 29, 1, 26);
-INSERT INTO planned_activity VALUES ( 29, 2, 24);
-INSERT INTO planned_activity VALUES ( 29, 3, 20);
-INSERT INTO planned_activity VALUES ( 29, 4, 31);
-INSERT INTO planned_activity VALUES ( 29, 5, 8);
-INSERT INTO planned_activity VALUES ( 30, 1, 23);
-INSERT INTO planned_activity VALUES ( 30, 2, 13);
-INSERT INTO planned_activity VALUES ( 30, 3, 10);
-INSERT INTO planned_activity VALUES ( 30, 4, 40);
-INSERT INTO planned_activity VALUES ( 30, 5, 14);
-INSERT INTO planned_activity VALUES ( 31, 1, 22);
-INSERT INTO planned_activity VALUES ( 31, 2, 17);
-INSERT INTO planned_activity VALUES ( 31, 3, 20);
-INSERT INTO planned_activity VALUES ( 31, 4, 14);
-INSERT INTO planned_activity VALUES ( 31, 5, 12);
-INSERT INTO planned_activity VALUES ( 32, 1, 13);
-INSERT INTO planned_activity VALUES ( 32, 2, 34);
-INSERT INTO planned_activity VALUES ( 32, 3, 36);
-INSERT INTO planned_activity VALUES ( 32, 4, 40);
-INSERT INTO planned_activity VALUES ( 32, 5, 34);
-INSERT INTO planned_activity VALUES ( 32, 1, 29);
-INSERT INTO planned_activity VALUES ( 32, 2, 25);
-INSERT INTO planned_activity VALUES ( 32, 3, 37);
-INSERT INTO planned_activity VALUES ( 32, 4, 30);
-INSERT INTO planned_activity VALUES ( 32, 5, 12);
-INSERT INTO planned_activity VALUES ( 32, 1, 38);
-INSERT INTO planned_activity VALUES ( 32, 2, 35);
-INSERT INTO planned_activity VALUES ( 32, 3, 15);
-INSERT INTO planned_activity VALUES ( 32, 4, 33);
-INSERT INTO planned_activity VALUES ( 32, 5, 22);
-INSERT INTO planned_activity VALUES ( 33, 1, 29);
-INSERT INTO planned_activity VALUES ( 33, 2, 33);
-INSERT INTO planned_activity VALUES ( 33, 3, 23);
-INSERT INTO planned_activity VALUES ( 33, 4, 6);
-INSERT INTO planned_activity VALUES ( 33, 5, 5);
-INSERT INTO planned_activity VALUES ( 33, 1, 22);
-INSERT INTO planned_activity VALUES ( 33, 2, 14);
-INSERT INTO planned_activity VALUES ( 33, 3, 8);
-INSERT INTO planned_activity VALUES ( 33, 4, 27);
-INSERT INTO planned_activity VALUES ( 33, 5, 21);
-INSERT INTO planned_activity VALUES ( 33, 1, 18);
-INSERT INTO planned_activity VALUES ( 33, 2, 27);
-INSERT INTO planned_activity VALUES ( 33, 3, 31);
-INSERT INTO planned_activity VALUES ( 33, 4, 40);
-INSERT INTO planned_activity VALUES ( 33, 5, 7);
-INSERT INTO planned_activity VALUES ( 34, 1, 29);
-INSERT INTO planned_activity VALUES ( 34, 2, 32);
-INSERT INTO planned_activity VALUES ( 34, 3, 17);
-INSERT INTO planned_activity VALUES ( 34, 4, 21);
-INSERT INTO planned_activity VALUES ( 34, 5, 15);
-INSERT INTO planned_activity VALUES ( 35, 1, 33);
-INSERT INTO planned_activity VALUES ( 35, 2, 24);
-INSERT INTO planned_activity VALUES ( 35, 3, 35);
-INSERT INTO planned_activity VALUES ( 35, 4, 13);
-INSERT INTO planned_activity VALUES ( 35, 5, 7);
-INSERT INTO planned_activity VALUES ( 36, 1, 13);
-INSERT INTO planned_activity VALUES ( 36, 2, 36);
-INSERT INTO planned_activity VALUES ( 36, 3, 14);
-INSERT INTO planned_activity VALUES ( 36, 4, 5);
-INSERT INTO planned_activity VALUES ( 36, 5, 34);
-INSERT INTO planned_activity VALUES ( 37, 1, 15);
-INSERT INTO planned_activity VALUES ( 37, 2, 18);
-INSERT INTO planned_activity VALUES ( 37, 3, 40);
-INSERT INTO planned_activity VALUES ( 37, 4, 33);
-INSERT INTO planned_activity VALUES ( 37, 5, 8);
-INSERT INTO planned_activity VALUES ( 37, 1, 30);
-INSERT INTO planned_activity VALUES ( 37, 2, 9);
-INSERT INTO planned_activity VALUES ( 37, 3, 26);
-INSERT INTO planned_activity VALUES ( 37, 4, 5);
-INSERT INTO planned_activity VALUES ( 37, 5, 33);
-INSERT INTO planned_activity VALUES ( 38, 1, 11);
-INSERT INTO planned_activity VALUES ( 38, 2, 10);
-INSERT INTO planned_activity VALUES ( 38, 3, 35);
-INSERT INTO planned_activity VALUES ( 38, 4, 12);
-INSERT INTO planned_activity VALUES ( 38, 5, 14);
-INSERT INTO planned_activity VALUES ( 39, 1, 38);
-INSERT INTO planned_activity VALUES ( 39, 2, 26);
-INSERT INTO planned_activity VALUES ( 39, 3, 37);
-INSERT INTO planned_activity VALUES ( 39, 4, 35);
-INSERT INTO planned_activity VALUES ( 39, 5, 11);
-INSERT INTO planned_activity VALUES ( 39, 1, 37);
-INSERT INTO planned_activity VALUES ( 39, 2, 18);
-INSERT INTO planned_activity VALUES ( 39, 3, 8);
-INSERT INTO planned_activity VALUES ( 39, 4, 23);
-INSERT INTO planned_activity VALUES ( 39, 5, 34);
-INSERT INTO planned_activity VALUES ( 39, 1, 6);
-INSERT INTO planned_activity VALUES ( 39, 2, 20);
-INSERT INTO planned_activity VALUES ( 39, 3, 25);
-INSERT INTO planned_activity VALUES ( 39, 4, 22);
-INSERT INTO planned_activity VALUES ( 39, 5, 28);
-INSERT INTO planned_activity VALUES ( 40, 1, 7);
-INSERT INTO planned_activity VALUES ( 40, 2, 28);
-INSERT INTO planned_activity VALUES ( 40, 3, 33);
-INSERT INTO planned_activity VALUES ( 40, 4, 16);
-INSERT INTO planned_activity VALUES ( 40, 5, 13);
-INSERT INTO planned_activity VALUES ( 40, 1, 22);
-INSERT INTO planned_activity VALUES ( 40, 2, 25);
-INSERT INTO planned_activity VALUES ( 40, 3, 34);
-INSERT INTO planned_activity VALUES ( 40, 4, 10);
-INSERT INTO planned_activity VALUES ( 40, 5, 25);
-INSERT INTO planned_activity VALUES ( 41, 1, 11);
-INSERT INTO planned_activity VALUES ( 41, 2, 36);
-INSERT INTO planned_activity VALUES ( 41, 3, 12);
-INSERT INTO planned_activity VALUES ( 41, 4, 10);
-INSERT INTO planned_activity VALUES ( 41, 5, 38);
-INSERT INTO planned_activity VALUES ( 41, 1, 21);
-INSERT INTO planned_activity VALUES ( 41, 2, 10);
-INSERT INTO planned_activity VALUES ( 41, 3, 26);
-INSERT INTO planned_activity VALUES ( 41, 4, 5);
-INSERT INTO planned_activity VALUES ( 41, 5, 18);
-INSERT INTO planned_activity VALUES ( 41, 1, 5);
-INSERT INTO planned_activity VALUES ( 41, 2, 18);
-INSERT INTO planned_activity VALUES ( 41, 3, 31);
-INSERT INTO planned_activity VALUES ( 41, 4, 28);
-INSERT INTO planned_activity VALUES ( 41, 5, 5);
-INSERT INTO planned_activity VALUES ( 42, 1, 26);
-INSERT INTO planned_activity VALUES ( 42, 2, 21);
-INSERT INTO planned_activity VALUES ( 42, 3, 31);
-INSERT INTO planned_activity VALUES ( 42, 4, 23);
-INSERT INTO planned_activity VALUES ( 42, 5, 12);
-INSERT INTO planned_activity VALUES ( 42, 1, 7);
-INSERT INTO planned_activity VALUES ( 42, 2, 11);
-INSERT INTO planned_activity VALUES ( 42, 3, 27);
-INSERT INTO planned_activity VALUES ( 42, 4, 40);
-INSERT INTO planned_activity VALUES ( 42, 5, 25);
-INSERT INTO planned_activity VALUES ( 43, 1, 33);
-INSERT INTO planned_activity VALUES ( 43, 2, 26);
-INSERT INTO planned_activity VALUES ( 43, 3, 10);
-INSERT INTO planned_activity VALUES ( 43, 4, 28);
-INSERT INTO planned_activity VALUES ( 43, 5, 35);
-INSERT INTO planned_activity VALUES ( 43, 1, 26);
-INSERT INTO planned_activity VALUES ( 43, 2, 38);
-INSERT INTO planned_activity VALUES ( 43, 3, 25);
-INSERT INTO planned_activity VALUES ( 43, 4, 24);
-INSERT INTO planned_activity VALUES ( 43, 5, 28);
-INSERT INTO planned_activity VALUES ( 44, 1, 38);
-INSERT INTO planned_activity VALUES ( 44, 2, 29);
-INSERT INTO planned_activity VALUES ( 44, 3, 21);
-INSERT INTO planned_activity VALUES ( 44, 4, 15);
-INSERT INTO planned_activity VALUES ( 44, 5, 13);
-INSERT INTO planned_activity VALUES ( 44, 1, 24);
-INSERT INTO planned_activity VALUES ( 44, 2, 11);
-INSERT INTO planned_activity VALUES ( 44, 3, 26);
-INSERT INTO planned_activity VALUES ( 44, 4, 18);
-INSERT INTO planned_activity VALUES ( 44, 5, 7);
-INSERT INTO planned_activity VALUES ( 45, 1, 17);
-INSERT INTO planned_activity VALUES ( 45, 2, 35);
-INSERT INTO planned_activity VALUES ( 45, 3, 22);
-INSERT INTO planned_activity VALUES ( 45, 4, 37);
-INSERT INTO planned_activity VALUES ( 45, 5, 20);
-INSERT INTO planned_activity VALUES ( 46, 1, 29);
-INSERT INTO planned_activity VALUES ( 46, 2, 36);
-INSERT INTO planned_activity VALUES ( 46, 3, 19);
-INSERT INTO planned_activity VALUES ( 46, 4, 12);
-INSERT INTO planned_activity VALUES ( 46, 5, 21);
-INSERT INTO planned_activity VALUES ( 46, 1, 22);
-INSERT INTO planned_activity VALUES ( 46, 2, 39);
-INSERT INTO planned_activity VALUES ( 46, 3, 28);
-INSERT INTO planned_activity VALUES ( 46, 4, 38);
-INSERT INTO planned_activity VALUES ( 46, 5, 27);
-INSERT INTO planned_activity VALUES ( 46, 1, 35);
-INSERT INTO planned_activity VALUES ( 46, 2, 33);
-INSERT INTO planned_activity VALUES ( 46, 3, 21);
-INSERT INTO planned_activity VALUES ( 46, 4, 29);
-INSERT INTO planned_activity VALUES ( 46, 5, 19);
-INSERT INTO planned_activity VALUES ( 47, 1, 23);
-INSERT INTO planned_activity VALUES ( 47, 2, 31);
-INSERT INTO planned_activity VALUES ( 47, 3, 30);
-INSERT INTO planned_activity VALUES ( 47, 4, 32);
-INSERT INTO planned_activity VALUES ( 47, 5, 38);
-INSERT INTO planned_activity VALUES ( 48, 1, 21);
-INSERT INTO planned_activity VALUES ( 48, 2, 29);
-INSERT INTO planned_activity VALUES ( 48, 3, 32);
-INSERT INTO planned_activity VALUES ( 48, 4, 21);
-INSERT INTO planned_activity VALUES ( 48, 5, 36);
-INSERT INTO planned_activity VALUES ( 48, 1, 15);
-INSERT INTO planned_activity VALUES ( 48, 2, 7);
-INSERT INTO planned_activity VALUES ( 48, 3, 25);
-INSERT INTO planned_activity VALUES ( 48, 4, 19);
-INSERT INTO planned_activity VALUES ( 48, 5, 20);
-INSERT INTO planned_activity VALUES ( 48, 1, 31);
-INSERT INTO planned_activity VALUES ( 48, 2, 8);
-INSERT INTO planned_activity VALUES ( 48, 3, 27);
-INSERT INTO planned_activity VALUES ( 48, 4, 15);
-INSERT INTO planned_activity VALUES ( 48, 5, 6);
-INSERT INTO planned_activity VALUES ( 49, 1, 24);
-INSERT INTO planned_activity VALUES ( 49, 2, 33);
-INSERT INTO planned_activity VALUES ( 49, 3, 34);
-INSERT INTO planned_activity VALUES ( 49, 4, 24);
-INSERT INTO planned_activity VALUES ( 49, 5, 8);
-INSERT INTO planned_activity VALUES ( 50, 1, 24);
-INSERT INTO planned_activity VALUES ( 50, 2, 7);
-INSERT INTO planned_activity VALUES ( 50, 3, 22);
-INSERT INTO planned_activity VALUES ( 50, 4, 13);
-INSERT INTO planned_activity VALUES ( 50, 5, 19);
-INSERT INTO planned_activity VALUES ( 50, 1, 7);
-INSERT INTO planned_activity VALUES ( 50, 2, 26);
-INSERT INTO planned_activity VALUES ( 50, 3, 7);
-INSERT INTO planned_activity VALUES ( 50, 4, 6);
-INSERT INTO planned_activity VALUES ( 50, 5, 14);
+-- === Create skills === ---
+INSERT INTO skill_set (skill_set) VALUES ('Pedagogy');
+INSERT INTO skill_set (skill_set) VALUES ('Curriculum Design');
+INSERT INTO skill_set (skill_set) VALUES ('Digital Tools');
+INSERT INTO skill_set (skill_set) VALUES ('Assessment Methods');
+INSERT INTO skill_set (skill_set) VALUES ('Research Methods');
+INSERT INTO skill_set (skill_set) VALUES ('Programming');
+INSERT INTO skill_set (skill_set) VALUES ('Data Analysis');
+INSERT INTO skill_set (skill_set) VALUES ('Project Management');
+INSERT INTO skill_set (skill_set) VALUES ('Academic Writing');
+INSERT INTO skill_set (skill_set) VALUES ('Communication');
+INSERT INTO skill_set (skill_set) VALUES ('Team Leadership');
+INSERT INTO skill_set (skill_set) VALUES ('Critical Thinking');
+INSERT INTO skill_set (skill_set) VALUES ('Machine Learning');
+INSERT INTO skill_set (skill_set) VALUES ('Statistics');
+INSERT INTO skill_set (skill_set) VALUES ('Database Design');
+INSERT INTO skill_set (skill_set) VALUES ('Networks');
+INSERT INTO skill_set (skill_set) VALUES ('Cloud Computing');
+INSERT INTO skill_set (skill_set) VALUES ('Cybersecurity');
+INSERT INTO skill_set (skill_set) VALUES ('Mathematics');
+INSERT INTO skill_set (skill_set) VALUES ('Problem Solving');
 
--- EMPLOYEE LOAD ALLOCATION
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (36, 1, 1, 1, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (10, 2, 1, 1, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 1, 1, 1, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (79, 1, 1, 1, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (55, 3, 1, 1, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (20, 1, 1, 1, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 5, 1, 2, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (36, 2, 1, 2, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (62, 3, 2, 3, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (69, 4, 2, 3, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (12, 3, 3, 4, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (27, 2, 3, 4, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (38, 4, 3, 4, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (93, 5, 3, 4, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (60, 4, 3, 4, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 2, 3, 4, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 3, 4, 5, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 1, 4, 5, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (94, 1, 4, 5, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (78, 4, 4, 5, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (63, 2, 4, 6, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (57, 1, 4, 6, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (77, 4, 4, 6, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 4, 4, 6, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (57, 2, 4, 7, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (28, 2, 5, 8, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 2, 5, 8, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (51, 2, 5, 8, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (61, 2, 6, 9, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 3, 6, 9, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (11, 3, 6, 9, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (76, 2, 6, 10, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (27, 5, 6, 10, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 1, 6, 10, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (67, 2, 6, 11, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 2, 7, 12, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (53, 4, 7, 12, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (19, 5, 7, 12, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (31, 4, 7, 13, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (59, 2, 7, 13, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 2, 8, 14, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 5, 8, 14, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (46, 1, 8, 15, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (6, 1, 9, 16, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 2, 9, 16, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (23, 5, 9, 16, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (61, 2, 9, 16, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (59, 2, 9, 16, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 4, 10, 17, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (10, 5, 10, 17, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (90, 3, 10, 17, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (52, 1, 10, 18, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (12, 2, 10, 18, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 1, 10, 18, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (79, 1, 10, 19, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (52, 5, 10, 19, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (79, 5, 11, 20, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (57, 5, 11, 20, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (67, 4, 11, 20, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (61, 4, 11, 21, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (64, 5, 12, 22, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (73, 3, 12, 23, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (18, 4, 12, 23, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (39, 3, 12, 23, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (10, 2, 12, 24, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 2, 12, 24, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (71, 5, 12, 24, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (40, 2, 12, 24, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 1, 13, 25, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (46, 3, 13, 26, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (66, 3, 13, 26, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 2, 13, 26, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 1, 14, 27, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (22, 4, 14, 27, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (18, 3, 14, 27, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (67, 4, 14, 28, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (11, 3, 14, 28, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (55, 5, 15, 29, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (82, 1, 15, 29, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 2, 15, 29, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (56, 5, 15, 29, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (33, 5, 15, 29, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (66, 2, 15, 30, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (77, 1, 15, 30, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 1, 15, 30, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 3, 15, 30, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (61, 3, 15, 30, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (63, 3, 15, 30, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (39, 1, 16, 31, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (32, 2, 16, 31, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (60, 3, 16, 32, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (89, 4, 16, 32, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 2, 16, 32, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (71, 5, 16, 33, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (40, 5, 16, 33, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (50, 2, 16, 33, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (51, 4, 17, 34, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (89, 3, 17, 34, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 2, 17, 34, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (60, 2, 18, 35, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (78, 3, 18, 35, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (56, 2, 18, 35, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (9, 3, 18, 35, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (40, 4, 18, 36, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (62, 3, 18, 36, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 4, 18, 36, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (23, 1, 19, 37, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (50, 3, 19, 37, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (5, 5, 19, 37, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (98, 1, 19, 38, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 5, 19, 38, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (90, 1, 19, 38, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (16, 1, 20, 39, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (88, 2, 20, 40, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (55, 3, 20, 40, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (4, 1, 20, 40, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (19, 4, 21, 41, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (18, 3, 21, 41, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (22, 4, 22, 42, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (8, 2, 22, 42, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (33, 2, 22, 42, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (4, 4, 23, 43, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (93, 4, 23, 43, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (70, 3, 23, 44, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 5, 23, 44, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 5, 23, 44, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (82, 4, 23, 44, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (33, 5, 23, 44, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 2, 23, 44, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (76, 2, 24, 45, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 3, 24, 46, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (5, 3, 24, 46, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (86, 2, 24, 46, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (95, 5, 25, 47, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (94, 2, 25, 47, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (73, 3, 26, 48, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (22, 3, 26, 49, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (59, 2, 26, 49, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (77, 4, 26, 49, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (23, 1, 27, 50, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 1, 27, 50, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (6, 2, 28, 51, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (58, 5, 29, 52, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (9, 2, 29, 52, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 4, 29, 52, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (17, 2, 30, 53, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (59, 5, 30, 53, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (63, 5, 31, 54, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (59, 5, 32, 55, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 1, 32, 56, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (11, 3, 32, 56, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (29, 3, 32, 56, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 1, 32, 56, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 5, 32, 56, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 3, 32, 56, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (89, 4, 32, 57, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (28, 2, 32, 57, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (21, 5, 32, 57, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (18, 4, 33, 58, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (48, 1, 33, 58, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 3, 33, 59, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (33, 1, 33, 59, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (39, 5, 33, 59, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (14, 4, 33, 59, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (25, 2, 33, 60, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (20, 3, 33, 60, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (66, 4, 33, 60, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (70, 3, 33, 60, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (78, 5, 34, 61, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (86, 4, 34, 61, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (4, 2, 34, 61, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (22, 4, 34, 61, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (10, 3, 35, 62, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 5, 35, 62, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 5, 35, 62, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (31, 2, 35, 62, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (62, 4, 35, 62, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 2, 36, 63, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (71, 5, 37, 64, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (5, 2, 37, 65, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (14, 5, 37, 65, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (27, 4, 37, 65, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 3, 37, 65, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (56, 1, 37, 65, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (32, 5, 38, 66, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (50, 5, 38, 66, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (49, 3, 38, 66, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (6, 1, 39, 67, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (16, 4, 39, 67, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (67, 3, 39, 67, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (12, 5, 39, 67, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (77, 5, 39, 68, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (5, 3, 39, 68, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (71, 1, 39, 69, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (27, 2, 39, 69, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (82, 4, 39, 69, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (29, 5, 39, 69, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (31, 1, 39, 69, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 5, 40, 70, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (17, 3, 40, 70, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (23, 2, 40, 71, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 1, 40, 71, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (63, 5, 40, 71, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (11, 3, 40, 71, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (79, 1, 41, 72, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (80, 3, 41, 72, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (36, 5, 41, 72, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (60, 1, 41, 72, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (87, 2, 41, 72, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (49, 3, 41, 72, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (6, 5, 41, 73, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 3, 41, 73, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (86, 2, 41, 73, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (14, 1, 41, 73, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 5, 41, 73, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (69, 5, 41, 73, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (6, 2, 41, 74, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (86, 3, 42, 75, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (84, 4, 42, 75, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (12, 5, 42, 75, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 3, 42, 76, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (85, 5, 42, 76, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (60, 5, 42, 76, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (48, 4, 42, 76, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (11, 2, 43, 77, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 4, 43, 77, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (27, 1, 43, 78, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (15, 4, 44, 79, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (12, 4, 44, 79, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (88, 3, 44, 79, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (2, 2, 44, 80, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (74, 1, 44, 80, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 5, 44, 80, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (38, 5, 44, 80, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (34, 3, 45, 81, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 3, 45, 81, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (48, 2, 45, 81, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (56, 2, 46, 82, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (63, 1, 46, 82, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (62, 2, 46, 82, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (87, 2, 46, 83, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (87, 5, 46, 83, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (36, 4, 46, 83, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (78, 3, 46, 83, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (65, 3, 46, 84, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (67, 2, 46, 84, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (88, 2, 46, 84, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (70, 4, 47, 85, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (88, 5, 48, 86, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (53, 4, 48, 86, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (41, 5, 48, 87, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (16, 1, 48, 87, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (70, 3, 48, 88, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (19, 1, 48, 88, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (85, 3, 49, 89, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (49, 4, 49, 89, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (62, 5, 49, 89, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (14, 1, 49, 89, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (23, 2, 49, 89, 4);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (86, 3, 50, 90, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (32, 5, 50, 90, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (77, 5, 50, 90, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (4, 5, 50, 90, 2);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (39, 2, 50, 90, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (28, 1, 50, 90, 1);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (3, 5, 50, 91, 3);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (55, 2, 50, 91, 5);
-INSERT INTO employee_load_allocation(person_id, department_id, course_id, course_layout_id, teaching_activity_id) VALUES (26, 3, 50, 91, 4);
+-- === Assign skills === --
+INSERT INTO employee_skill_set VALUES (1,  1 );
+INSERT INTO employee_skill_set VALUES (5,  1 );
+INSERT INTO employee_skill_set VALUES (10, 1 );
+INSERT INTO employee_skill_set VALUES (2,  2 );
+INSERT INTO employee_skill_set VALUES (6,  2 );
+INSERT INTO employee_skill_set VALUES (12, 2 );
+INSERT INTO employee_skill_set VALUES (3,  3 );
+INSERT INTO employee_skill_set VALUES (7,  3 );
+INSERT INTO employee_skill_set VALUES (19, 3 );
+INSERT INTO employee_skill_set VALUES (1,  4 );
+INSERT INTO employee_skill_set VALUES (9,  4 );
+INSERT INTO employee_skill_set VALUES (14, 4 );
+INSERT INTO employee_skill_set VALUES (20, 4 );
+INSERT INTO employee_skill_set VALUES (4,  5 );
+INSERT INTO employee_skill_set VALUES (13, 5 );
+INSERT INTO employee_skill_set VALUES (17, 5 );
+INSERT INTO employee_skill_set VALUES (6,  6 );
+INSERT INTO employee_skill_set VALUES (8,  6 );
+INSERT INTO employee_skill_set VALUES (18, 6 );
+INSERT INTO employee_skill_set VALUES (7,  7 );
+INSERT INTO employee_skill_set VALUES (11, 7 );
+INSERT INTO employee_skill_set VALUES (16, 7 );
+INSERT INTO employee_skill_set VALUES (3,  8 );
+INSERT INTO employee_skill_set VALUES (10, 8 );
+INSERT INTO employee_skill_set VALUES (15, 8 );
+INSERT INTO employee_skill_set VALUES (2,  9 );
+INSERT INTO employee_skill_set VALUES (5,  9 );
+INSERT INTO employee_skill_set VALUES (7,  9 );
+INSERT INTO employee_skill_set VALUES (1,  10);
+INSERT INTO employee_skill_set VALUES (8,  10);
+INSERT INTO employee_skill_set VALUES (12, 10);
+INSERT INTO employee_skill_set VALUES (19, 10);
+INSERT INTO employee_skill_set VALUES (4,  11);
+INSERT INTO employee_skill_set VALUES (9,  11);
+INSERT INTO employee_skill_set VALUES (18, 11);
+INSERT INTO employee_skill_set VALUES (5,  12);
+INSERT INTO employee_skill_set VALUES (14, 12);
+INSERT INTO employee_skill_set VALUES (20, 12);
+INSERT INTO employee_skill_set VALUES (6,  13);
+INSERT INTO employee_skill_set VALUES (7,  13);
+INSERT INTO employee_skill_set VALUES (15, 13);
+INSERT INTO employee_skill_set VALUES (3,  14);
+INSERT INTO employee_skill_set VALUES (11, 14);
+INSERT INTO employee_skill_set VALUES (2,  15);
+INSERT INTO employee_skill_set VALUES (12, 15);
+INSERT INTO employee_skill_set VALUES (19, 15);
+INSERT INTO employee_skill_set VALUES (1,  16);
+INSERT INTO employee_skill_set VALUES (5,  16);
+INSERT INTO employee_skill_set VALUES (8,  16);
+INSERT INTO employee_skill_set VALUES (4,  17);
+INSERT INTO employee_skill_set VALUES (6,  17);
+INSERT INTO employee_skill_set VALUES (10, 17);
+INSERT INTO employee_skill_set VALUES (13, 18);
+INSERT INTO employee_skill_set VALUES (7,  18);
+INSERT INTO employee_skill_set VALUES (3,  18);
+INSERT INTO employee_skill_set VALUES (9,  19);
+INSERT INTO employee_skill_set VALUES (14, 19);
+INSERT INTO employee_skill_set VALUES (15, 19);
+INSERT INTO employee_skill_set VALUES (16, 20);
+INSERT INTO employee_skill_set VALUES (18, 20);
+INSERT INTO employee_skill_set VALUES (20, 20);
+INSERT INTO employee_skill_set VALUES (2,  21);
+INSERT INTO employee_skill_set VALUES (6,  21);
+INSERT INTO employee_skill_set VALUES (11, 21);
+INSERT INTO employee_skill_set VALUES (1,  22);
+INSERT INTO employee_skill_set VALUES (8,  22);
+INSERT INTO employee_skill_set VALUES (13, 22);
+INSERT INTO employee_skill_set VALUES (4,  23);
+INSERT INTO employee_skill_set VALUES (7,  23);
+INSERT INTO employee_skill_set VALUES (19, 23);
+INSERT INTO employee_skill_set VALUES (5,  24);
+INSERT INTO employee_skill_set VALUES (10, 24);
+INSERT INTO employee_skill_set VALUES (18, 24);
+INSERT INTO employee_skill_set VALUES (3,  25);
+INSERT INTO employee_skill_set VALUES (12, 25);
+INSERT INTO employee_skill_set VALUES (17, 26);
+INSERT INTO employee_skill_set VALUES (12, 26);
+INSERT INTO employee_skill_set VALUES (2,  27);
+INSERT INTO employee_skill_set VALUES (9,  27);
+INSERT INTO employee_skill_set VALUES (16, 27);
+INSERT INTO employee_skill_set VALUES (7,  28);
+INSERT INTO employee_skill_set VALUES (11, 28);
+INSERT INTO employee_skill_set VALUES (13, 28);
+INSERT INTO employee_skill_set VALUES (1,  29);
+INSERT INTO employee_skill_set VALUES (5,  29);
+INSERT INTO employee_skill_set VALUES (15, 29);
+INSERT INTO employee_skill_set VALUES (6,  30);
+INSERT INTO employee_skill_set VALUES (8,  30);
+INSERT INTO employee_skill_set VALUES (18, 30);
+INSERT INTO employee_skill_set VALUES (3,  31);
+INSERT INTO employee_skill_set VALUES (10, 31);
+INSERT INTO employee_skill_set VALUES (17, 31);
+INSERT INTO employee_skill_set VALUES (2,  32);
+INSERT INTO employee_skill_set VALUES (4,  32);
+INSERT INTO employee_skill_set VALUES (19, 32);
+INSERT INTO employee_skill_set VALUES (6,  33);
+INSERT INTO employee_skill_set VALUES (7,  33);
+INSERT INTO employee_skill_set VALUES (14, 33);
+INSERT INTO employee_skill_set VALUES (11, 34);
+INSERT INTO employee_skill_set VALUES (13, 34);
+INSERT INTO employee_skill_set VALUES (20, 34);
+INSERT INTO employee_skill_set VALUES (1,  35);
+INSERT INTO employee_skill_set VALUES (8,  35);
+INSERT INTO employee_skill_set VALUES (9,  35);
+INSERT INTO employee_skill_set VALUES (5,  36);
+INSERT INTO employee_skill_set VALUES (16, 36);
+INSERT INTO employee_skill_set VALUES (18, 36);
+INSERT INTO employee_skill_set VALUES (3,  37);
+INSERT INTO employee_skill_set VALUES (12, 37);
+INSERT INTO employee_skill_set VALUES (14, 37);
+INSERT INTO employee_skill_set VALUES (4,  38);
+INSERT INTO employee_skill_set VALUES (7,  38);
+INSERT INTO employee_skill_set VALUES (10, 38);
+INSERT INTO employee_skill_set VALUES (6,  39);
+INSERT INTO employee_skill_set VALUES (15, 39);
+INSERT INTO employee_skill_set VALUES (19, 39);
+INSERT INTO employee_skill_set VALUES (2,  40);
+INSERT INTO employee_skill_set VALUES (9,  40);
+INSERT INTO employee_skill_set VALUES (17, 40);
+INSERT INTO employee_skill_set VALUES (8,  41);
+INSERT INTO employee_skill_set VALUES (13, 41);
+INSERT INTO employee_skill_set VALUES (20, 41);
+INSERT INTO employee_skill_set VALUES (3,  42);
+INSERT INTO employee_skill_set VALUES (11, 42);
+INSERT INTO employee_skill_set VALUES (14, 42);
+INSERT INTO employee_skill_set VALUES (5,  43);
+INSERT INTO employee_skill_set VALUES (12, 43);
+INSERT INTO employee_skill_set VALUES (18, 43);
+INSERT INTO employee_skill_set VALUES (1,  44);
+INSERT INTO employee_skill_set VALUES (4,  44);
+INSERT INTO employee_skill_set VALUES (16, 44);
+INSERT INTO employee_skill_set VALUES (6,  45);
+INSERT INTO employee_skill_set VALUES (8,  45);
+INSERT INTO employee_skill_set VALUES (15, 45);
+
+-- === Make courses === --
+INSERT INTO course (course_code, course_name) VALUES
+('IS1200', 'Datorteknik'),
+('IX1500', 'Diskret matematik'),
+('DH2642', 'Interaction programming and the Dynamic Web'),
+('ID1201', 'Algoritmer och datastrukturer'),
+('II1300', 'Ingenjörsmetodik'),
+('IL1333', 'Hårdvarusäkerhet'),
+('IV1351', 'Data Storage Paradigms'),
+('ID1018', 'Programmering 1'),
+('IE1204', 'Digital design'),
+('IV1350', 'Objektorienterad design'),
+('IX1303', 'Algebra och geometri'),
+('IX1307', 'Problemlösning i matematik');
+
+-- === Make course layouts === --
+INSERT INTO course_layout (course_id, min_students, max_students, hp, version) VALUES
+(1, 50, 150, 7.5, 1),
+(1, 50, 200, 15, 2),
+(2, 70, 150, 7.5, 1),
+(3, 40, 250, 7.5, 1),
+(4, 60, 180, 7.5, 1),
+(4, 60, 200, 15, 2),
+(5, 30, 120, 7.5, 1),
+(6, 25, 100, 7.5, 1),
+(7, 35, 150, 7.5, 1),
+(7, 35, 180, 15, 2),
+(8, 80, 300, 7.5, 1),
+(9, 45, 160, 7.5, 1),
+(10, 50, 200, 7.5, 1),
+(10, 50, 220, 15, 2),
+(11, 40, 140, 7.5, 1),
+(12, 30, 110, 7.5, 1);
+
+-- === Create instances === --
+INSERT INTO course_instance (course_layout_id, instance_id, num_students, study_year, study_period) VALUES
+-- Course layout 1 (IS1200 version 1)
+(1, 'IS1200_2024_P1', 85, '2024', 'P1'),
+(1, 'IS1200_2024_P2', 92, '2024', 'P2'),
+(1, 'IS1200_2025_P1', 78, '2025', 'P1'),
+
+-- Course layout 2 (IS1200 version 2)
+(2, 'IS1200_2024_P3', 145, '2024', 'P3'),
+(2, 'IS1200_2025_P3', 167, '2025', 'P3'),
+
+-- Course layout 3 (IX1500 version 1)
+(3, 'IX1500_2024_P1', 112, '2024', 'P1'),
+(3, 'IX1500_2024_P2', 98, '2024', 'P2'),
+(3, 'IX1500_2025_P1', 127, '2025', 'P1'),
+
+-- Course layout 4 (DH2642 version 1)
+(4, 'DH2642_2024_P1', 189, '2024', 'P1'),
+(4, 'DH2642_2024_P2', 203, '2024', 'P2'),
+(4, 'DH2642_2025_P1', 176, '2025', 'P1'),
+
+-- Course layout 5 (ID1201 version 1)
+(5, 'ID1201_2024_P1', 132, '2024', 'P1'),
+(5, 'ID1201_2024_P2', 145, '2024', 'P2'),
+
+-- Course layout 6 (ID1201 version 2)
+(6, 'ID1201_2024_P3', 178, '2024', 'P3'),
+(6, 'ID1201_2025_P3', 192, '2025', 'P3'),
+
+-- Course layout 7 (II1300 version 1)
+(7, 'II1300_2024_P1', 68, '2024', 'P1'),
+(7, 'II1300_2025_P1', 72, '2025', 'P1'),
+
+-- Course layout 8 (IL1333 version 1)
+(8, 'IL1333_2024_P2', 45, '2024', 'P2'),
+(8, 'IL1333_2025_P2', 52, '2025', 'P2'),
+
+-- Course layout 9 (IV1351 version 1)
+(9, 'IV1351_2024_P1', 89, '2024', 'P1'),
+(9, 'IV1351_2024_P2', 94, '2024', 'P2'),
+
+-- Course layout 10 (IV1351 version 2)
+(10, 'IV1351_2025_P3', 156, '2025', 'P3'),
+
+-- Course layout 11 (ID1018 version 1)
+(11, 'ID1018_2024_P1', 245, '2024', 'P1'),
+(11, 'ID1018_2024_P2', 267, '2024', 'P2'),
+(11, 'ID1018_2025_P1', 278, '2025', 'P1'),
+
+-- Course layout 12 (IE1204 version 1)
+(12, 'IE1204_2024_P1', 112, '2024', 'P1'),
+(12, 'IE1204_2025_P1', 125, '2025', 'P1'),
+
+-- Course layout 13 (IV1350 version 1)
+(13, 'IV1350_2024_P1', 145, '2024', 'P1'),
+(13, 'IV1350_2024_P2', 138, '2024', 'P2'),
+
+-- Course layout 14 (IV1350 version 2)
+(14, 'IV1350_2025_P3', 187, '2025', 'P3'),
+
+-- Course layout 15 (IX1303 version 1)
+(15, 'IX1303_2024_P2', 96, '2024', 'P2'),
+(15, 'IX1303_2025_P2', 102, '2025', 'P2'),
+
+-- Course layout 16 (IX1307 version 1)
+(16, 'IX1307_2024_P1', 67, '2024', 'P1'),
+(16, 'IX1307_2025_P1', 72, '2025', 'P1');
+
+-- === Make teaching activities === --
+INSERT INTO teaching_activity (activity_name, factor) VALUES
+('Labs', 2.4),
+('Lectures', 3.6),
+('Tutorials', 2.4),
+('Seminars', 1.8),
+('Examination', 4.1);
+
+-- === Generate planned activities for each course_instance's 
+INSERT INTO planned_activity (teaching_activity_id, course_instance_id, planned_hours) VALUES
+-- Labs (teaching_activity_id = 1) for all 34 instances
+(1, 1, 16), (1, 2, 18), (1, 3, 16), (1, 4, 24), (1, 5, 26),
+(1, 6, 20), (1, 7, 18), (1, 8, 22), (1, 9, 20), (1, 10, 28),
+(1, 11, 25), (1, 12, 18), (1, 13, 22), (1, 14, 30), (1, 15, 16),
+(1, 16, 14), (1, 17, 20), (1, 18, 16), (1, 19, 18), (1, 20, 20),
+(1, 21, 22), (1, 22, 24), (1, 23, 26), (1, 24, 28), (1, 25, 18),
+(1, 26, 20), (1, 27, 22), (1, 28, 24), (1, 29, 16), (1, 30, 18),
+(1, 31, 20), (1, 32, 22), (1, 33, 14), (1, 34, 16),
+
+-- Lectures (teaching_activity_id = 2) for all 34 instances
+(2, 1, 24), (2, 2, 26), (2, 3, 24), (2, 4, 36), (2, 5, 40),
+(2, 6, 30), (2, 7, 28), (2, 8, 32), (2, 9, 30), (2, 10, 42),
+(2, 11, 38), (2, 12, 28), (2, 13, 32), (2, 14, 45), (2, 15, 24),
+(2, 16, 20), (2, 17, 30), (2, 18, 24), (2, 19, 26), (2, 20, 30),
+(2, 21, 32), (2, 22, 36), (2, 23, 38), (2, 24, 42), (2, 25, 28),
+(2, 26, 30), (2, 27, 32), (2, 28, 36), (2, 29, 24), (2, 30, 26),
+(2, 31, 30), (2, 32, 32), (2, 33, 20), (2, 34, 24),
+
+-- Tutorials (teaching_activity_id = 3) for all 34 instances
+(3, 1, 12), (3, 2, 14), (3, 3, 12), (3, 4, 20), (3, 5, 22),
+(3, 6, 16), (3, 7, 14), (3, 8, 18), (3, 9, 16), (3, 10, 24),
+(3, 11, 20), (3, 12, 14), (3, 13, 18), (3, 14, 26), (3, 15, 12),
+(3, 16, 10), (3, 17, 16), (3, 18, 12), (3, 19, 14), (3, 20, 16),
+(3, 21, 18), (3, 22, 20), (3, 23, 22), (3, 24, 24), (3, 25, 14),
+(3, 26, 16), (3, 27, 18), (3, 28, 20), (3, 29, 12), (3, 30, 14),
+(3, 31, 16), (3, 32, 18), (3, 33, 10), (3, 34, 12),
+
+-- Seminars (teaching_activity_id = 4) for all 34 instances
+(4, 1, 8), (4, 2, 10), (4, 3, 8), (4, 4, 14), (4, 5, 16),
+(4, 6, 12), (4, 7, 10), (4, 8, 12), (4, 9, 10), (4, 10, 18),
+(4, 11, 14), (4, 12, 10), (4, 13, 12), (4, 14, 20), (4, 15, 8),
+(4, 16, 6), (4, 17, 12), (4, 18, 8), (4, 19, 10), (4, 20, 12),
+(4, 21, 14), (4, 22, 16), (4, 23, 18), (4, 24, 20), (4, 25, 10),
+(4, 26, 12), (4, 27, 14), (4, 28, 16), (4, 29, 8), (4, 30, 10),
+(4, 31, 12), (4, 32, 14), (4, 33, 6), (4, 34, 8),
+
+-- Examination (teaching_activity_id = 5) for all 34 instances
+(5, 1, 6), (5, 2, 6), (5, 3, 6), (5, 4, 8), (5, 5, 8),
+(5, 6, 6), (5, 7, 6), (5, 8, 6), (5, 9, 6), (5, 10, 8),
+(5, 11, 8), (5, 12, 6), (5, 13, 6), (5, 14, 8), (5, 15, 6),
+(5, 16, 6), (5, 17, 6), (5, 18, 6), (5, 19, 6), (5, 20, 6),
+(5, 21, 6), (5, 22, 6), (5, 23, 6), (5, 24, 8), (5, 25, 6),
+(5, 26, 6), (5, 27, 6), (5, 28, 6), (5, 29, 6), (5, 30, 6),
+(5, 31, 6), (5, 32, 6), (5, 33, 6), (5, 34, 6);
+
+-- === Allocates employees to activities in instance === --
+INSERT INTO employee_load_allocation (teaching_activity_id, course_instance_id, employee_id) VALUES
+(1, 1, 1), (2, 2, 2), (3, 3, 3), (4, 4, 4), (5, 5, 5),
+(1, 6, 6), (2, 7, 7), (3, 8, 8), (4, 9, 9), (5, 10, 10),
+(1, 11, 11), (2, 12, 12), (3, 13, 13), (4, 14, 14), (5, 15, 15),
+(1, 16, 16), (2, 17, 17), (3, 18, 18), (4, 19, 19), (5, 20, 20),
+(1, 21, 21), (2, 22, 22), (3, 23, 23), (4, 24, 24), (5, 25, 25),
+(1, 26, 26), (2, 27, 27), (3, 28, 28), (4, 29, 29), (5, 30, 30),
+(1, 31, 31), (2, 32, 32), (3, 33, 33), (4, 34, 34), (1, 1, 35),
+(2, 2, 36), (3, 3, 37), (4, 4, 38), (5, 5, 39), (1, 6, 40),
+(2, 7, 41), (3, 8, 42), (4, 9, 43), (5, 10, 44), (1, 11, 45);

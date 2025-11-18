@@ -92,35 +92,43 @@ The method of creating a database starts by creating a miniworld of reality that
 \begin{description}
   \item Two trivial steps of creating tables and rows based on the conceptual model.
   \item Then assigning the domain for each attribute.
-  \item Attribute "unique" to attributes that are unique in the conceptual model.
-  \item Define primary keys for each table which is definied as a strong entity in the model.
+  \item "UNIQUE" attributes will be marked in the model.
+  \item Define primary keys for each table which is definied as a strong entity in the model. Typically surrogate key.
+  \item Then define the relationships between tables, one-to-many, one-to-one, many-to-many
+  \item Generate pk and fk for multivalued attribute tables
+  \item Normalize the model
+  \item Final step of making the model is verifying all the operations.
 \end{description}
-
+After each step is completed the model is complete and the tool used to make the model Astah professional is able to generate a rough SQL dump. Finalizing the database is done by adding UNIQUE to the correct attributes and adding foreign key constraints ON DELETE.
 \section{Result}
-Applying all the 
-
-Attributes in person: phone number has VARCHAR 15 to allow a phone number with country code that is larger than 2 digits. Adress, last\_name and first\_name all use VARCHAR 200 to allow for large names but without risks of massive values.
+The first two steps generated a very simple model with just the first tables and attributes. Then we assign the domain for each attribute.
 \bigskip
 \\
-Attributes for employee: employment\_id is unqiue to an employee and gets the VARCHAR 200 for format that would be used by the university but we cant be sure how that format should be. A skill set for an employee does o
+Attributes in person: phone number has VARCHAR 13 to allow a phone number with country code that is larger than 2 digits. Adress, last\_name and first\_name all use VARCHAR 200 to allow for large names but without risks of massive values. personal\_number is unique because two people are not allowed to have the same personal number. 
 \bigskip
 \\
-Attributes for course\_layout: We ar not sure about the corse\_code so we allow for 200 charachter VARCHAR so the university can use whatever format. min and max students is treated as an int and hp is double precision floating point number.
+Attributes for employee: employment\_id is unqiue to an employee and gets the VARCHAR 200 domain. What format the university would use is not known so a variety of formats is allowed by the database. Then an employee has a manager which is also an employee which is why it is allowed to be null. max\_allowed\_courses is an int, salary is an int. job\_title of an employee is a foreign key to the table containing all job\_titles. 
+\bigskip
+\\
+Attributes for course\_layout: We can not not the corse\_code so we allow for 200 charachter VARCHAR so the university can use whatever format it chooses. Course\_name gets the same treatment.
 \bigskip
 \\
 attribute for planned\_acitivty: int for hours
 \bigskip
 \\
-The rest of the attributes were handled similarly except for study\_period which is treated as an enum. The manager\_id 
+An employee has a manager\_id which is also a employee\_id and for the department it is also a employee\_id which is the managers\_id.  
 \bigskip
 \\
 Each attribute such as person\_number, employment\_id and all the others marked with UNIQUE  got labels describing that property.
 \bigskip
 \\
+Each attribute was chosen to be atomic and also relevant to how a university would use that value. most values used as an id is for business logic for the university and is not to be confused by the surrogate id which identifies the tuples. 
+\bigskip
+\\
 Finding the strong entities was done by looking at the conceptual model and searching for an entity which is not dependant on another entity to exist. Such entites were found to be person, course layout and department. They were then given a surrogate key to define their primary key. 
 \textbf{This chapter explains \textit{the result} of what you did.}
 
-\textbf{The report must show that you have done the work yourself and that you have understood what you have done}, both of these goals are met by carefully explaining your solution here in the result chapter, and proving that it meets the requirements. \textit{State each requirement that is met} and explain \textit{how you met it}. Also include links to your code in your Git repository, and include also diagrams, see Figure \ref{fig:diag}, and other figures to illustrate your reasoning. All figures must be referenced in the text. Ask yourself if the solution is clearly explained, and if the reader will understand the application. What would you yourself want to know if you read about the application, is that included in the report? More specific instructions for the content can be found under each task on the Project page in Canvas. 
+\textbf{The report must show that you have done the work yourself and that you have understood what you have done}, both of these goals are met by carefully explaining your solution here in the result chapter, and proving that it meets the requirements. \textit{State each requirement that is met} and explain \textit{how you met it}. Also include links to your code in your Git repository, and include also diagrams, see Figure , and other figures to illustrate your reasoning. All figures must be referenced in the text. Ask yourself if the solution is clearly explained, and if the reader will understand the application. What would you yourself want to know if you read about the application, is that included in the report? More specific instructions for the content can be found under each task on the Project page in Canvas. 
 
 Foreign key constraint
 \begin{figure}[h!]
@@ -141,19 +149,15 @@ For our many-to-many relations such as study period and employee skillset we use
 When finding strong entites the department entity is perculiar because the manager\_id is dependent on a employee existing. By allowing for a null manager we can define the department as a strong entity because it is no longer dependant on the employee table. This is allowed because null is not accounted for when checking the column for uniqueness.
 \bigskip
 \\
-When considering the hp for a course there could be the same course with the same course id but with a different amount of hp. This is a complicated thing to solve because the typical course layout would store 
-
+When considering the hp for a course there could be the same course with the same course id but with a different amount of hp. Our solution is to divide course and course layout in to two tables. The course only contains code and name with a surrogate key. Then layout has min and max students, hp, a version and the course\_id as a foreign key with a surrogate key as primary key. The relation between the two is non-identifying but one could argue that the layout should be identified by its course. Another way of solving it would be to combine the two tables and have the version as a primary key togehter with course\_id but that solution was not used because the course\_code and course\_name are not related to version in the primary key.
 
 
 \textbf{This chapter \textit{analysis} the result presented in the previous section.} 
 
 Evaluate your solution according to the assessment criteria found in the assessment-criteria documents, which are found under the bullet \textit{In the Discussion chapter of your report...}, under each task on the Project page in Canvas. You do not have to cover all specified criteria.
 
+
 \section{Comments About the Course}
-
-\textbf{This section is optional, but please at least write approximately how much time you spent on the assignment}, including lectures, labs, tutorials and seminars. This is of great help for course evaluation.
-
-Also, any other comment(s) related to this course offering or to coming offerings is much appreciated. 
-
+The time invested to the project were six, five hour sessions so in total 30 hours to complete the project.  
 
 \end{document}

@@ -1,8 +1,8 @@
-PWD /Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/Group Project
+PWD /Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/IV1351-Project-group44/Group Project
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/Group Project/IV1350-group-44-Seminar-1.tex
+INPUT /Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/IV1351-Project-group44/Group Project/IV1350-group-44-Seminar-1.tex
 OUTPUT IV1350-group-44-Seminar-1.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls

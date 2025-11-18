@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.14)  15 NOV 2025 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.14)  18 NOV 2025 17:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/Group Project/IV1350-group-44-Seminar-1.tex"
-(/Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/Group Project/IV1350-group-44-Seminar-1.tex
+**"/Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/IV1351-Project-group44/Group Project/IV1350-group-44-Seminar-1.tex"
+(/Users/viktor_danielsson/KTH kurser/2025/HT25/IV1351/IV1351-Project-group44/Group Project/IV1350-group-44-Seminar-1.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -432,8 +432,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3]
-
-LaTeX Warning: Reference `fig:diag' on page 4 undefined on input line 123.
+Overfull \hbox (0.4059pt too wide) in paragraph at lines 104--130
+\OT1/cmr/m/n/10.95 Attributes for course[]layout: We can not not the corse[]code so we al-low for 200 charachter
+ []
 
 [4] [5] [6] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -442,21 +443,17 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 13972 strings out of 474116
- 292138 string characters out of 5743682
- 1936187 words of memory out of 5000000
- 36129 multiletter control sequences out of 15000+600000
+ 13971 strings out of 474116
+ 292197 string characters out of 5743682
+ 1937187 words of memory out of 5000000
+ 36128 multiletter control sequences out of 15000+600000
  562416 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,107p,11016b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,107p,11039b,323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on IV1350-group-44-Seminar-1.pdf (6 pages, 133247 bytes).
+Output written on IV1350-group-44-Seminar-1.pdf (6 pages, 134640 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
