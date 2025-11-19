@@ -7,6 +7,10 @@
 \usepackage{wrapfig}
 \usepackage{fancyvrb}
 \usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{minted}
+\usemintedstyle{manni}
+\usepackage{svg}
 \pagestyle{fancy}
 
 % Create header and footer
@@ -60,10 +64,21 @@ Consider the following:
 
 Explain the task and the requirements on the solution. It's important to clearly state the requirements. \textit{Also specify which other student you worked with when solving the tasks, or if you worked alone.} 
 
-The task at hand is to design and create a database capable of describing a universites course system. There has to exist a course layout that describes the course code, course name, how many points the course is worth, the minimum amount of students and the maximum amount. A course instance is needded to track the total amount of students registered and in which period the course is given in ex. P1, P2, P3, P4. Each course has many different teaching activites such as lectures, labs, tutorials and seminars. Every teaching activity requires a diffrerent amount of time for the teacher to prepare (multiplication factor) which has to be included in the database. Every course has a varying amount of time for each teaching activity which also has to be considered in the database, aswell as derived data for examination hours and admin hours dependening on the amount of students. The last things are the different departments with their manager (who is also an employee) and the teachers/employees themselves. An employee or teacher works at a department and must have contact details, salary, teaching activites based on skill set, job title and their supervisor/manager. Each teacher can be involved in many teaching activites for multiple different course instances and each course instance can have multiple teachers involved at once. However, a teacher can only be in up to four course instances in a single period.
+The task at hand is to design and create a database capable of describing a universities course system. There has to exist a course layout that describes the course code, course name, how many points the course is worth, the minimum and maximum amount of students. A course instance is needed to track the total amount of students registered and in which period the course is given in for example P1, P2, P3, P4. Each course has many different teaching activites such as lectures, labs, tutorials and seminars. Every teaching activity requires a diffrerent amount of time for the teacher to prepare (multiplication factor) which has to be included in the database. Every course has a varying amount of time for each teaching activity which also has to be considered in the database. The last things are the different departments with their manager (who is also an employee) and the teachers/employees themselves. An employee or teacher works at a department and must have contact details, salary, teaching activites based on skill set, job title and their supervisor/manager. Each teacher can be involved in many teaching activites for multiple different course instances and each course instance can have multiple teachers involved at once. However, a teacher can only be in up to four course instances in a single period.
 \bigskip
 \\
 The final database has to be able to handle all the affermentioned details from the university and be flexible enough to add more  teaching activites later on. It must also be possible to add different course versions of the same course layout to to have a 15hp course aswell as a 7.5hp for the same course.
+\bigskip
+\\
+A university customer would have to specify which operations the database must handle but for a general solution the operations are defined as follows:
+\begin{itemize}
+  \item A teacher is not allowed to be overloaded with work during a period.
+  \item Since costs are computed for all activities given during the particular period, the database must contain information about who gave which activity for which course instance.
+  \item It must be possible to add more teaching activities.
+  \item It must be possible to change salary for teachers.
+  \item A course must be able to be planned based on the hours needed for teaching activities.
+  \item When a teaching activity has been made a teacher must be able to be allocated to said activity.
+\end{itemize} 
 \section{Literature Study}
 
 This chapter must prove that you collected sufficient knowledge before starting development, instead of just hacking away without knowing how to complete a task. State what you have read and briefly summarize what you have learned.
@@ -79,8 +94,6 @@ Some of the knowledge gathered to complete the task was:
     \item Primary Key: A primary key is a specific attribute choosen specifically to identify each tuple in the relation, or alternativly each row in a table. 
     \item Foreign key: The foreign key is a value in a different table that has to match one of the values in the primary key of that other table. This allows for references between tables. 
 \end{itemize}
-There is of course more, but this was a short summary of what has been taught and what is needed to understand the task. 
-
 \section{Method}
 
 \textbf{This chapter tells \textit{how} you solved the task.}
@@ -104,10 +117,18 @@ After each step is completed the model is complete and the tool used to make the
 \\
 When the schema has been defined a process of adding data has to be added and then some SQL operations can be performed on the model to see that all the data that should be accesable is. 
 \section{Result}
-The first two steps generated a very simple model with just the first tables and attributes. Then we assign the domain for each attribute.
-\bigskip
+Generating a simple logical model with just tables and attributes directly from the conceptual model generated the basis for the finished logical model.
+A finalized version of the entire logical model can be seen in figure \ref{fig:image_of_logical_physical_model}
+\begin{figure}[h!]
+  \begin{center}
+    \includesvg[width=\textwidth]{LogPhyModel_image.svg}
+    \caption{A complete image of the logical and physical model}
+    \label{fig:image_of_logical_physical_model}
+  \end{center}
+\end{figure}
 \\
-Attributes in person: phone number has VARCHAR 13 to allow a phone number with country code that is larger than 2 digits. Adress, last\_name and first\_name all use VARCHAR 200 to allow for large names but without risks of massive values. personal\_number is unique because two people are not allowed to have the same personal number. 
+Assiging the domain to each attribute is a necessary step for the database to allow enough space for each column but also to apply the corresponding constraints which are associated within a domain. In the case of not knowing what the customer wants some liberty has to be taken because it is simply not possible to know exactly what domain a customer would want. 
+The domain for each column in person is VARCHAR 13 for the phone number allow a phone number with country code that is larger than 2 digits. Adress, last\_name and first\_name all use VARCHAR 200 to allow for large names but without risks of massive values. personal\_number is unique because two people are not allowed to have the same personal number. 
 \bigskip
 \\
 Attributes for employee: employment\_id is unqiue to an employee and gets the VARCHAR 200 domain. What format the university would use is not known so a variety of formats is allowed by the database. Then an employee has a manager which is also an employee which is why it is allowed to be null. max\_allowed\_courses is an int, salary is an int. job\_title of an employee is a foreign key to the table containing all job\_titles. 
@@ -129,6 +150,37 @@ Each attribute was chosen to be atomic and also relevant to how a university wou
 \bigskip
 \\
 Finding the strong entities was done by looking at the conceptual model and searching for an entity which is not dependant on another entity to exist. Such entites were found to be person, course layout and department. They were then given a surrogate key to define their primary key. 
+\bigskip
+\\
+The SQL dump was generate by Astah by exporting the E-R diagram. This allowed us to quickly deploy a revised database and test it almost immediatly. So if the new design was able to solve issues or not  we could figure it out much faster than if we had to write a new dump by ourselves each time. The SQL dump is published on \href{https://github.com/viktordanielsson/IV1351-Project-group44/blob/main/Group%20Project/university_db_dump3.sql}{github} but the code structure is similar to this for each table 
+\begin{figure}[h!]
+  \begin{center}
+    \begin{minted}[
+]{postgres}
+CREATE TABLE employee (
+ id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
+ employment_id  VARCHAR(200) NOT NULL UNIQUE,
+ salary INT NOT NULL,
+ person_id  INT NOT NULL UNIQUE,
+ department_id INT NOT NULL,
+ max_allowed_courses INT NOT NULL,
+ job_title_id INT NOT NULL,
+ manager_id VARCHAR(200),
+
+ FOREIGN KEY (person_id ) 
+    REFERENCES person (id)
+    ON DELETE CASCADE,
+ FOREIGN KEY (department_id) 
+    REFERENCES department (id)
+    ON DELETE NO ACTION,
+ FOREIGN KEY (job_title_id) 
+    REFERENCES job_title (id)
+    ON DELETE NO ACTION
+);
+\end{minted}
+  \end{center}
+\end{figure}
+
 \textbf{This chapter explains \textit{the result} of what you did.}
 
 \textbf{The report must show that you have done the work yourself and that you have understood what you have done}, both of these goals are met by carefully explaining your solution here in the result chapter, and proving that it meets the requirements. \textit{State each requirement that is met} and explain \textit{how you met it}. Also include links to your code in your Git repository, and include also diagrams, see Figure , and other figures to illustrate your reasoning. All figures must be referenced in the text. Ask yourself if the solution is clearly explained, and if the reader will understand the application. What would you yourself want to know if you read about the application, is that included in the report? More specific instructions for the content can be found under each task on the Project page in Canvas. 
@@ -142,17 +194,19 @@ Foreign key constraint
 \pagebreak
 
 \section{Discussion}
-
-The employee attribute skill set is tricky because multiple employees can share the same skill and we want to ensure the values are atomic so we also do not want to store an array of multiple skills for a single employee. So multiple employees can have the same skill and a single employee has multiple skills. Then solved with a many-to-many relation.
+In general each step has been revised over multiple iterations because the actions following a step might show flaws in the previous steps. One such flaw which showed up only after trying to add data was foreign keys which had "circular" relationsships. Creating one table would first need a different table to be generated first but for that to happen the other table needs the current table, a catch-22 for generating data. These flaws were difficult to find directly in the model but obivous when the constraint violations are thrown in the databsase. These issues were prevelant in both the courses, employees with department but solved by having fewer NOT NULL constraints and less identifying relations. 
 \bigskip
 \\
-For our many-to-many relations such as study period and employee skillset we use the cross-reference table. It could be done with less tables with a table with multivalued attributes but it is valuable to decrease the amount of duplicate data. We then force the values to be unique because otherwise they would be able to be duplicate which would remove the benefit of having a cross-reference table.
+The employee attribute skill set is tricky because multiple employees can share the same skill and we want to ensure the values are atomic. So multiple employees can have the same skill and a single employee has multiple skills. The many-to-many relation is solved with a cross-reference table.
 \bigskip
 \\
-When finding strong entites the department entity is perculiar because the manager\_id is dependent on a employee existing. By allowing for a null manager we can define the department as a strong entity because it is no longer dependant on the employee table. This is allowed because null is not accounted for when checking the column for uniqueness.
+For our many-to-many relations such as course instance and teaching activity and employee skillset we use the cross-reference table. It could be done with less tables such as tables with multivalued attributes but it is valuable to decrease the amount of duplicate data
 \bigskip
 \\
-When considering the hp for a course there could be the same course with the same course id but with a different amount of hp. Our solution is to divide course and course layout in to two tables. The course only contains code and name with a surrogate key. Then layout has min and max students, hp, a version and the course\_id as a foreign key with a surrogate key as primary key. The relation between the two is non-identifying but one could argue that the layout should be identified by its course. Another way of solving it would be to combine the two tables and have the version as a primary key togehter with course\_id but that solution was not used because the course\_code and course\_name are not related to version in the primary key.
+When finding strong entites the department entity is perculiar because the manager\_id is dependent on a employee existing. By allowing for a null manager we can define the department as a strong entity because it is no longer dependant on the employee table. This is allowed because null is not accounted for when checking the column for uniqueness. This was also a point where "circular" dependencies showed up when generating data and having the department independent from employee allows us to create the department without an employee.
+\bigskip
+\\
+When considering the hp for a course there could be the same course with the same course id but with a different amount of hp. Our solution is to divide course and course layout in to two tables. The course only contains code and name with a surrogate key. Then layout has min and max students, hp, a version and a surrogate key as primary key. The relation between the two is non-identifying but one could argue that the layout should be identified by its course. Another way of solving it would be to combine the two tables and have the version as a primary key togehter with course\_id but that solution was not used because the course\_code and course\_name are not related to version in the primary key. 
 
 
 \textbf{This chapter \textit{analysis} the result presented in the previous section.} 
