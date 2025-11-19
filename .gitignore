@@ -16,3 +16,7 @@ Group Project/IV1350-group-44-Seminar-1.tex
 Group Project/IV1350-group-44-Seminar-1.synctex.gz
 Group Project/svg-inkscape/LogPhyModel_image_svg-tex.pdf_tex
 Group Project/university_db_dump.sql.bak
+*.pdf_tex
+Group Project/LogPhyModel.svg
+*.pdf
+*.pygtex
