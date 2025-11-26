@@ -45,7 +45,7 @@ It is furthermore declared that the solution below is a contribution by the proj
 The task at hand is to design and create a database capable of describing a universities course system. There has to exist a course layout that describes the course code, course name, how many points the course is worth, the minimum and maximum amount of students. A course instance is needed to track the total amount of students registered and in which period the course is given in for example P1, P2, P3, P4. Each course has many different teaching activites such as lectures, labs, tutorials and seminars. Every teaching activity requires a diffrerent amount of time for the teacher to prepare (multiplication factor) which has to be included in the database. Every course has a varying amount of time for each teaching activity which also has to be considered in the database. The last things are the different departments with their manager (who is also an employee) and the teachers/employees themselves. An employee or teacher works at a department and must have contact details, salary, teaching activites based on skill set, job title and their supervisor/manager. Each teacher can be involved in many teaching activites for multiple different course instances and each course instance can have multiple teachers involved at once. However, a teacher can only be in up to four course instances in a single period.
 \bigskip
 \\
-The final database has to be able to handle all the affermentioned details from the university and be flexible enough to add more  teaching activites later on. It must also be possible to add different course versions of the same course layout to to have a 15hp course aswell as a 7.5hp for the same course.
+The final database has to be able to handle all the affermentioned details from the university and be flexible enough to add more  teaching activites later on. It must also be possible to add different course versions of the same course layout to have a 15hp course aswell as a 7.5hp for the same course.
 \bigskip
 \\
 A university customer would have to specify which operations the database must handle but for a general solution the operations are defined as follows:
@@ -83,7 +83,7 @@ The method of creating a database starts by creating a miniworld of reality that
 After each step is completed the model is complete and the tool used to make the model Astah professional is able to generate a rough SQL dump. Finalizing the database is done by adding UNIQUE to the correct attributes and adding foreign key constraints ON DELETE.
 \bigskip
 \\
-When the schema has been defined a process of adding data has to be added and then some SQL operations can be performed on the model to see that all the data that should be accesable is. 
+When the schema has been defined a process of adding data has to be added and then some SQL operations can be performed on the model to see that all the data that should be accessible is. 
 \section{Result}
 Generating a simple logical model with just tables and attributes directly from the conceptual model generated the basis for the finished logical model.
 A finalized version of the entire logical model can be seen in figure \ref{fig:image_of_logical_physical_model}
@@ -135,6 +135,7 @@ CREATE TABLE employee (
 \end{minted}
   \end{center}
 \end{figure}
+\\
 Finally some SQL queries were used to validate the operations define in the introduction. The first operation is not overloading a teacher. This would be solved by a trigger in the database which uses the max\_allowed\_courses but triggers are not necessary for this database. All of the operations are possible to perform. Finding which employee gave which activity for which course instance is recorded in the employee\_load\_allocation table. Teaching activity allows for more inserts and the employee salary is possible to update. Planned activity stores the hours for each activity in a course which fulfills that requirement. Employee\_load\_allocation has foreign keys for employees and teaching activites so the teacher will be linked to a certain activity.
 
 \section{Discussion}

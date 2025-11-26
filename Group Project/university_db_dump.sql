@@ -126,5 +126,3 @@ CREATE TABLE employee_load_allocation (
  FOREIGN KEY (teaching_activity_id, course_instance_id) REFERENCES planned_activity (teaching_activity_id,course_instance_id) ON DELETE CASCADE,
  FOREIGN KEY (employee_id) REFERENCES employee (id) ON DELETE NO ACTION
 );
-
-
