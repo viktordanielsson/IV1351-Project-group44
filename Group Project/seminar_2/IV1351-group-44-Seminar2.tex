@@ -62,12 +62,12 @@ Higher grade criteria is met when the tasks have been evaluted based on their fr
 \end{enumerate}
 They are then evalutated based on whether they should be given indices and/or turned into materialized views. This is considered based on their respective query frequency, expected data size, freshness etc. Lastly the improvments will be analyzed and compared against their previous implementation to see performance gains and reason around the benefits/downsides of the new implementation.
 \section{Literature Study}
-For this seminar sql is needed to understand how the queries are formulated. For this chapters 3-5 were read in foundations of database systems and the lecture on SQL was read. Lastly, the tips and tricks for seminar 2 was used to further understand some concepts.
+For this seminar, SQL is needed to understand how the queries are formulated. For this chapters 3-5 were read in foundations of database systems and the lecture on SQL was read. Lastly, the tips and tricks for seminar 2 was used to further understand some concepts.
 \section{Method}
-Writing a SQL query based on a written task is done by understanding what data is needed to fulfill the task. By joining tables together and filtering its content or by performing artihmetic operations the queries can be combined into a operation much more complex. The analysis of a given query will be performed by EXPLAIN ANALYZe which returns the time to perform the query. 
+Writing a SQL query based on a written task is done by understanding what data is needed to fulfill the task. By joining tables together and filtering its content or by performing artihmetic operations the queries can be combined into a operation much more complex. The analysis of a given query will be performed by EXPLAIN \(ANALYSE TIMING ON\) which returns the time to perform each node in the query.
 \bigskip
 \\
-Evaluating the need for indices and materialized views is based on how complex and often the  query has to be performed. Where a slow, complex and often used query should be optimsed with indices for speed and a materialized view to ease the use of the query. 
+Evaluating the need for indices and materialized views is based on how complex a query is and how often it is performed. Where a slow, complex and often used query should be optimsed with indices for speed and a materialized view to ease the use of the query. 
 \section{Result}
 A query for calculating the total planned hours for the current years course instances is written by first joining all relevant tables together. In this scenario tables \_\_\_\_\_\_ where needed and where joined together with \_\_\_\_\_\_. Then by filtering by the current year and summing together the hours the final total hours column can be correctly written.
 \bigskip
@@ -76,6 +76,73 @@ The second query is done by again analysing which tables are needed to perform t
 \bigskip
 \\
 A teacher is found in the employee table and their allocated activites in the Employee\_load\_allocation table. Then by
+
+\begin{minted}
+[
+frame=lines,
+framesep=2mm,
+baselinestretch=0.4,
+fontsize=\tiny
+]
+{SQL}
+QUERY PLAN                                                                            
+--------------------------------------------------------------------------------------------------------------
+Sort(cost=23.55..23.63 rows=34 width=123)
+        (actual time=2.859..2.868 rows=34 loops=1)
+  Sort Key: ci.instance_id
+  Sort Method: quicksort  Memory: 29kB
+  ->  Hash Join (cost=17.86..22.68 rows=34 width=123)
+                (actual time=1.188..1.582 rows=34 loops=1)
+        Hash Cond: ((ci.instance_id)::text = (activity_hours.instance_id)::text)
+        ->  Hash Join   (cost=2.63..4.20 rows=34 width=37)
+                        (actual time=0.613..0.657 rows=34 loops=1)
+              Hash Cond: (cl.course_id = c.id)
+              ->  Hash Join (cost=1.36..2.81 rows=34 width=34)
+                            (actual time=0.097..0.124 rows=34 loops=1)
+                    Hash Cond: (ci.course_layout_id = cl.id)
+                    ->  Seq Scan on course_instance ci  (cost=0.00..1.34 rows=34 width=26)
+                                                        (actual time=0029..0.034 rows=34 loops=1)
+                    ->  Hash    (cost=1.16..1.16 rows=16 width=16)
+                                (actual time=0.035..0.036 rows=16 loops=1)
+                          Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                          ->  Seq Scan on course_layout cl  (cost=0.00..1.16 rows=16 width=16)
+                                                            (actualtime=0.018..0.022 rows=16 loops=1)
+              ->  Hash  (cost=1.12..1.12 rows=12 width=11)
+                        (actual time=0.499..0.500 rows=12 loops=1)
+                    Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                    ->  Seq Scan on course c  (cost=0.00..1.12 rows=12 width=11)
+                                              (actual time=0.043..0.049rows=12 loops=1)
+        ->  Hash  (cost=14.81..14.81 rows=34 width=47)
+                    (actual time=0.517..0.520 rows=34 loops=1)
+              Buckets: 1024  Batches: 1  Memory Usage: 11kB
+              ->  Subquery Scan on activity_hours   (cost=14.13..14.81 rows=34 width=47)
+                                                    (actual time=0.469.0.490 rows=34 loops=1)
+                    ->  HashAggregate   (cost=14.13..14.47 rows=34 width=47)
+                                        (actual time=0.468..0.482rows=34 loops=1)
+                          Group Key: ci_1.instance_id
+                          Batches: 1  Memory Usage: 24kB
+                          ->  Hash Join  (cost=2.88..6.90 rows=170 width=36)
+                                         (actual time=0.144..0.321  rows=170 loops=1)
+                                Hash Cond: (pa.teaching_activity_id = ta.id)
+                                ->  Hash Join  (cost=1.77..4.97 rows=170 width=23) 
+                                               (actual time=0.089..0.198 rows=170 loops=1)
+                                      Hash Cond: (pa.course_instance_id = ci_1.id)
+                                      ->  Seq Scan on planned_activity pa   (cost=0.00..2.70 rows=170width=12)
+                                                                            (actual time=0.018..0.039 rows=170 loops=1)
+                                      ->  Hash  (cost=1.34..1.34 rows=34 width=19)
+                                                (actual time=0.027..0.028 rows=34 loops=1)
+                                            Buckets: 1024  Batches: 1  Memory Usage: 10kB
+                                            ->  Seq Scan on course_instance ci_1    (cost=0.00..1.34 rows=34width=19)
+                                                                                    (actual time=0.006..0.013 rows=34 loops=1)
+                                ->  Hash    (cost=1.05..1.05 rows=5 width=21)
+                                            (actual time=0.032..0.032 rows=5loops=1)
+                                    Buckets: 1024  Batches: 1  Memory Usage: 9kB
+                                    ->  Seq Scan on teaching_activity ta    (cost=0.00..1.05 rows=5width=21)
+                                                                            (actual time=0.021..0.022 rows=5 loops=1)
+Planning Time: 3.169 ms
+Execution Time: 3.259 ms
+(35 rows)
+\end{minted}
 \section{Discussion}
 
 \section{Comments About the Course}

@@ -120,7 +120,7 @@ CREATE TABLE employee_load_allocation (
  teaching_activity_id INT NOT NULL,
  course_instance_id INT NOT NULL,
  employee_id INT NOT NULL,
-
+ allocated_hours DOUBLE PRECISION DEFAULT 0.0 NOT NULL,
  PRIMARY KEY (teaching_activity_id,course_instance_id,employee_id),
 
  FOREIGN KEY (teaching_activity_id, course_instance_id) REFERENCES planned_activity (teaching_activity_id,course_instance_id) ON DELETE CASCADE,
