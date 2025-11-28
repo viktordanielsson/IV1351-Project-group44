@@ -200,7 +200,7 @@ JOIN (
     JOIN employee e ON e.id = ela.employee_id
     JOIN person p ON p.id = e.person_id 
     JOIN job_title jt ON jt.id = e.job_title_id
-    WHERE (p.first_name = 'Rebecca' AND p.last_name = 'Sandström')
+    WHERE (p.first_name = 'Annika' AND p.last_name = 'Lindahl')
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
 ORDER BY ci.instance_id;

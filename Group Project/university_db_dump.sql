@@ -80,7 +80,6 @@ CREATE TABLE employee (
  salary INT NOT NULL,
  person_id  INT NOT NULL,
  department_id INT NOT NULL,
- max_allowed_courses INT NOT NULL,
  job_title_id INT NOT NULL,
  manager_id VARCHAR(200),
 
@@ -114,7 +113,6 @@ CREATE TABLE planned_activity (
  FOREIGN KEY (course_instance_id) REFERENCES course_instance (id)
 );
 
-
 DROP TABLE employee_load_allocation CASCADE;
 CREATE TABLE employee_load_allocation (
  teaching_activity_id INT NOT NULL,
@@ -126,3 +124,59 @@ CREATE TABLE employee_load_allocation (
  FOREIGN KEY (teaching_activity_id, course_instance_id) REFERENCES planned_activity (teaching_activity_id,course_instance_id) ON DELETE CASCADE,
  FOREIGN KEY (employee_id) REFERENCES employee (id) ON DELETE NO ACTION
 );
+
+DROP TABLE university_constants CASCADE;
+CREATE TABLE university_constants (
+ constant_name VARCHAR(40) NOT NULL UNIQUE,
+ constant_value DOUBLE PRECISION, 
+
+ PRIMARY KEY (constant_name)
+);
+
+
+
+CREATE TRIGGER limit_allowed_courses
+AFTER INSERT ON employee_load_allocation
+FOR EACH ROW
+EXECUTE FUNCTION check_max_courses();
+
+CREATE OR REPLACE FUNCTION check_max_courses() RETURNS TRIGGER AS $$
+DECLARE
+    course_count INT;
+    max_allowed INT;
+    emp_study_year CHAR(4);
+    emp_study_period VARCHAR(200);
+BEGIN
+    SELECT ci.study_year, ci.study_period
+    INTO emp_study_year, emp_study_period
+    FROM course_instance ci
+    WHERE ci.id = NEW.course_instance_id;
+
+    SELECT CAST(constant_value AS INT)
+    INTO max_allowed
+    FROM university_constants
+    WHERE constant_name = 'Max allowed courses';
+
+    SELECT COUNT(DISTINCT ci.id)
+    INTO course_count
+    FROM employee_load_allocation ela
+    JOIN planned_activity pa ON ela.teaching_activity_id = pa.teaching_activity_id
+        AND ela.course_instance_id = pa.course_instance_id
+    JOIN course_instance ci ON pa.course_instance_id = ci.id
+    WHERE ela.employee_id = NEW.employee_id
+    AND ci.study_year = emp_study_year
+    AND ci.study_period = emp_study_period
+    AND ci.id != NEW.course_instance_id;
+
+    IF course_count >= max_allowed teaching THEN
+        RAISE EXCEPTION 'Employee % already has % courses in % %. Cannot exceed % courses.',
+            NEW.employee_id, course_count, emp_study_year, emp_study_period, max_allowed;
+    END IF;
+
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+
+--CREATE TRIGGER derive_course_hours 
+--AFTER INSERT ON course_instance 

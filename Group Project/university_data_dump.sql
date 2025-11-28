@@ -1,3 +1,11 @@
+INSERT INTO university_constants (constant_name, constant_value) VALUES
+('Examination constant', 32),
+('Examination num_student constant', 0.725),
+('Admin constant', 28),
+('Admin num_student constant', 0.2),
+('Admin HP constant', 2),
+('Max allowed courses', 4);
+
 INSERT INTO person ( personal_number, first_name, last_name, phone_number, address) VALUES
 ('199203154873', 'Anna', 'Svensson', '+46723541322', 'Bergsgatan 12, 113 45 Stockholm'),
 ('198711098452', 'Lars', 'Johansson', '+46855221978', 'Storgatan 8, 411 24 Göteborg'),
@@ -80,65 +88,65 @@ INSERT INTO department (department_name, manager_id) VALUES
 ('Information Systems Department', NULL);
 
 -- === DEPARTMENT 1: 9 employees (1 manager) ===
-INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
-('EMP10001', 72000, 1, 1, 4, 3, NULL),
-('EMP10002', 54000, 2, 1, 3, 7, 'EMP10001'),
-('EMP10003', 51000, 3, 1, 2, 4, 'EMP10001'),
-('EMP10004', 60000, 4, 1, 5, 6, 'EMP10001'),
-('EMP10005', 58000, 5, 1, 4, 2, 'EMP10001'),
-('EMP10006', 49000, 6, 1, 2, 1, 'EMP10001'),
-('EMP10007', 63000, 7, 1, 6, 8, 'EMP10001'),
-('EMP10008', 52000, 8, 1, 3, 5, 'EMP10001'),
-('EMP10009', 56000, 9, 1, 4, 9, 'EMP10001');
+INSERT INTO employee (employment_id, salary, person_id, department_id, job_title_id, manager_id) VALUES
+('EMP10001', 72000, 1, 1, 3, NULL),
+('EMP10002', 54000, 2, 1, 7, 'EMP10001'),
+('EMP10003', 51000, 3, 1, 4, 'EMP10001'),
+('EMP10004', 60000, 4, 1, 6, 'EMP10001'),
+('EMP10005', 58000, 5, 1, 2, 'EMP10001'),
+('EMP10006', 49000, 6, 1, 1, 'EMP10001'),
+('EMP10007', 63000, 7, 1, 8, 'EMP10001'),
+('EMP10008', 52000, 8, 1, 5, 'EMP10001'),
+('EMP10009', 56000, 9, 1, 9, 'EMP10001');
 
 
 -- === DEPARTMENT 2: 9 employees (1 manager) ===
-INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
-('EMP20001', 76000, 10, 2, 5, 2, NULL),
-('EMP20002', 53000, 11, 2, 3, 1, 'EMP20001'),
-('EMP20003', 61000, 12, 2, 4, 8, 'EMP20001'),
-('EMP20004', 48000, 13, 2, 2, 5, 'EMP20001'),
-('EMP20005', 57000, 14, 2, 3, 3, 'EMP20001'),
-('EMP20006', 62000, 15, 2, 5, 7, 'EMP20001'),
-('EMP20007', 51000, 16, 2, 2, 10, 'EMP20001'),
-('EMP20008', 55000, 17, 2, 3, 4, 'EMP20001'),
-('EMP20009', 59000, 18, 2, 4, 9, 'EMP20001');
+INSERT INTO employee (employment_id, salary, person_id, department_id, job_title_id, manager_id) VALUES
+('EMP20001', 76000, 10, 2, 2, NULL),
+('EMP20002', 53000, 11, 2, 1, 'EMP20001'),
+('EMP20003', 61000, 12, 2, 8, 'EMP20001'),
+('EMP20004', 48000, 13, 2, 5, 'EMP20001'),
+('EMP20005', 57000, 14, 2, 3, 'EMP20001'),
+('EMP20006', 62000, 15, 2, 7, 'EMP20001'),
+('EMP20007', 51000, 16, 2, 10, 'EMP20001'),
+('EMP20008', 55000, 17, 2, 4, 'EMP20001'),
+('EMP20009', 59000, 18, 2, 9, 'EMP20001');
 
 -- === DEPARTMENT 3: 9 employees (1 manager) ===
-INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
-('EMP30001', 78000, 19, 3, 5, 6, NULL),
-('EMP30002', 54000, 20, 3, 3, 2, 'EMP30001'),
-('EMP30003', 60000, 21, 3, 4, 7, 'EMP30001'),
-('EMP30004', 49000, 22, 3, 2, 1, 'EMP30001'),
-('EMP30005', 52000, 23, 3, 3, 4, 'EMP30001'),
-('EMP30006', 56000, 24, 3, 4, 8, 'EMP30001'),
-('EMP30007', 63000, 25, 3, 6, 5, 'EMP30001'),
-('EMP30008', 58000, 26, 3, 4, 10, 'EMP30001'),
-('EMP30009', 51000, 27, 3, 3, 3, 'EMP30001');
+INSERT INTO employee (employment_id, salary, person_id, department_id, job_title_id, manager_id) VALUES
+('EMP30001', 78000, 19, 3, 6, NULL),
+('EMP30002', 54000, 20, 3, 2, 'EMP30001'),
+('EMP30003', 60000, 21, 3, 7, 'EMP30001'),
+('EMP30004', 49000, 22, 3, 1, 'EMP30001'),
+('EMP30005', 52000, 23, 3, 4, 'EMP30001'),
+('EMP30006', 56000, 24, 3, 8, 'EMP30001'),
+('EMP30007', 63000, 25, 3, 5, 'EMP30001'),
+('EMP30008', 58000, 26, 3, 10, 'EMP30001'),
+('EMP30009', 51000, 27, 3, 3, 'EMP30001');
 
 -- === DEPARTMENT 4: 9 employees (1 manager) ===
-INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
-('EMP40001', 75000, 28, 4, 5, 9, NULL),
-('EMP40002', 54000, 29, 4, 3, 7, 'EMP40001'),
-('EMP40003', 58000, 30, 4, 4, 6, 'EMP40001'),
-('EMP40004', 62000, 31, 4, 5, 8, 'EMP40001'),
-('EMP40005', 50000, 32, 4, 2, 2, 'EMP40001'),
-('EMP40006', 53000, 33, 4, 3, 4, 'EMP40001'),
-('EMP40007', 57000, 34, 4, 4, 5, 'EMP40001'),
-('EMP40008', 64000, 35, 4, 6, 1, 'EMP40001'),
-('EMP40009', 59500, 36, 4, 4, 3, 'EMP40001');
+INSERT INTO employee (employment_id, salary, person_id, department_id, job_title_id, manager_id) VALUES
+('EMP40001', 75000, 28, 4, 9, NULL),
+('EMP40002', 54000, 29, 4, 7, 'EMP40001'),
+('EMP40003', 58000, 30, 4, 6, 'EMP40001'),
+('EMP40004', 62000, 31, 4, 8, 'EMP40001'),
+('EMP40005', 50000, 32, 4, 2, 'EMP40001'),
+('EMP40006', 53000, 33, 4, 4, 'EMP40001'),
+('EMP40007', 57000, 34, 4, 5, 'EMP40001'),
+('EMP40008', 64000, 35, 4, 1, 'EMP40001'),
+('EMP40009', 59500, 36, 4, 3, 'EMP40001');
 
 -- === DEPARTMENT 5: 9 employees (1 manager) ===
-INSERT INTO employee (employment_id, salary, person_id, department_id, max_allowed_courses, job_title_id, manager_id) VALUES
-('EMP50001', 82000, 37, 5, 6, 10, NULL),
-('EMP50002', 60000, 38, 5, 4, 7, 'EMP50001'),
-('EMP50003', 53000, 39, 5, 3, 6, 'EMP50001'),
-('EMP50004', 51000, 40, 5, 2, 4, 'EMP50001'),
-('EMP50005', 58000, 41, 5, 4, 3, 'EMP50001'),
-('EMP50006', 62000, 42, 5, 5, 8, 'EMP50001'),
-('EMP50007', 56000, 43, 5, 3, 5, 'EMP50001'),
-('EMP50008', 59000, 44, 5, 4, 9, 'EMP50001'),
-('EMP50009', 54000, 45, 5, 3, 1, 'EMP50001');
+INSERT INTO employee (employment_id, salary, person_id, department_id, job_title_id, manager_id) VALUES
+('EMP50001', 82000, 37, 5, 10, NULL),
+('EMP50002', 60000, 38, 5, 7, 'EMP50001'),
+('EMP50003', 53000, 39, 5, 6, 'EMP50001'),
+('EMP50004', 51000, 40, 5, 4, 'EMP50001'),
+('EMP50005', 58000, 41, 5, 3, 'EMP50001'),
+('EMP50006', 62000, 42, 5, 8, 'EMP50001'),
+('EMP50007', 56000, 43, 5, 5, 'EMP50001'),
+('EMP50008', 59000, 44, 5, 9, 'EMP50001'),
+('EMP50009', 54000, 45, 5, 1, 'EMP50001');
 
 -- === Assign department managers === --
 UPDATE department SET manager_id = 'EMP10001' WHERE id = 1;
@@ -340,6 +348,15 @@ INSERT INTO course_layout (course_id, min_students, max_students, hp, version) V
 (11, 40, 140, 7.5, 1),
 (12, 30, 110, 7.5, 1);
 
+-- === Make teaching activities === --
+INSERT INTO teaching_activity (activity_name, factor) VALUES
+('Labs', 2.4),
+('Lectures', 3.6),
+('Tutorials', 2.4),
+('Seminars', 1.8),
+('Examination', 1.0),
+('Administration', 1.0);
+
 -- === Create instances === --
 INSERT INTO course_instance (course_layout_id, instance_id, num_students, study_year, study_period) VALUES
 -- Course layout 1 (IS1200 version 1)
@@ -407,13 +424,6 @@ INSERT INTO course_instance (course_layout_id, instance_id, num_students, study_
 -- Course layout 16 (IX1307 version 1)
 (16, 'IX1307_2024_P1', 67, '2024', 'P1'),
 (16, 'IX1307_2025_P1', 72, '2025', 'P1');
-
--- === Make teaching activities === --
-INSERT INTO teaching_activity (activity_name, factor) VALUES
-('Labs', 2.4),
-('Lectures', 3.6),
-('Tutorials', 2.4),
-('Seminars', 1.8);
 
 -- === Generate planned activities for each course_instance's 
 INSERT INTO planned_activity (teaching_activity_id, course_instance_id, planned_hours) VALUES
