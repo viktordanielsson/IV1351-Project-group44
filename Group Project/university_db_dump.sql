@@ -44,7 +44,6 @@ CREATE TABLE person (
  address VARCHAR(200) NOT NULL
 );
 
-
 DROP TABLE skill_set CASCADE;
 CREATE TABLE skill_set (
  id INT GENERATED ALWAYS AS IDENTITY NOT NULL PRIMARY KEY,
@@ -58,7 +57,7 @@ CREATE TABLE teaching_activity (
  activity_name  VARCHAR(20) NOT NULL UNIQUE,
  factor DOUBLE PRECISION NOT NULL
 );
-
+CREATE UNIQUE INDEX teaching_activity_index ON teaching_activity (id, activity_name);
 
 DROP TABLE course_instance CASCADE;
 CREATE TABLE course_instance (
@@ -71,7 +70,7 @@ CREATE TABLE course_instance (
 
  FOREIGN KEY (course_layout_id) REFERENCES course_layout (id) ON DELETE CASCADE
 );
-
+CREATE UNIQUE INDEX course_instance_index ON course_instance (instance_id, id, course_layout_id);
 
 DROP TABLE employee CASCADE;
 CREATE TABLE employee (
@@ -87,7 +86,6 @@ CREATE TABLE employee (
  FOREIGN KEY (department_id) REFERENCES department (id) ON DELETE NO ACTION,
  FOREIGN KEY (job_title_id) REFERENCES job_title (id) ON DELETE NO ACTION
 );
-
 
 DROP TABLE employee_skill_set CASCADE;
 CREATE TABLE employee_skill_set (
@@ -113,6 +111,7 @@ CREATE TABLE planned_activity (
  FOREIGN KEY (course_instance_id) REFERENCES course_instance (id)
 );
 
+
 DROP TABLE employee_load_allocation CASCADE;
 CREATE TABLE employee_load_allocation (
  teaching_activity_id INT NOT NULL,
@@ -124,6 +123,9 @@ CREATE TABLE employee_load_allocation (
  FOREIGN KEY (teaching_activity_id, course_instance_id) REFERENCES planned_activity (teaching_activity_id,course_instance_id) ON DELETE CASCADE,
  FOREIGN KEY (employee_id) REFERENCES employee (id) ON DELETE NO ACTION
 );
+CREATE UNIQUE INDEX ela_index ON employee_load_allocation (teaching_activity_id, course_instance_id, employee_id, allocated_hours);
+
+
 
 DROP TABLE university_constants CASCADE;
 CREATE TABLE university_constants (

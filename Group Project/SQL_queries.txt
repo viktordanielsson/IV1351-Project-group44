@@ -155,11 +155,11 @@ WHERE ci.instance_id = 'II1300_2024_P1'
 ORDER BY ci.instance_id;
 
 
---_____________________________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
---UPPGIFT 3
+UPPGIFT 3
 
---_____________________________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
 SELECT
     c.course_code AS "Course Code",
@@ -203,40 +203,40 @@ JOIN (
     JOIN employee e ON e.id = ela.employee_id
     JOIN person p ON p.id = e.person_id 
     JOIN job_title jt ON jt.id = e.job_title_id
-    WHERE (p.first_name = 'Alexander' AND p.last_name = 'Franzén')
+    WHERE (p.first_name = 'Joel' AND p.last_name = 'Falk')
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
 ORDER BY ci.instance_id;
 
---_____________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________________________________________________________________________
 
---UPPGIFT 4 
+UPPGIFT 4
 
---_____________________________________________________________________________________________________________________________________________________________________________________________
-
-SELECT 
-    e.employment_id AS "Employment ID",
-    CONCAT(p.first_name, ' ', p.last_name) AS "Teacher's name",
-    num_course_count.period AS "Period",
-    num_course_count.number_of_courses AS "No. of courses"
-FROM employee e
-JOIN person p 
-    ON p.id = e.person_id
-JOIN (
+_____________________________________________________________________________________________________________________________________________________________________________________________
+CREATE MATERIALIZED VIEW employee_active_courses AS
     SELECT 
-        ela.employee_id,
-        ci.study_period AS period,
-        COUNT(DISTINCT ci.id) AS number_of_courses
-    FROM employee_load_allocation ela
-    JOIN planned_activity pa
-        ON ela.teaching_activity_id = pa.teaching_activity_id
-        AND ela.course_instance_id = pa.course_instance_id
-    JOIN course_instance ci 
-        ON ci.id = pa.course_instance_id
-    WHERE ci.study_year = '2025'
-      AND ci.study_period = 'P1'
-    GROUP BY ela.employee_id, ci.study_period
-) AS num_course_count
-    ON e.id = num_course_count.employee_id
-    WHERE num_course_count.number_of_courses >= 1;
+        e.employment_id AS "Employment ID",
+        CONCAT(p.first_name, ' ', p.last_name) AS "Teacher's name",
+        num_course_count.period AS "Period",
+        num_course_count.number_of_courses AS "No. of courses"
+    FROM employee e
+    JOIN person p 
+        ON p.id = e.person_id
+    JOIN (
+        SELECT 
+            ela.employee_id,
+            ci.study_period AS period,
+            COUNT(DISTINCT ci.id) AS number_of_courses
+        FROM employee_load_allocation ela
+        JOIN planned_activity pa
+            ON ela.teaching_activity_id = pa.teaching_activity_id
+            AND ela.course_instance_id = pa.course_instance_id
+        JOIN course_instance ci 
+            ON ci.id = pa.course_instance_id
+        WHERE ci.study_year = EXTRACT(YEAR FROM CURRENT_DATE)::TEXT
+            AND ci.study_period = 'P1'
+        GROUP BY ela.employee_id, ci.study_period
+    ) AS num_course_count
+        ON e.id = num_course_count.employee_id
+        WHERE num_course_count.number_of_courses >= 1;
 
