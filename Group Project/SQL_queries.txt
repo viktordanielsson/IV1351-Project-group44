@@ -68,18 +68,17 @@ SELECT
     CAST(activity_hours."Lecture hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Tutorial hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Seminar hours" AS DECIMAL (5,1)),
-    -- Admin hours = 2*HP + 28 + 0.2*#Students
-    CAST((2 * cl.hp + 28 + 0.2 * ci.num_students) AS DECIMAL (5,1)) AS "Admin hours",
-    -- Examination hours = 32 + 0.725*#Students
-    CAST((32 + 0.725 * ci.num_students) AS DECIMAL (5,1)) AS "Examination hours",
+    CAST(activity_hours."Admin hours" AS DECIMAL(5,1)),
+    CAST(activity_hours."Exam hours" AS DECIMAL(5,1)),
+
     -- Total hours = Sum of all activity hours + Admin + Examination
     CAST((
         COALESCE(activity_hours."Lab hours", 0) +
         COALESCE(activity_hours."Lecture hours", 0) + 
         COALESCE(activity_hours."Tutorial hours", 0) +
         COALESCE(activity_hours."Seminar hours", 0) +
-        (2 * cl.hp + 28 + 0.2 * ci.num_students) +
-        (32 + 0.725 * ci.num_students)
+        COALESCE(activity_hours."Admin hours",0) +
+        COALESCE(activity_hours."Exam hours",0)
     ) AS DECIMAL (7,1)) AS "Total hours"
 FROM course c 
 JOIN course_layout cl ON cl.course_id = c.id
@@ -90,7 +89,9 @@ JOIN (
         MAX(CASE WHEN ta.activity_name = 'Labs' THEN pa.planned_hours * ta.factor END) AS "Lab hours",
         MAX(CASE WHEN ta.activity_name = 'Lectures' THEN pa.planned_hours * ta.factor END) AS "Lecture hours",
         MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN pa.planned_hours * ta.factor END) AS "Tutorial hours",
-        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours * ta.factor END) AS "Seminar hours"
+        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours * ta.factor END) AS "Seminar hours",
+        MAX(CASE WHEN ta.activity_name = 'Administration' THEN pa.planned_hours * ta.factor END) AS "Admin hours",
+        MAX(CASE WHEN ta.activity_name = 'Examination' THEN pa.planned_hours * ta.factor END) AS "Exam hours"
     FROM course_instance ci
     JOIN planned_activity pa ON ci.id = pa.course_instance_id
     JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
@@ -115,18 +116,17 @@ SELECT
     CAST(activity_hours."Lecture hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Tutorial hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Seminar hours" AS DECIMAL (5,1)),
-    --Admin hours = 2*HP + 28 + 0.2*#Students
-    CAST((2 * cl.hp + 28 + 0.2 * ci.num_students) AS DECIMAL (5,1)) AS "Admin hours",
-    --Examination hours = 32 + 0.725*#Students
-    CAST((32 + 0.725 * ci.num_students) AS DECIMAL (5,1)) AS "Examination hours",
+    CAST(activity_hours."Admin hours" AS DECIMAL(5,1)),
+    CAST(activity_hours."Exam hours" AS DECIMAL(5,1)),
+
     -- Total hours = Sum of all activity hours + Admin + Examination
     CAST((
         COALESCE(activity_hours."Lab hours", 0) +
         COALESCE(activity_hours."Lecture hours", 0) + 
         COALESCE(activity_hours."Tutorial hours", 0) +
         COALESCE(activity_hours."Seminar hours", 0) +
-        (2 * cl.hp + 28 + 0.2 * ci.num_students) +
-        (32 + 0.725 * ci.num_students)
+        COALESCE(activity_hours."Admin hours", 0) +
+        COALESCE(activity_hours."Exam hours", 0)
     ) AS DECIMAL (7,1)) AS "Total hours"
 FROM course c 
 JOIN course_layout cl ON cl.course_id = c.id
@@ -139,7 +139,9 @@ JOIN (
         MAX(CASE WHEN ta.activity_name = 'Labs' THEN ela.allocated_hours END) AS "Lab hours",
         MAX(CASE WHEN ta.activity_name = 'Lectures' THEN ela.allocated_hours END) AS "Lecture hours",
         MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN ela.allocated_hours END) AS "Tutorial hours",
-        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN ela.allocated_hours END) AS "Seminar hours"
+        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN ela.allocated_hours END) AS "Seminar hours",
+        MAX(CASE WHEN ta.activity_name = 'Examination' THEN ela.allocated_hours END) AS "Exam hours",
+        MAX(CASE WHEN ta.activity_name = 'Administration' THEN ela.allocated_hours END) AS "Admin hours"
     FROM course_instance ci
     JOIN employee_load_allocation ela ON (ela.course_instance_id = ci.id)
     JOIN teaching_activity ta ON ta.id = ela.teaching_activity_id
@@ -149,15 +151,15 @@ JOIN (
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours 
 ON ci.instance_id = activity_hours.instance_id
-WHERE ci.instance_id = 'IV1351_2025_P3'
+WHERE ci.instance_id = 'II1300_2024_P1'
 ORDER BY ci.instance_id;
 
 
-_____________________________________________________________________________________________________________________________________________________________________________________________
+--_____________________________________________________________________________________________________________________________________________________________________________________________
 
-UPPGIFT 3
+--UPPGIFT 3
 
-_____________________________________________________________________________________________________________________________________________________________________________________________
+--_____________________________________________________________________________________________________________________________________________________________________________________________
 
 SELECT
     c.course_code AS "Course Code",
@@ -169,18 +171,17 @@ SELECT
     CAST(activity_hours."Lecture hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Tutorial hours" AS DECIMAL (5,1)),
     CAST(activity_hours."Seminar hours" AS DECIMAL (5,1)),
-    --Admin hours = 2*HP + 28 + 0.2*#Students
-    CAST((2 * cl.hp + 28 + 0.2 * ci.num_students) AS DECIMAL (5,1)) AS "Admin hours",
-    --Examination hours = 32 + 0.725*#Students
-    CAST((32 + 0.725 * ci.num_students) AS DECIMAL (5,1)) AS "Examination hours",
+    CAST(activity_hours."Admin hours" AS DECIMAL(5,1)),
+    CAST(activity_hours."Exam hours" AS DECIMAL(5,1)),
+
     -- Total hours = Sum of all activity hours + Admin + Examination
     CAST((
         COALESCE(activity_hours."Lab hours", 0) +
         COALESCE(activity_hours."Lecture hours", 0) + 
         COALESCE(activity_hours."Tutorial hours", 0) +
         COALESCE(activity_hours."Seminar hours", 0) +
-        (2 * cl.hp + 28 + 0.2 * ci.num_students) +
-        (32 + 0.725 * ci.num_students)
+        COALESCE(activity_hours."Admin hours",0) +
+        COALESCE(activity_hours."Exam hours",0)
     ) AS DECIMAL (7,1)) AS "Total hours"
 FROM course c 
 JOIN course_layout cl ON cl.course_id = c.id
@@ -193,14 +194,49 @@ JOIN (
         MAX(CASE WHEN ta.activity_name = 'Labs' THEN ela.allocated_hours END) AS "Lab hours",
         MAX(CASE WHEN ta.activity_name = 'Lectures' THEN ela.allocated_hours END) AS "Lecture hours",
         MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN ela.allocated_hours END) AS "Tutorial hours",
-        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN ela.allocated_hours END) AS "Seminar hours"
+        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN ela.allocated_hours END) AS "Seminar hours",
+        MAX(CASE WHEN ta.activity_name = 'Administration' THEN ela.allocated_hours END) AS "Exam hours",
+        MAX(CASE WHEN ta.activity_name = 'Examination' THEN ela.allocated_hours END) AS "Admin hours"
     FROM course_instance ci
     JOIN employee_load_allocation ela ON (ela.course_instance_id = ci.id)
     JOIN teaching_activity ta ON ta.id = ela.teaching_activity_id
     JOIN employee e ON e.id = ela.employee_id
     JOIN person p ON p.id = e.person_id 
     JOIN job_title jt ON jt.id = e.job_title_id
-    WHERE (p.first_name = 'Annika' AND p.last_name = 'Lindahl')
+    WHERE (p.first_name = 'Alexander' AND p.last_name = 'Franzén')
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
 ORDER BY ci.instance_id;
+
+--_____________________________________________________________________________________________________________________________________________________________________________________________
+
+--UPPGIFT 4 
+
+--_____________________________________________________________________________________________________________________________________________________________________________________________
+
+SELECT 
+    e.employment_id AS "Employment ID",
+    CONCAT(p.first_name, ' ', p.last_name) AS "Teacher's name",
+    num_course_count.period AS "Period",
+    num_course_count.number_of_courses AS "No. of courses"
+FROM employee e
+JOIN person p 
+    ON p.id = e.person_id
+JOIN (
+    SELECT 
+        ela.employee_id,
+        ci.study_period AS period,
+        COUNT(DISTINCT ci.id) AS number_of_courses
+    FROM employee_load_allocation ela
+    JOIN planned_activity pa
+        ON ela.teaching_activity_id = pa.teaching_activity_id
+        AND ela.course_instance_id = pa.course_instance_id
+    JOIN course_instance ci 
+        ON ci.id = pa.course_instance_id
+    WHERE ci.study_year = '2025'
+      AND ci.study_period = 'P1'
+    GROUP BY ela.employee_id, ci.study_period
+) AS num_course_count
+    ON e.id = num_course_count.employee_id
+    WHERE num_course_count.number_of_courses >= 1;
+

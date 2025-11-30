@@ -158,4 +158,13 @@ There are multiple ways of implementing max\_allowed\_courses. For this database
 \section{Comments About the Course}
 The time invested to the project were six, five hour sessions so in total 30 hours to complete the project.  
 
+\section{Changes for seminar 4}
+After the feedback from seminar 1, a change had to be made for how max\_allowed\_courses were stored in the database. The first solution does work if teachers can have a varying amount of courses allowed but that implementation is beyond the requirements of this database. So the other solution was to create a lookup table which contains all constants in the database such as max\_allowed\_courses. The constants table has a name for the constant and a value for the constant which then removes the max\_allowed\_courses from employees and is instead stored in the table. The trigger for ensuring  how many courses a single employee is allocated to in a single study period for a given study year was also added to work better with seminar 2. The changes are visible on \href{https://github.com/viktordanielsson/IV1351-Project-group44/blob/main/Group%20Project/university_db_dump.sql}{github} 
+\begin{figure}[h!]
+  \begin{center}
+    \includesvg[width=\textwidth]{LogPhyModelSEM1SEM4.svg}
+    \caption{A complete image of the logical and physical model}
+    \label{fig:image_of_new_model}
+  \end{center}
+\end{figure}
 \end{document}
