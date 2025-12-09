@@ -241,15 +241,25 @@ BEGIN
     FROM teaching_activity t 
     WHERE t.activity_name = 'Administration';
 
-    INSERT INTO planned_activity(course_instance_id, teaching_activity_id, planned_hours)
-    VALUES
-    (NEW.id, examination_id, examination_constant + examination_num_student_constant * NEW.num_students),
-    (NEW.id, admin_id, admin_hp_constant*course_hp + admin_constant + admin_num_student_constant*NEW.num_students);
+    IF (TG_OP = 'UPDATE') THEN
+            UPDATE planned_activity 
+            SET planned_hours = admin_hp_constant*course_hp + admin_constant + admin_num_student_constant*NEW.num_students 
+            WHERE course_instance_id = NEW.id AND teaching_activity_id = admin_id;
+            
+            UPDATE planned_activity 
+            SET planned_hours = examination_constant + examination_num_student_constant * NEW.num_students 
+            WHERE course_instance_id = NEW.id AND teaching_activity_id = examination_id;
+    ELSE
+            INSERT INTO planned_activity(course_instance_id, teaching_activity_id, planned_hours)
+            VALUES
+                (NEW.id, examination_id, examination_constant + examination_num_student_constant * NEW.num_students),
+                (NEW.id, admin_id, admin_hp_constant*course_hp + admin_constant + admin_num_student_constant*NEW.num_students);
+        END IF;
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
 
 CREATE TRIGGER derive_course_instance_hours 
-AFTER INSERT ON course_instance
+AFTER INSERT OR UPDATE ON course_instance 
 FOR ROW
 EXECUTE FUNCTION derive_hours();
