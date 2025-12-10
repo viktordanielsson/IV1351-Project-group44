@@ -9,7 +9,7 @@ public enum Command {
     /**
      * Lists all existing accounts.
      */
-    LIST,
+    ADD,
     /**
      * Deletes the specified account.
      */

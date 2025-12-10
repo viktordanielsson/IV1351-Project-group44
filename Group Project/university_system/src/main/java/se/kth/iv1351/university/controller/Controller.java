@@ -3,14 +3,19 @@ package se.kth.iv1351.university.controller;
 import java.util.List;
 
 import se.kth.iv1351.university.integration.UniversityDAO;
-
+import se.kth.iv1351.university.integration.UniversityDBException;
+import se.kth.iv1351.university.model.Cost;
+import se.kth.iv1351.university.model.CostDTO;
 import se.kth.iv1351.university.model.EmployeeAllocation;
 public class Controller {
     private final UniversityDAO uniDB;
-    private final int TEACHER_PLANNED_SALARY = 300;
 
-    public Controller(){
-        uniDB = new UniversityDAO();
+    public Controller() throws UniversityDBException{
+        try {
+            uniDB = new UniversityDAO();
+        } catch (Exception e) {
+            throw new UniversityDBException("null");
+        }
     }
 
     public void getAllEmployees(){
@@ -19,37 +24,62 @@ public class Controller {
 
 
     //TASK 1 
-    public String calculateTeachingCost(String studyYear, String studyPeriod, String courseCode){
-        List<EmployeeAllocation> employeeAllocations = uniDB.findEmployeeAllocationByPeriodYearCourseCode(studyYear,studyPeriod,courseCode);
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("Course Code\t Course Instance\tPeriod\tplanned cost\t actual cost\n");
-        sb.append(courseCode+"\t\t "+
-        employeeAllocations.getFirst().getActivity().getCourseInstanceId()+"\t\t "+
-        studyPeriod+"\t");  
-
-        int plannedCost = 0;
-        int actualCost = 0;
-
-        for (EmployeeAllocation allocation : employeeAllocations) {
-            plannedCost += allocation.getActivity().getPlannedHours()*TEACHER_PLANNED_SALARY ;
-            actualCost += allocation.getEmployee().getSalary()*allocation.getHoursAllocated();
+    public CostDTO calculateTeachingCost(String studyYear, String studyPeriod, String courseCode)
+    throws UniversityDBException
+    {
+        try {
+            List<EmployeeAllocation> employeeAllocations = uniDB.readEmployeeAllocationByPeriodYearCourseCode(studyYear,studyPeriod,courseCode);
+            CostDTO costDTO = new Cost(employeeAllocations);
+            return costDTO;
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
         }
-
-        sb.append(plannedCost+ "\t\t   "+actualCost);
-
-        return sb.toString();
     }
     
 
     //TASK 2
-    public String modifyCourseInstanceStudentNumber(String studyYear, String studyPeriod, String courseCode, int modifyAmount){
-        uniDB.updateCourseInstanceNumberOfStudents(studyYear, studyPeriod, courseCode, modifyAmount);
+    public String modifyCourseInstanceStudentNumber(String studyYear, String studyPeriod, String courseCode, int modifyAmount)
+    throws UniversityDBException
+    {
+        try {
+            uniDB.updateCourseInstanceNumberOfStudents(studyYear, studyPeriod, courseCode, modifyAmount);
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
+        }
         return "Update executed";
     }
 
     //TASK 3
-    public void allocatedTeacherToCourseInstance(String studyYear, String studyPeriod, String courseCode, String employmentId, String activityName, double hoursAllocated){  
-        uniDB.createEmployeeAllocation(studyYear, studyPeriod, courseCode, employmentId, activityName);
+    public String allocatedTeacherToCourseInstance(String studyYear, String studyPeriod, String courseCode, String activityName, String employmentId, double hoursAllocated)
+    throws UniversityDBException {  
+        try {
+            uniDB.createEmployeeAllocation(studyYear, studyPeriod, courseCode, activityName, employmentId, hoursAllocated);
+            return "Employee allocated";
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
+        } 
+    }
+
+    public String deallocateTeacherToCourseActivity(String studyYear, String studyPeriod, String courseCode, String activityName,String employmentId)
+    throws UniversityDBException
+    {
+        try {
+            uniDB.deleteEmployeeAllocation(studyYear, studyPeriod, courseCode, activityName, employmentId);
+            return "Deletion completed";
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
+        }
+    }
+
+    //TASK 4
+    public String addNewTeachingActivity(String activityName, double factor)
+    throws UniversityDBException
+    {
+        try {
+            uniDB.createTeachingActivity(activityName, factor);
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
+        }
+        return "";
     }
 }

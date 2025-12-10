@@ -1,9 +1,11 @@
 package se.kth.iv1351.university.view;
 
 import se.kth.iv1351.university.controller.Controller;
+import se.kth.iv1351.university.model.CostDTO;
+
 import java.util.Scanner;
 
-public class BlockingInterpreter {
+public class BlockingInterpreter{
     private static final String PROMPT = "> ";
     private final Scanner console = new Scanner(System.in);
     private Controller ctrl;
@@ -47,49 +49,34 @@ public class BlockingInterpreter {
                     case QUIT:
                         keepReceivingCmds = false;
                         break;
-                    case COST:
-                        System.out.println(ctrl.calculateTeachingCost(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2)));
-                        /*ctrl.createAccount(cmdLine.getParameter(0));*/
+                    case COST:                      // YEAR                                PERIOD                           COURSECODE
+                        String[] userInputs = {cmdLine.getParameter(0), cmdLine.getParameter(1), cmdLine.getParameter(2)};
+                        CostDTO cost = ctrl.calculateTeachingCost(userInputs[0],userInputs[1],userInputs[2]);
+                        StringBuilder sb = new StringBuilder();
+                        sb.append("Course Code\t Course Instance\tPeriod\tplanned cost\t actual cost\n");
+                        sb.append(userInputs[2]+"\t\t "+
+                        cost.getCourseInstanceId()+"\t\t"+
+                        userInputs[1]+"\t");  
+
+                        sb.append(cost.getPlannedCost()+ "\t "+cost.getActualCost());
+                        System.out.println(sb);
                         break;
-                    case DELETE:
-                                /*ctrl.deleteAccount(cmdLine.getParameter(0)); */   
-                    break;
-                    case LIST:
-                        /* List<? extends AccountDTO> accounts = null;
-                        if (cmdLine.getParameter(0).equals("")) {
-                            accounts = ctrl.getAllAccounts();
-                        } else {
-                            accounts = ctrl.getAccountsForHolder(cmdLine.getParameter(0));
-                        }
-                        for (AccountDTO account : accounts) {
-                            System.out.println("acct no: " + account.getAccountNo() + ", "
-                                            + "holder: " + account.getHolderName() + ", "
-                                            + "balance: " + account.getBalance());
-                        } */
+
+                    case ADD:                               //ACTIVITYNAME                                  FACTOR
+                        ctrl.addNewTeachingActivity(cmdLine.getParameter(0), Double.parseDouble(cmdLine.getParameter(1)));
+  
                         break;
-                    case MODIFY:
-                        System.out.println(ctrl.modifyCourseInstanceStudentNumber("2025","P1","IS1200",1000));
-                        /* 
-                        ctrl.deposit(cmdLine.getParameter(0), 
-                        Integer.parseInt(cmdLine.getParameter(1))); 
-                        */
+                    case MODIFY:                                          // STUDY YEAR                , STUDYPERIOD,                 COURSECODE,                            MODIFYAMOUNT
+                        ctrl.modifyCourseInstanceStudentNumber(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2), Integer.parseInt(cmdLine.getParameter(3)));
+
                         break;
-                    case ALLOCATE:
-                        ctrl.allocatedTeacherToCourseInstance("2025","P1","IS1200","EMP10001","Admin", 100.1);
-                        /* 
-                        ctrl.withdraw(cmdLine.getParameter(0), 
-                        Integer.parseInt(cmdLine.getParameter(1))); 
-                        */
+                    case ALLOCATE:                                    // STUDY YEAR                 STUDYPERIOD                 COURSECODE                      ACTIVITYNAME                  EMPLOYMENTIND                             ALLOCATED HOURS             
+                        ctrl.allocatedTeacherToCourseInstance(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2),cmdLine.getParameter(3),cmdLine.getParameter(4),Double.parseDouble(cmdLine.getParameter(5)));
                         break;
-                    case DEALLOCATE:
-                        /*
-                        AccountDTO acct = ctrl.getAccount(cmdLine.getParameter(0));
-                        if (acct != null) {
-                            System.out.println(acct.getBalance());
-                        } else {
-                            System.out.println("No such account");
-                        }
-                        */
+
+                    case DEALLOCATE:                                  // STUDY YEAR                STUDYPERIOD                      COURSECODE                   ACTIVITYNAME                   EMPLOYMENTIND                                 
+                        ctrl.deallocateTeacherToCourseActivity(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2),cmdLine.getParameter(3),cmdLine.getParameter(4));
+
                         break; 
                     default:
                         System.out.println("illegal command");

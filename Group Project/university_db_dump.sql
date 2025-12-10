@@ -172,11 +172,17 @@ BEGIN
     AND ci.study_period = emp_study_period
     AND ci.id != NEW.course_instance_id;
 
-    IF course_count >= max_allowed THEN
-        RAISE EXCEPTION 'Employee % already has % courses in % %. Cannot exceed % courses.',
-            NEW.employee_id, course_count, emp_study_year, emp_study_period, max_allowed;
+    IF( TG_OP = 'INSERT')
+        THEN 
+            IF course_count >= max_allowed THEN
+            RAISE EXCEPTION 'Employee % already has % courses in % %. Cannot exceed % courses.',
+                NEW.employee_id, course_count, emp_study_year, emp_study_period, max_allowed;
+            END IF;
+    ELSE    
+        --IF course_count < 1 THEN 
+            --RAISE EXCEPTION 'The teacher is not allocated to any courses';
+        --END IF;
     END IF;
-
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -254,7 +260,7 @@ BEGIN
             VALUES
                 (NEW.id, examination_id, examination_constant + examination_num_student_constant * NEW.num_students),
                 (NEW.id, admin_id, admin_hp_constant*course_hp + admin_constant + admin_num_student_constant*NEW.num_students);
-        END IF;
+    END IF;
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -263,3 +269,22 @@ CREATE TRIGGER derive_course_instance_hours
 AFTER INSERT OR UPDATE ON course_instance 
 FOR ROW
 EXECUTE FUNCTION derive_hours();
+
+
+
+
+
+CREATE OR REPLACE FUNCTION integrate_new_teaching_activity() RETURNS TRIGGER AS $$
+BEGIN
+    INSERT INTO planned_activity(teaching_activity_id, course_instance_id,planned_hours) 
+    SELECT NEW.id, ci.id, 0
+    FROM course_instance ci;
+    
+    RETURN NEW;    
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER add_reference_between_new_teaching_activity_and_course_intance
+AFTER INSERT ON teaching_activity
+FOR EACH ROW
+EXECUTE FUNCTION integrate_new_teaching_activity();

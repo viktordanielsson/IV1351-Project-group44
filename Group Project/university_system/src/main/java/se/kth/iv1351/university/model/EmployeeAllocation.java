@@ -1,6 +1,6 @@
 package se.kth.iv1351.university.model;
 
-public class EmployeeAllocation {
+public class EmployeeAllocation implements EmployeeAllocationDTO{
     Employee employee;
     Activity activity;
     Double hoursAllocated;
