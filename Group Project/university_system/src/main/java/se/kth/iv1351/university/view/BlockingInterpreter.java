@@ -76,7 +76,6 @@ public class BlockingInterpreter{
 
                     case DEALLOCATE:                                  // STUDY YEAR                STUDYPERIOD                      COURSECODE                   ACTIVITYNAME                   EMPLOYMENTIND                                 
                         ctrl.deallocateTeacherToCourseActivity(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2),cmdLine.getParameter(3),cmdLine.getParameter(4));
-
                         break; 
                     default:
                         System.out.println("illegal command");

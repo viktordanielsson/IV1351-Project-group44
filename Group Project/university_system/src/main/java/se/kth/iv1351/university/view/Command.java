@@ -3,27 +3,23 @@ package se.kth.iv1351.university.view;
 
 public enum Command {
     /**
-     * Creates a new account.
+     * Cost of course instance
      */
     COST,
     /**
-     * Lists all existing accounts.
+     * add new teaching activity
      */
     ADD,
     /**
-     * Deletes the specified account.
-     */
-    DELETE,
-    /**
-     * Deposits the specified amount to the specified account
+     *  modify the number of students
      */
     MODIFY,
     /**
-     * Withdraws the specified amount from the specified account
+     * allocate new teacher to teaching activity
      */
     ALLOCATE,
     /**
-     * Lists the balance of the specified account.
+     * deallocate new teacher to teaching activity
      */
     DEALLOCATE,
     /**

@@ -1,61 +1,6 @@
-För att få course code, course instance, hp, period, # students
--------------------------------------------------------------------
-SELECT
-	c.course_code AS "Course Code",
-	ci.instance_id AS "Course Instance ID",
-	cl.hp AS "HP",
-	ci.study_period AS "Period",
-	ci.num_students AS "# Students"
-FROM course c 
-JOIN course_layout cl
-	ON cl.course_id = c.id
-JOIN course_instance ci
-	ON ci.course_layout_id = cl.id
---------------------------------------------------------------------
-För att få Lab hours, Lecture hours, Tutorial hours, Seminar hours
---------------------------------------------------------------------
-SELECT
-	MAX(CASE WHEN ta.activity_name = 'Labs' THEN pa.planned_hours END) AS "Lab hours",
-	MAX(CASE WHEN ta.activity_name = 'Lectures' THEN pa.planned_hours END) AS "Lecture hours",
-	MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN pa.planned_hours END) AS "Tutorial hours",
-	MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours END) AS "Seminar hours"
-FROM course_instance ci
-JOIN planned_activity pa ON ci.id = pa.course_instance_id
-JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
-GROUP BY ci.instance_id
-ORDER BY ci.instance_id
----------------------------------------------------------------------
-För att slå ihop de två ovan
----------------------------------------------------------------------
-SELECT
-    c.course_code AS "Course Code",
-    ci.instance_id AS "Course Instance ID",
-    cl.hp AS "HP",
-    ci.study_period AS "Period",
-    ci.num_students AS "# Students",
-    activity_hours."Lab hours",
-    activity_hours."Lecture hours", 
-    activity_hours."Tutorial hours",
-    activity_hours."Seminar hours"
-FROM course c 
-JOIN course_layout cl ON cl.course_id = c.id
-JOIN course_instance ci ON ci.course_layout_id = cl.id
-JOIN (
-    SELECT
-        ci.instance_id,
-        MAX(CASE WHEN ta.activity_name = 'Labs' THEN pa.planned_hours * ta.factor END) AS "Lab hours",
-        MAX(CASE WHEN ta.activity_name = 'Lectures' THEN pa.planned_hours * ta.factor END) AS "Lecture hours",
-        MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN pa.planned_hours * ta.factor END) AS "Tutorial hours",
-        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours * ta.factor END) AS "Seminar hours"
-    FROM course_instance ci
-    JOIN planned_activity pa ON ci.id = pa.course_instance_id
-    JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
-    GROUP BY ci.instance_id
-) AS activity_hours ON ci.instance_id = activity_hours.instance_id
-ORDER BY ci.instance_id
 _____________________________________________________________________________________________________________________________________________________________________________________________
 
-UPPGIFT 1
+TASK 1 Seminar 2
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 SELECT
@@ -95,6 +40,7 @@ JOIN (
     FROM course_instance ci
     JOIN planned_activity pa ON ci.id = pa.course_instance_id
     JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
+    WHERE ci.study_year = EXTRACT(YEAR FROM CURRENT_DATE)::TEXT
     GROUP BY ci.instance_id
 ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
 ORDER BY ci.instance_id;
@@ -102,7 +48,7 @@ ORDER BY ci.instance_id;
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 
-UPPGIFT 2
+TASK 2 Seminar 2
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -148,17 +94,18 @@ JOIN (
     JOIN employee e ON e.id = ela.employee_id
     JOIN person p ON p.id = e.person_id 
     JOIN job_title jt ON jt.id = e.job_title_id
+    WHERE ci.study_year = EXTRACT(YEAR FROM CURRENT_DATE)::TEXT
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours 
 ON ci.instance_id = activity_hours.instance_id
-WHERE ci.instance_id = 'IX1307_2025_P1'
+WHERE c.course_code = 'IS1200'
 ORDER BY ci.instance_id;
 
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 
-UPPGIFT 3
-
+TASK 3 Seminar 2
+ 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 
 SELECT
@@ -203,14 +150,14 @@ JOIN (
     JOIN employee e ON e.id = ela.employee_id
     JOIN person p ON p.id = e.person_id 
     JOIN job_title jt ON jt.id = e.job_title_id
-    WHERE (p.first_name = 'Felix' AND p.last_name = 'Holgersson')
+    WHERE (p.first_name = 'Felix' AND p.last_name = 'Holgersson') AND ci.study_year = EXTRACT(YEAR FROM CURRENT_DATE)::TEXT
     GROUP BY ci.instance_id, p.first_name, p.last_name, jt.job_title
 ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
 ORDER BY ci.instance_id;
 
 ____________________________________________________________________________________________________________________________________________________________________________________________
 
-UPPGIFT 4
+TASK 4 Seminar 2
 
 _____________________________________________________________________________________________________________________________________________________________________________________________
 CREATE MATERIALIZED VIEW employee_active_courses AS
@@ -272,3 +219,69 @@ SELECT
         GROUP BY ci.instance_id, p.first_name, p.last_name
     ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
     ORDER BY ci.instance_id;
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+smaller examples of what was done in seminar 2
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+    För att få course code, course instance, hp, period, # students
+-------------------------------------------------------------------
+SELECT
+	c.course_code AS "Course Code",
+	ci.instance_id AS "Course Instance ID",
+	cl.hp AS "HP",
+	ci.study_period AS "Period",
+	ci.num_students AS "# Students"
+FROM course c 
+JOIN course_layout cl
+	ON cl.course_id = c.id
+JOIN course_instance ci
+	ON ci.course_layout_id = cl.id
+--------------------------------------------------------------------
+För att få Lab hours, Lecture hours, Tutorial hours, Seminar hours
+--------------------------------------------------------------------
+SELECT
+	MAX(CASE WHEN ta.activity_name = 'Labs' THEN pa.planned_hours END) AS "Lab hours",
+	MAX(CASE WHEN ta.activity_name = 'Lectures' THEN pa.planned_hours END) AS "Lecture hours",
+	MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN pa.planned_hours END) AS "Tutorial hours",
+	MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours END) AS "Seminar hours"
+FROM course_instance ci
+JOIN planned_activity pa ON ci.id = pa.course_instance_id
+JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
+GROUP BY ci.instance_id
+ORDER BY ci.instance_id
+---------------------------------------------------------------------
+För att slå ihop de två ovan
+---------------------------------------------------------------------
+SELECT
+    c.course_code AS "Course Code",
+    ci.instance_id AS "Course Instance ID",
+    cl.hp AS "HP",
+    ci.study_period AS "Period",
+    ci.num_students AS "# Students",
+    activity_hours."Lab hours",
+    activity_hours."Lecture hours", 
+    activity_hours."Tutorial hours",
+    activity_hours."Seminar hours"
+FROM course c 
+JOIN course_layout cl ON cl.course_id = c.id
+JOIN course_instance ci ON ci.course_layout_id = cl.id
+JOIN (
+    SELECT
+        ci.instance_id,
+        MAX(CASE WHEN ta.activity_name = 'Labs' THEN pa.planned_hours * ta.factor END) AS "Lab hours",
+        MAX(CASE WHEN ta.activity_name = 'Lectures' THEN pa.planned_hours * ta.factor END) AS "Lecture hours",
+        MAX(CASE WHEN ta.activity_name = 'Tutorials' THEN pa.planned_hours * ta.factor END) AS "Tutorial hours",
+        MAX(CASE WHEN ta.activity_name = 'Seminars' THEN pa.planned_hours * ta.factor END) AS "Seminar hours"
+    FROM course_instance ci
+    JOIN planned_activity pa ON ci.id = pa.course_instance_id
+    JOIN teaching_activity ta ON pa.teaching_activity_id = ta.id
+    GROUP BY ci.instance_id
+) AS activity_hours ON ci.instance_id = activity_hours.instance_id
+ORDER BY ci.instance_id
+___
