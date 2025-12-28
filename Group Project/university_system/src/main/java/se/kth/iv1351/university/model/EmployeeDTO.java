@@ -4,4 +4,5 @@ public interface EmployeeDTO {
 
     public int getSalary();
     public String getEmploymentId();
+    public String getName();
 }

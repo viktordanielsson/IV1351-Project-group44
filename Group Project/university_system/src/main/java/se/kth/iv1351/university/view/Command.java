@@ -23,6 +23,10 @@ public enum Command {
      */
     DEALLOCATE,
     /**
+     * L
+     */
+    DISPLAY,
+    /**
      * Lists all commands.
      */
     HELP,

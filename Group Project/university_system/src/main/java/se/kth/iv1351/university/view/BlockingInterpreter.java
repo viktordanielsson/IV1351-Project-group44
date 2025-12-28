@@ -2,6 +2,7 @@ package se.kth.iv1351.university.view;
 
 import se.kth.iv1351.university.controller.Controller;
 import se.kth.iv1351.university.model.CostDTO;
+import se.kth.iv1351.university.model.EmployeeAllocationDTO;
 
 import java.util.Scanner;
 
@@ -70,13 +71,24 @@ public class BlockingInterpreter{
                         ctrl.modifyCourseInstanceStudentNumber(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2), Integer.parseInt(cmdLine.getParameter(3)));
 
                         break;
-                    case ALLOCATE:                                    // STUDY YEAR                 STUDYPERIOD                 COURSECODE                      ACTIVITYNAME                  EMPLOYMENTIND                             ALLOCATED HOURS             
+                    case ALLOCATE:                                    // STUDY YEAR                 STUDYPERIOD                 COURSECODE                      ACTIVITYNAME                  EMPLOYMENTID                             ALLOCATED HOURS             
                         ctrl.allocatedTeacherToCourseInstance(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2),cmdLine.getParameter(3),cmdLine.getParameter(4),Double.parseDouble(cmdLine.getParameter(5)));
                         break;
 
-                    case DEALLOCATE:                                  // STUDY YEAR                STUDYPERIOD                      COURSECODE                   ACTIVITYNAME                   EMPLOYMENTIND                                 
+                    case DEALLOCATE:                                  // STUDY YEAR                STUDYPERIOD                      COURSECODE                   ACTIVITYNAME                   EMPLOYMENTID                                 
                         ctrl.deallocateTeacherToCourseActivity(cmdLine.getParameter(0),cmdLine.getParameter(1),cmdLine.getParameter(2),cmdLine.getParameter(3),cmdLine.getParameter(4));
                         break; 
+                    case DISPLAY: 
+                                                // STUDY YEAR                   STUDYPERIOD                             COURSECODE                 ACTIVITYNAME                         EMPLOYMENTID          
+                        String[] userInput = {cmdLine.getParameter(0), cmdLine.getParameter(1), cmdLine.getParameter(2), cmdLine.getParameter(3), cmdLine.getParameter(4)};
+                        EmployeeAllocationDTO DTO = ctrl.displayTeacherAllocation(userInput[0],userInput[1],userInput[2],userInput[3],userInput[4]);
+                        StringBuilder stringBuilder = new StringBuilder();
+                        stringBuilder.append("Course Code\t Course Instance\tTeacher's name \t\t"+userInput[3]+" Hours\n");
+                        stringBuilder.append(userInput[2]+"\t\t "+
+                        DTO.getActivity().getCourseInstanceId()+"\t\t"+DTO.getEmployee().getName()+"\t "+
+                        DTO.getHoursAllocated()+"\t");  
+                        System.out.println(stringBuilder);                        
+                        break;
                     default:
                         System.out.println("illegal command");
                 }

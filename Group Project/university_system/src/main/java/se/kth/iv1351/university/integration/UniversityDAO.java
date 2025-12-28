@@ -26,6 +26,7 @@ public class UniversityDAO {
     private static final String ACTIVITY_FACTOR = "factor";
     private static final String PLANNED_HOURS = "planned_hours";
     private static final String ALLOCATED_HOURS = "allocated_hours";
+    private static final String EMPLOYEE_NAME = "Teachers name";
 
     private Connection connection;
 
@@ -36,6 +37,7 @@ public class UniversityDAO {
     private PreparedStatement readSurrogateKeysForEmployeeLoadAllocationStmt;
     private PreparedStatement deleteEmployeeAllocationStmt;
     private PreparedStatement createTeachingActivityStmt;
+    private PreparedStatement readTeachingAllocationStmt;
 
 
     private static class Keys {
@@ -122,7 +124,8 @@ public class UniversityDAO {
                         (
                                 new Employee(
                                         results.getInt(EMPLOYEE_SALARY),
-                                        results.getString(EMPLOYEE_ID)
+                                        results.getString(EMPLOYEE_ID),
+                                        results.getString(EMPLOYEE_NAME)
                                 ),
                                 new Activity(
                                         results.getString(ACTIVITY_NAME),
@@ -256,6 +259,39 @@ public class UniversityDAO {
         } catch (SQLException sqle) {
             handleException("Could not create new teaching " + activityName, sqle);
         }
+    }
+
+    public EmployeeAllocation readTeachersAllocation(String studyYear, String studyPeriod, String courseCode,String activityName, String employmentId)
+    throws UniversityDBException
+    {
+        Course course = readCourseByYearPeriodCourseCode(studyYear, studyPeriod, courseCode);
+        ResultSet result = null;
+        PreparedStatement stmtToExequte = readTeachingAllocationStmt;
+        EmployeeAllocation employeeAllocation = null;
+        try {
+            stmtToExequte.setString(1, activityName);
+            stmtToExequte.setString(2, course.getCourseInstanceId());
+            stmtToExequte.setString(3, employmentId);
+            result = stmtToExequte.executeQuery();
+            if(result.next()){
+                employeeAllocation = new EmployeeAllocation(
+                                new Employee(
+                                        result.getInt(EMPLOYEE_SALARY),
+                                        result.getString(EMPLOYEE_ID),
+                                        result.getString(EMPLOYEE_NAME)
+                                ),
+                                new Activity(
+                                        result.getString(ACTIVITY_NAME),
+                                        result.getDouble(ACTIVITY_FACTOR),
+                                        result.getDouble(PLANNED_HOURS),
+                                        course.getCourseInstanceId()
+                                ),
+                                result.getDouble(ALLOCATED_HOURS));
+            }
+        } catch (SQLException sqle) {
+            handleException("Could not find employee " + employmentId + " for " + courseCode + " in " + studyPeriod + " and " + studyYear + " in activity: "+activityName, sqle);
+        }
+        return employeeAllocation;
     }
 
     /**
@@ -392,12 +428,14 @@ public class UniversityDAO {
 
         readAllEmployeeAllocationsByCourseInstanceStmt = connection.prepareStatement
                 (
-                        "SELECT ta." + ACTIVITY_NAME + ", ta." + ACTIVITY_FACTOR + ", pa." + PLANNED_HOURS + ", ci." + COURSE_INSTANCE_ID + ", e." + EMPLOYEE_ID + ", e." + EMPLOYEE_SALARY + ", ela." + ALLOCATED_HOURS +
+                        "SELECT ta." + ACTIVITY_NAME + ", ta." + ACTIVITY_FACTOR + ", pa." + PLANNED_HOURS + ", ci." + COURSE_INSTANCE_ID + ", e." + EMPLOYEE_ID + ", e." + EMPLOYEE_SALARY +", ela." + ALLOCATED_HOURS+
+                        ", CONCAT(p.first_name, ' ', p.last_name) AS \"" + EMPLOYEE_NAME + "\" " +
                                 " FROM teaching_activity ta " +
                                 "JOIN planned_activity pa ON pa.teaching_activity_id = ta.id " +
                                 "JOIN course_instance ci ON ci.id = pa.course_instance_id " +
                                 "JOIN employee_load_allocation ela ON pa.course_instance_id = ela.course_instance_id AND pa.teaching_activity_id = ela.teaching_activity_id " +
                                 "JOIN employee e ON e.id = ela.employee_id " +
+                                "JOIN person p ON p.id = e.person_id "+
                                 "WHERE ci.instance_id = ?"
                 );
 
@@ -457,35 +495,30 @@ public class UniversityDAO {
                         "INSERT INTO teaching_activity (" + ACTIVITY_NAME + ", " + ACTIVITY_FACTOR + ") " +
                                 "VALUES (?, ?)"
                 );
-
-        /**
-         *
-         * DISPLAY the teacher added to Exercise
-         *
-         * SELECT
-         * c.course_code AS "Course Code",
-         * ci.instance_id AS "Course Instance ID",
-         * activity_hours."Teacher's name",
-         * CAST(activity_hours."Exercise hours" AS DECIMAL (5,1))
-         * FROM course c
-         * JOIN course_layout cl ON cl.course_id = c.id
-         * JOIN course_instance ci ON ci.course_layout_id = cl.id
-         * JOIN (
-         * SELECT
-         * ci.instance_id,
-         * CONCAT(p.first_name, ' ', p.last_name) AS "Teacher's name",
-         * MAX(CASE WHEN ta.activity_name = 'Exercise' THEN ela.allocated_hours END) AS "Exercise hours"
-         * FROM course_instance ci
-         * JOIN employee_load_allocation ela ON (ela.course_instance_id = ci.id)
-         * JOIN teaching_activity ta ON ta.id = ela.teaching_activity_id
-         * JOIN employee e ON e.id = ela.employee_id
-         * JOIN person p ON p.id = e.person_id
-         * WHERE ta.activity_name = 'Exercise'
-         * AND ci.instance_id = 'IX1307_2025_P1'
-         * GROUP BY ci.instance_id, p.first_name, p.last_name
-         * ) AS activity_hours ON ci.instance_id = activity_hours.instance_id
-         * ORDER BY ci.instance_id;
-         *
-         */
+        
+        readTeachingAllocationStmt = connection.prepareStatement(
+            "SELECT " +
+            "  ta." + ACTIVITY_NAME + ", " +
+            "  ta." + ACTIVITY_FACTOR + ", " +
+            "  pa." + PLANNED_HOURS + ", " +
+            "  ci." + COURSE_INSTANCE_ID + ", " +
+            "  e." + EMPLOYEE_ID + ", " +
+            "  e." + EMPLOYEE_SALARY + ", " +
+            "  ela." + ALLOCATED_HOURS + ", " +
+            "  c.course_code AS \"" + COURSE_CODE + "\", " +
+            "  CONCAT(p.first_name, ' ', p.last_name) AS \"" + EMPLOYEE_NAME + "\" " +
+            "FROM course c " +
+            "JOIN course_layout cl ON cl.course_id = c.id " +
+            "JOIN course_instance ci ON ci.course_layout_id = cl.id " +
+            "JOIN employee_load_allocation ela ON ela.course_instance_id = ci.id " +
+            "JOIN teaching_activity ta ON ta.id = ela.teaching_activity_id " +
+            "JOIN employee e ON e.id = ela.employee_id " +
+            "JOIN person p ON p.id = e.person_id " +
+            "JOIN planned_activity pa ON pa.teaching_activity_id = ta.id " +
+            "WHERE ta.activity_name = ? " +
+            "AND ci.instance_id = ? " +
+            "AND e.employment_id = ? " +
+            "ORDER BY ci.instance_id"
+        );
     }
 }

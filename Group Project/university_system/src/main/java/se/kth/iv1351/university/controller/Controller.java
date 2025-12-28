@@ -7,6 +7,7 @@ import se.kth.iv1351.university.integration.UniversityDBException;
 import se.kth.iv1351.university.model.Cost;
 import se.kth.iv1351.university.model.CostDTO;
 import se.kth.iv1351.university.model.EmployeeAllocation;
+import se.kth.iv1351.university.model.EmployeeAllocationDTO;
 public class Controller {
     private final UniversityDAO uniDB;
 
@@ -81,5 +82,15 @@ public class Controller {
             throw new UniversityDBException(udbe.toString());
         }
         return "";
+    }
+
+    public EmployeeAllocationDTO displayTeacherAllocation(String studyYear, String studyPeriod, String courseCode,String activityName,String employmentId)
+    throws UniversityDBException
+    {
+        try {
+            return uniDB.readTeachersAllocation(studyYear, studyPeriod, courseCode, activityName,employmentId);
+        } catch (UniversityDBException udbe) {
+            throw new UniversityDBException(udbe.toString());
+        }
     }
 }
